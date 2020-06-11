@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 
+
+
 export const HamburgerLine = styled.div`
       height: 5px;
       width: 70%;
       border-radius: 2px;
-      box-shadow:         inset 0 0 5px #aaaaaa;
+      box-shadow: inset 0 0 5px #aaaaaa;
       transition: all 300ms ease;
       transform-origin: left;
 `
-
 
 export const DropDownButton = styled.div`
       width: 50px;
@@ -16,8 +17,8 @@ export const DropDownButton = styled.div`
       background: #eeeeee;
       border-radius: 5px;
       box-shadow: 0 3px 3px #aaaaaa;
-      transform: translate(0, -3px);
       display: flex; 
+      transform: translate(0, -3px);
       flex-direction: column;
       justify-content: space-between;
       align-items: center;

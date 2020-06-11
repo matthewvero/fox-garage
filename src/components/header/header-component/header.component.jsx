@@ -1,16 +1,14 @@
-import React from "react";
+import React                    from "react";
 import {
     HeaderContainer,
-    HeaderNavComponent,
     HeaderSection,
     HeaderLogo,
     HeaderContactDetails,
-    HeaderDropDownIcon,
     HeaderPhoneNo,
-} from "./header.styles";
+}                               from "./header.styles";
 
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import HeaderDropDownButton from "../header-dropdown-button/header-dropdown-button.component";
+import HeaderDropDownButton     from "../header-dropdown-button/header-dropdown-button.component";
+import HeaderNav from "../Header-Nav/header-nav.component";
 
 export default class Header extends React.Component  {
     state = {
@@ -36,23 +34,11 @@ export default class Header extends React.Component  {
                 <HeaderLogo>F O X</HeaderLogo>
             </HeaderSection>
             <HeaderSection>
-            <HeaderNavComponent collapse>
-                Prices 
-                <HeaderDropDownIcon icon={faChevronDown}/>
-            </HeaderNavComponent>
-            <HeaderNavComponent collapse>
-                Services
-                <HeaderDropDownIcon icon={faChevronDown}/>
-            </HeaderNavComponent>
-            <HeaderNavComponent collapse>
-                Blog
-                <HeaderDropDownIcon icon={faChevronDown}/>    
-            </HeaderNavComponent>
-            <HeaderNavComponent collapse>
-                About Fox
-                <HeaderDropDownIcon icon={faChevronDown}/>
-            </HeaderNavComponent>
-            <HeaderNavComponent collapse>Contact Us</HeaderNavComponent>
+            {
+                this.state.isMobile ? 
+                null : 
+                <HeaderNav/> 
+            }
             <HeaderContactDetails>
                 <span>To Book Call:</span> <HeaderPhoneNo>01276 704600</HeaderPhoneNo>
             </HeaderContactDetails>

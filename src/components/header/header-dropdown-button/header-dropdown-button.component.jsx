@@ -1,5 +1,8 @@
-import React from 'react'
-import { DropDownButton, HamburgerLine } from './header-dropdown-button.styles'
+import React                  from 'react'
+import { 
+      DropDownButton,
+      HamburgerLine
+}                             from './header-dropdown-button.styles'
 import { HeaderNavComponent } from '../header-component/header.styles'
 
 class HeaderDropDownButton extends React.Component {

@@ -1,7 +1,19 @@
-import React from 'react'
-import { QuickLinksButton,  QuickLinksContainer, QuickLinkTitle, QuickLinkIcon} from './quicklinks.styles'
+import React                  from 'react'
+import { 
+      QuickLinksButton,  
+      QuickLinksContainer, 
+      QuickLinkTitle, 
+      QuickLinkIcon
+}                             from './quicklinks.styles'
 
-import { faListAlt, faOilCan, faSnowflake, faDotCircle, faCogs, faBolt } from "@fortawesome/free-solid-svg-icons";
+import { 
+      faListAlt,
+      faOilCan, 
+      faSnowflake, 
+      faDotCircle, 
+      faCogs, 
+      faBolt 
+}                             from "@fortawesome/free-solid-svg-icons";
 
 const QuickLinks = () => {
       return (

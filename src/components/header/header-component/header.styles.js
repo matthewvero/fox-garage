@@ -31,11 +31,6 @@ export const HeaderNavComponent = styled.div`
         background-color: #dddddd;
         color: DODGERBLUE;
     }
-    
-    @media (max-width: 850px) {
-        ${props => props.collapse ?  'display: none;' : null};
-    }
-    
 `;
 
 export const HeaderSection = styled.div`

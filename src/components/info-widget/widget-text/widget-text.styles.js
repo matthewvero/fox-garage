@@ -16,6 +16,19 @@ export const WidgetTextContent = styled.p`
                   return '2vw'
             }
       }};
+
+      @media (max-width: 1000px) {
+            font-size: ${props => {
+                  switch(props.textSize) {
+                        case 'subtext':
+                              return '2vw'
+                        case 'heading':
+                              return '3.5vw'
+                        default :
+                        return '2.5vw'
+                  }
+            }};
+      }
       color: ${props => props.color};
       padding: 0 20px;
       margin: 0;

@@ -27,7 +27,7 @@ const Homepage = () => {
                               </WidgetText>
                         </Widget>
                         <Widget backgroundcolor='white'>
-                              <WidgetText color='#8899aa'>Call Us To Book </WidgetText>
+                              <WidgetText color='#8899aa' textSize='heading' >Call Us To Book </WidgetText>
                               <PhoneNumber/>
                               <CustomButton> Our Prices</CustomButton>
                         </Widget>

@@ -21,15 +21,15 @@ export const WidgetTextContent = styled.p`
             font-size: ${props => {
                   switch(props.textSize) {
                         case 'subtext':
-                              return '2vw'
+                              return '2.5vw'
                         case 'heading':
-                              return '3.5vw'
+                              return '4vw'
                         default :
-                        return '2.5vw'
+                        return '3vw'
                   }
             }};
       }
       color: ${props => props.color};
       padding: 0 20px;
-      margin: 0;
+      margin: 20px;
 `

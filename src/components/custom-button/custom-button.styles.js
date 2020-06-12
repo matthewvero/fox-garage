@@ -22,4 +22,11 @@ export const CustomButtonInput = styled.button`
             box-shadow: none;
             background-color: #778899;
       }
+
+      @media (max-width: 1000px) {
+            font-size: 4vw;
+            width: 50%;
+            align-self: center;
+            margin: 20px;
+      }
 `

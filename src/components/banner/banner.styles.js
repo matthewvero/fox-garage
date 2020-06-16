@@ -11,6 +11,7 @@ export const BannerBackground = styled.div`
       background-size: cover;
       position: absolute;
       transition: transform ease-in-out 1s;
+      border-radius: 10px;
 `
 
 export const BackgroundFade = styled.div`
@@ -39,6 +40,9 @@ export const BannerContainer = styled.div`
       &:hover ${BackgroundFade} {
             background-color: rgba(50,50,50, 0.8);
 
+      }
+      @media (max-width: 1000px) {
+            min-height: 100px;
       }
 `
 
@@ -78,5 +82,10 @@ export const BannerImage = styled.div`
       margin: 0 50px;
       z-index: 2;
       border-radius: 5px;
+
+      @media (max-width: 1000px) {
+            height: 50px;
+            width: 50px;
+      }
 `
 

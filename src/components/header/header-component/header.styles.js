@@ -26,11 +26,6 @@ export const HeaderNavComponent = styled.div`
     align-items: center;
     cursor: pointer;
     position: relative;
-
-    &:hover {
-        background-color: #dddddd;
-        color: DODGERBLUE;
-    }
 `;
 
 export const HeaderSection = styled.div`

@@ -31,5 +31,5 @@ export const WidgetTextContent = styled.p`
       }
       color: ${props => props.color};
       padding: 0 20px;
-      margin: 20px;
+      margin: 2%;
 `

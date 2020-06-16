@@ -6,9 +6,9 @@ export const HamburgerLine = styled.div`
       height: 5px;
       width: 70%;
       border-radius: 2px;
-      box-shadow: inset 0 0 5px #aaaaaa;
       transition: all 300ms ease;
       transform-origin: left;
+      background-color: DODGERBLUE;
 `
 
 export const DropDownButton = styled.div`
@@ -26,7 +26,7 @@ export const DropDownButton = styled.div`
       box-sizing: border-box;
       overflow: hidden;
       &:hover {
-            transform: translate(0px, 0) scale;
+            transform: translate(0px, 0) ;
             box-shadow: none;
 
       }      

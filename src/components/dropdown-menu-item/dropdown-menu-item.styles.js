@@ -13,10 +13,12 @@ export const DropdownMenuItemText = styled.div`
       display: flex;
       flex-direction: row;
       align-items: center;
+      user-select: none;
 `
 
 export const DropdownMenuItemIcon = styled(FontAwesomeIcon)`
-      
+      user-select: none;
+
 `
 
 export const IconContainer = styled.div`
@@ -32,7 +34,7 @@ export const IconContainer = styled.div`
 
 export const DropdownMenuItemContainer = styled.div`
       width: 90%;
-      height: 50px;
+      height: 10vh;
       text-align: left;
       transition: all 300ms ease;
       display: flex; 
@@ -42,6 +44,7 @@ export const DropdownMenuItemContainer = styled.div`
       border-radius: 10px;
       cursor: pointer;
       z-index: 3;
+
 
       &:hover {
             background-color: #cccccc;

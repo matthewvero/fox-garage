@@ -20,6 +20,7 @@ export const BackgroundFade = styled.div`
       height: 100%;
       width: 100%;
       transition: background-color ease 300ms;
+      border-radius: 10px;
 `
 export const BannerContainer = styled.div`
       cursor: pointer;

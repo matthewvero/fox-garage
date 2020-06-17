@@ -26,6 +26,10 @@ export const QuickLinkTitle = styled.div`
             top: 50%;
             position: static;
       }
+      @media (max-width: 750px) {
+            font-size: 2.5vw;
+      }
+      user-select: none
       
 `
 
@@ -38,6 +42,10 @@ export const QuickLinkIcon = styled(FontAwesomeIcon)`
             font-size: 5vw;
 
       }
+      @media (max-width: 750px) {
+            font-size: 7vw;
+      }
+      user-select: none
 
 `
 

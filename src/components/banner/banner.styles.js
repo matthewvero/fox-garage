@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 export const BannerBackground = styled.div`
-      width: 101%;
+      width: 100%;
       height: 100%;
       background-image: url(${props => props.backgroundImage});
       background-position: center;
@@ -13,6 +13,9 @@ export const BannerBackground = styled.div`
       transition: transform ease-in-out 1s;
       border-radius: 10px;
       overflow: hidden;
+      @media (max-width: 1000px) {
+            border-radius: 0;
+      }
 `
 
 export const BackgroundFade = styled.div`
@@ -21,7 +24,6 @@ export const BackgroundFade = styled.div`
       height: 100%;
       width: 100%;
       transition: background-color ease 300ms;
-      border-radius: 10px;
       overflow: hidden;
 `
 export const BannerContainer = styled.div`
@@ -46,6 +48,7 @@ export const BannerContainer = styled.div`
       }
       @media (max-width: 1000px) {
             min-height: 100px;
+            border-radius: 0;
       }
 `
 

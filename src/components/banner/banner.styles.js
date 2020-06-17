@@ -34,7 +34,7 @@ export const BannerContainer = styled.div`
       justify-content: space-between;
       box-shadow: 0 0 10px #555555;
       border-radius: 10px;
-      overflow: hidden;
+      overflow: hidden!important;
       &:hover ${BannerBackground} {
             transform: scale(1.1);
       }

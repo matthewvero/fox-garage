@@ -32,7 +32,7 @@ export const DropDownButton = styled.div`
             transform: ${props => props.open ? 'translate(5px, 0) rotate(-45deg) scale(1.02);' : null};
       }
       ${HamburgerLine}:nth-child(2) {
-            transform: ${props => props.open ? 'translate(-50px, 0);' : null};x
+            transform: ${props => props.open ? 'translate(-50px, 0);' : null};
       }
 
 `

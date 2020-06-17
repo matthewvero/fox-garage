@@ -70,12 +70,15 @@ export const QuickLinksButton = styled.div`
             height: 100px;
             margin: 1% 2%;
             justify-content: space-around;
-            &:active ${QuickLinkIcon} {
-                  transform: scale(1.3);
+            &:active {
+                  background-color: #aabbcc;
             }
             &:active ${QuickLinkTitle} {
-                  transform: scale(1.7);
-            }
+                  color: white;
+            };
+            &:active ${QuickLinkIcon} {
+                  color: white;
+            };
 
       }
 

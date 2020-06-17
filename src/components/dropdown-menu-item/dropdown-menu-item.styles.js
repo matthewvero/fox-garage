@@ -36,7 +36,6 @@ export const DropdownMenuItemContainer = styled.div`
       width: 90%;
       height: 10vh;
       text-align: left;
-      transition: all 300ms ease;
       display: flex; 
       flex-flow: row nowrap;
       align-items: center;

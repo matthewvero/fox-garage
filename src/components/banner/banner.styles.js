@@ -13,9 +13,7 @@ export const BannerBackground = styled.div`
       transition: transform ease-in-out 1s;
       border-radius: 10px;
       overflow: hidden;
-      @media (max-width: 1000px) {
-            border-radius: 0;
-      }
+      
 `
 
 export const BackgroundFade = styled.div`
@@ -46,10 +44,10 @@ export const BannerContainer = styled.div`
             background-color: rgba(50,50,50, 0.8);
 
       }
-      @media (max-width: 1000px) {
-            min-height: 100px;
-            border-radius: 0;
-      }
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0)
 `
 
 export const BannerTitle = styled.div`

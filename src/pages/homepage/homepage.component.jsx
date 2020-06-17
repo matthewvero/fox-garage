@@ -44,7 +44,9 @@ const Homepage = () => {
                   </WidgetCluster>
 
                   <WidgetCluster>
-                  <Widget></Widget>
+                  <Widget>
+                  
+                  </Widget>
                   <Widget>
                         <QuickLinks></QuickLinks>
                   </Widget>

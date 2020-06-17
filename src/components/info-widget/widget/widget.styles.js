@@ -12,8 +12,11 @@ export const SectionContainer = styled.div`
       flex-grow: ${props => props.large ? 1 : 1};
       flex-basis: 50%;
       font-weight: 600;
+
       ${props => props.otherStyles};
+      
       box-sizing: border-box;
+
       ${props => props.warning ? 
             'background-color: rgb(255, 100, 100); color: white;' : null}
 

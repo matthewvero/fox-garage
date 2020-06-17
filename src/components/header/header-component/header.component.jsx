@@ -26,18 +26,16 @@ import {
     faChevronRight,
     faAlignJustify,
 } from "@fortawesome/free-solid-svg-icons";
+
 import { CSSTransition } from "react-transition-group";
 import DropdownMenuSection from "../../dropdown-menu-section/dropdown-menu-section.component";
+import { connect } from "react-redux";
 
-export default class Header extends React.Component {
+class Header extends React.Component {
     state = {
         isMobile: window.innerWidth < 850,
-        activeMenu: "main",
-    };
+        menu: 'menu'
 
-    goToMenu = (menu) => {
-        console.log("activeMenu", this.state.activeMenu);
-        this.setState({ activeMenu: menu });
     };
 
     handleResize = () => {
@@ -66,10 +64,9 @@ export default class Header extends React.Component {
                     </HeaderContactDetails>
                     {this.state.isMobile ? (
                         <HeaderDropDownButton>
-                        
-                            <DropdownMenu onClick={() => console.log('clicked')}>
+                            <DropdownMenu>
                                 <CSSTransition
-                                    in={this.state.activeMenu === "main"}
+                                    in={this.props.activeMenu === 'main' ? true : false}
                                     timeout={500}
                                     classNames="menu-primary"
                                     unmountOnExit
@@ -77,7 +74,7 @@ export default class Header extends React.Component {
                                     <DropdownMenuSection>
                                         <DropDownMenuItem
                                             leftIcon={faPoundSign}
-                                            action={this.goToMenu}
+                                            action={'menu-link'}
                                             menu='prices'
                                             rightIcon={faChevronRight}
                                         >
@@ -85,7 +82,7 @@ export default class Header extends React.Component {
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faAlignJustify}
-                                            action={this.goToMenu}
+                                            action={'menu-link'}
                                             menu='services'
                                             rightIcon={faChevronRight}
 
@@ -94,7 +91,7 @@ export default class Header extends React.Component {
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faComment}
-                                            action={this.goToMenu}
+                                            action={'menu-link'}
                                             menu='blog'
                                             rightIcon={faChevronRight}
                                         >
@@ -102,7 +99,7 @@ export default class Header extends React.Component {
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faCloud}
-                                            action={this.goToMenu}
+                                            action={'menu-link'}
                                             menu='about us'
                                             rightIcon={faChevronRight}
 
@@ -118,52 +115,47 @@ export default class Header extends React.Component {
                                 </CSSTransition>
 
                                 <CSSTransition
-                                    in={this.state.activeMenu === "prices"}
+                                    in={this.props.activeMenu === "prices" ? true : false}
                                     timeout={500}
                                     classNames="menu-secondary"
                                     unmountOnExit
                                 >
                                     <DropdownMenuSection>
-                                    <DropDownMenuItem
+                                        <DropDownMenuItem
                                             leftIcon={faChevronLeft}
-                                            action={this.goToMenu}
+                                            action={'menu-link'}
                                             menu='main'
                                         >
                                             Back
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faOilCan}
-                                            action={this.goToMenu}
-                                            menu='service'
+                                            
                                         >
                                             Service
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faCheck}
-                                            action={this.goToMenu}
-                                            menu='MOT'
+                                            
                                         >
                                             MOT
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faSnowflake}
-                                            goTomenu="Blog"
-                                            action={this.goToMenu}
-                                            menu='aircon'
+                                            
                                         >
                                             AirCon 
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faCircle}
-                                            action={this.goToMenu}
-                                            menu='tyres'
+                                            
                                         >
                                             Tyres
                                         </DropDownMenuItem>
                                     </DropdownMenuSection>
                                 </CSSTransition>
                                 <CSSTransition
-                                    in={this.state.activeMenu === "services"}
+                                    in={this.props.activeMenu === "services" ? true : false}
                                     timeout={500}
                                     classNames="menu-secondary"
                                     unmountOnExit
@@ -171,37 +163,44 @@ export default class Header extends React.Component {
                                     <DropdownMenuSection>
                                     <DropDownMenuItem
                                             leftIcon={faChevronLeft}
-                                            action={this.goToMenu}
+                                            action={'menu-link'}
                                             menu='main'
                                         >
                                             Back
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faOilCan}
-                                            action={this.goToMenu}
-                                            menu='service'
+                                            
                                         >
                                             Service
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faCheck}
-                                            action={this.goToMenu}
-                                            menu='MOT'
+                                            
                                         >
                                             MOT
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faSnowflake}
-                                            goTomenu="Blog"
-                                            action={this.goToMenu}
-                                            menu='aircon'
+                                            
+                                        >
+                                            AirCon 
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faSnowflake}
+                                            
+                                        >
+                                            AirCon 
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faSnowflake}
+                                            
                                         >
                                             AirCon 
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faCircle}
-                                            action={this.goToMenu}
-                                            menu='tyres'
+                                            
                                         >
                                             Tyres
                                         </DropDownMenuItem>
@@ -215,3 +214,9 @@ export default class Header extends React.Component {
         );
     }
 }
+
+const mapState = (state) => ({
+    activeMenu: state.header.activeMobileMenu,
+});
+
+export default connect(mapState)(Header)

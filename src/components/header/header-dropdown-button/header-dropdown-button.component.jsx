@@ -2,26 +2,24 @@ import React from "react";
 import { DropDownButton, HamburgerLine } from "./header-dropdown-button.styles";
 import { HeaderNavComponent } from "../header-component/header.styles";
 import { CSSTransition } from "react-transition-group";
+import { connect } from "react-redux";
+import { toggleMobileMenu } from "../../../redux/header/header.actions";
 
 class HeaderDropDownButton extends React.Component {
-    state = {
-        open: false,
-    };
-
     render() {
         return (
             <HeaderNavComponent>
                 <DropDownButton
-                    open={this.state.open}
-                    onClick={() => this.setState({ open: !this.state.open })}
+                    open={this.props.mobileMenuOpen}
+                    onClick={() => this.props.toggleMobileMenu()}
                 >
                     <HamburgerLine />
                     <HamburgerLine />
                     <HamburgerLine />
                 </DropDownButton>
                 <CSSTransition
-                    in={this.state.open}
-                    classNames='dropdown'
+                    in={this.props.mobileMenuOpen}
+                    classNames="dropdown"
                     timeout={500}
                     unmountOnExit
                 >
@@ -32,4 +30,12 @@ class HeaderDropDownButton extends React.Component {
     }
 }
 
-export default HeaderDropDownButton;
+const mapState = (state) => ({
+    mobileMenuOpen: state.header.mobileMenuVisible,
+});
+
+const mapDispatch = (dispatch) => ({
+    toggleMobileMenu: () => dispatch(toggleMobileMenu())
+});
+
+export default connect(mapState, mapDispatch)(HeaderDropDownButton);

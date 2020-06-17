@@ -11,20 +11,20 @@ const HeaderNav = () => {
       return (
             <HeaderSection>
             <HeaderNavComponent>
-            Prices 
-            <HeaderDropDownIcon icon={faChevronDown}/>
+                  Prices 
+                  <HeaderDropDownIcon icon={faChevronDown}/>
             </HeaderNavComponent>
             <HeaderNavComponent>
-            Services
-            <HeaderDropDownIcon icon={faChevronDown}/>
+                  Services
+                  <HeaderDropDownIcon icon={faChevronDown}/>
             </HeaderNavComponent>
             <HeaderNavComponent>
-            Blog
-            <HeaderDropDownIcon icon={faChevronDown}/>    
+                  Blog
+                  <HeaderDropDownIcon icon={faChevronDown}/>    
             </HeaderNavComponent>
             <HeaderNavComponent>
-            About Fox
-            <HeaderDropDownIcon icon={faChevronDown}/>
+                  About Fox
+                  <HeaderDropDownIcon icon={faChevronDown}/>
             </HeaderNavComponent>
             <HeaderNavComponent>Contact Us</HeaderNavComponent>
             </HeaderSection>

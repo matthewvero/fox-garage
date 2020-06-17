@@ -1,11 +1,16 @@
-import React from 'react'
-import {DropdownMenuBox } from './dropdown-menu.styles'
-const DropdownMenu = ({children}) => {
-      return (
-            <DropdownMenuBox>
-                  {children}
-            </DropdownMenuBox>
-      )
-}
+import React                  from 'react'
+import { DropdownMenuBox }    from './dropdown-menu.styles'
+import { connect }            from 'react-redux'
 
-export default DropdownMenu
+const DropdownMenu = ({menuHeight, children}) => (
+      <DropdownMenuBox height={menuHeight}>
+            {children}
+      </DropdownMenuBox>
+)
+
+
+const mapState = (state) => ({
+      menuHeight: state.header.mobileMenuHeight
+})
+
+export default connect(mapState)(DropdownMenu)

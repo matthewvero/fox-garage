@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const HeaderContainer = styled.div`
     width: 100vw;
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: flex;
     flex-direction: row;

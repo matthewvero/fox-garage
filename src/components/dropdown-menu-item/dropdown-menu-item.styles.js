@@ -32,8 +32,7 @@ export const IconContainer = styled.div`
 
 export const DropdownMenuItemContainer = styled.div`
       width: 90%;
-      height: 10%;
-      margin: 5px 0;
+      height: 50px;
       text-align: left;
       transition: all 300ms ease;
       display: flex; 
@@ -42,10 +41,22 @@ export const DropdownMenuItemContainer = styled.div`
       transition: all 100ms ease;
       border-radius: 10px;
       cursor: pointer;
-      padding: 5px;
       z-index: 3;
+
+      &:hover {
+            background-color: #cccccc;
+      }
+
+      @media (max-width: 1000px) {
             &:hover {
+                  background-color: white;
+            } 
+            &:active {
                   background-color: #cccccc;
-            }
+
+            } 
+
+      }
+
 
 `

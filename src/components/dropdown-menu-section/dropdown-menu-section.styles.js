@@ -4,11 +4,11 @@ export const DropdownMenuSectionContainer = styled.div`
       width: 100%;
       height: 100%;
       display: flex;
-      flex-flow: column wrap;
+      flex-direction: column;
       align-items: center;
       position: absolute;
       cursor: auto;
-
+      
       &.menu-primary-enter {
             position: absolute;
             transform: translateX(-110%);

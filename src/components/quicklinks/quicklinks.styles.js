@@ -20,6 +20,12 @@ export const QuickLinkTitle = styled.div`
       transition: all ease-out 100ms;
       opacity: 0;
       color: #8899aa;
+      @media (max-width: 1000px) {
+            font-size: 2vw;
+            opacity: 1;
+            top: 50%;
+            position: static;
+      }
       
 `
 
@@ -27,7 +33,11 @@ export const QuickLinkIcon = styled(FontAwesomeIcon)`
       font-size: 5vw;
       color: #8899aa;
       align-self: center;
-      transition: transform ease-out 100ms ;
+      transition: transform linear 100ms ;
+      @media (max-width: 1000px) {
+            font-size: 5vw;
+
+      }
 
 `
 
@@ -48,13 +58,29 @@ export const QuickLinksButton = styled.div`
       cursor: pointer;
       background-color: #eeeeee;
       
-      &:hover ${QuickLinkTitle} {
-            transform: scale(1);
-            opacity: 1;
-      };
-      transition: background-color ease-out 100ms;
+      @media (max-width: 1000px) {
+            height: 100px;
+            margin: 1% 2%;
+            justify-content: space-around;
+            &:active ${QuickLinkIcon} {
+                  transform: scale(1.3);
+            }
+            &:active ${QuickLinkTitle} {
+                  transform: scale(1.7);
+            }
 
-      &:hover ${QuickLinkIcon} {
-            transform: scale(0);
       }
+
+      @media (min-width: 1000px) {
+            &:hover ${QuickLinkTitle} {
+                  transform: scale(1);
+                  opacity: 1;
+            };
+            transition: background-color ease-out 100ms;
+      
+            &:hover ${QuickLinkIcon} {
+                  transform: scale(0);
+            }
+      }
+      
 `

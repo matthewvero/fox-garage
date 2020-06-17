@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const DropdownMenuBox = styled.div`
+      height: ${props => props.height}px;
       position: absolute;
-      height: 500px;
       width: 96vw;
       background: white;
       top: 90px;
@@ -11,6 +11,8 @@ export const DropdownMenuBox = styled.div`
       border-radius: 10px;
       overflow: hidden;
       padding: 10px 0;
+      transition: height 200ms ease;
+      
       &.dropdown-enter {
             position: absolute;
             transform: translateX(120%);

@@ -21,11 +21,11 @@ export const WidgetTextContent = styled.p`
             font-size: ${props => {
                   switch(props.textSize) {
                         case 'subtext':
-                              return '2.5vw'
+                              return '3vw'
                         case 'heading':
-                              return '4vw'
+                              return '4.5vw'
                         default :
-                        return '3vw'
+                        return '3.5vw'
                   }
             }};
       }

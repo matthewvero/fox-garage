@@ -53,6 +53,16 @@ export const BannerTitle = styled.div`
       margin: 0 50px;
       text-align: end;
       font-weight: 600;
+      text-align: center;
+
+      @media (max-width: 1000px) {
+            margin: 0;
+            
+      }
+      
+      @media (max-width: 800px) {
+            font-size: 4vw; 
+      }
 
 `
 export const BannerSubtitle = styled.div`
@@ -62,15 +72,26 @@ export const BannerSubtitle = styled.div`
       margin: 0 50px;
       color: rgb(50, 255, 150);
       font-weight: 600;
+      @media (max-width: 1000px) {
+            margin: 0;
+      }
+      
+      @media (max-width: 800px) {
+            font-size: 4vw; 
+      }
       
 `
 
 export const BannerTextContainer = styled.div`
-      font-size: 3vw;
       color: white;
       z-index: 2;
+      width: 60%;
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 1000px) {
+            width: 80%;
+      }
 
 `
 export const BannerImage = styled.div`

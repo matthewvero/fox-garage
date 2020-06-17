@@ -13,7 +13,7 @@ export const WidgetBox = styled.div`
       background-color: white;
 
       @media (max-width: 1000px){
-            width: 80vw;
+            width: 90vw;
             flex-direction: column;
       }
 `

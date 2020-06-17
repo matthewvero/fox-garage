@@ -12,6 +12,7 @@ export const BannerBackground = styled.div`
       position: absolute;
       transition: transform ease-in-out 1s;
       border-radius: 10px;
+      overflow: hidden;
 `
 
 export const BackgroundFade = styled.div`
@@ -21,6 +22,7 @@ export const BackgroundFade = styled.div`
       width: 100%;
       transition: background-color ease 300ms;
       border-radius: 10px;
+      overflow: hidden;
 `
 export const BannerContainer = styled.div`
       cursor: pointer;
@@ -34,7 +36,7 @@ export const BannerContainer = styled.div`
       justify-content: space-between;
       box-shadow: 0 0 10px #555555;
       border-radius: 10px;
-      overflow: hidden!important;
+      overflow: hidden;
       &:hover ${BannerBackground} {
             transform: scale(1.1);
       }

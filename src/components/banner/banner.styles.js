@@ -35,6 +35,23 @@ export const BannerContainer = styled.div`
     &:hover ${BackgroundFade} {
         background-color: rgba(50, 50, 50, 0.8);
     }
+
+    ${props => props.animate ? 
+        `
+        &:hover ${BackgroundFade}{
+            background-color: rgba(75, 75, 75, 0.8);
+        }
+        ${BannerBackground} {
+            transform: scale(1.1);
+        }
+        ${BackgroundFade} {
+            background-color: rgba(50, 50, 50, 0.8);
+            
+        }
+        ` 
+        : null
+    }
+
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);

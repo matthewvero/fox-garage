@@ -34,7 +34,7 @@ export const IconContainer = styled.div`
 
 export const DropdownMenuItemContainer = styled.div`
       width: 90%;
-      height: 10vh;
+      height: 50px;
       text-align: left;
       display: flex; 
       flex-flow: row nowrap;

@@ -13,7 +13,7 @@ class DropdownMenuSection extends React.Component {
       
 
       calcHeight = (reference) => {
-            return reference.firstChild.offsetHeight * reference.children.length
+            return reference.offsetHeight
       }
 
       componentDidMount() {

@@ -5,7 +5,7 @@ const INITIAL_STATE = {
     activeMobileMenu: "main",
     priceMenuVisible: false,
     servicesMenuVisible: false,
-    mobileMenuHeight: 300,
+    mobileMenuHeight: 250,
 };
 
 const headerReducer = (state = INITIAL_STATE, { type, payload }) => {

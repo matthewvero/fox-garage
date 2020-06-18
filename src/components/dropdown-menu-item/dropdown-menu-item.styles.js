@@ -43,8 +43,6 @@ export const DropdownMenuItemContainer = styled.div`
       border-radius: 10px;
       cursor: pointer;
       z-index: 3;
-
-
       &:hover {
             background-color: #cccccc;
       }

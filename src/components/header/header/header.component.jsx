@@ -8,7 +8,7 @@ import {
 } from "./header.styles";
 
 import MobileDropDownButton from "../mobile-dropdown-button/mobile-dropdown-button.component";
-import HeaderNav from '../header-Nav/header-nav.component';
+import HeaderNav from '../header-nav/header-nav.component';
 import DropDownMenuItem from "../../dropdown-menu-item/dropdown-menu-item.component";
 
 import DropdownMenu from "../../dropdown-menu/dropdown-menu.component";

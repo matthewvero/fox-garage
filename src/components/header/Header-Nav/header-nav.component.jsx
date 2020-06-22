@@ -1,28 +1,27 @@
-import React                        from 'react'
+import React                  from 'react'
 import {
-      HeaderNavComponent,
       HeaderDropDownIcon,
       HeaderSection,
-}                                   from '../header-component/header.styles'
-import { faChevronDown }        from "@fortawesome/free-solid-svg-icons";
-
+}                             from '../header/header.styles'
+import { faChevronDown }      from "@fortawesome/free-solid-svg-icons";
+import {HeaderNavComponent}   from './header-nav.styles'
 
 const HeaderNav = () => {
       return (
             <HeaderSection>
-            <HeaderNavComponent>
+            <HeaderNavComponent dropdown>
                   Prices 
                   <HeaderDropDownIcon icon={faChevronDown}/>
             </HeaderNavComponent>
-            <HeaderNavComponent>
+            <HeaderNavComponent dropdown>
                   Services
                   <HeaderDropDownIcon icon={faChevronDown}/>
             </HeaderNavComponent>
-            <HeaderNavComponent>
+            <HeaderNavComponent dropdown>
                   Blog
                   <HeaderDropDownIcon icon={faChevronDown}/>    
             </HeaderNavComponent>
-            <HeaderNavComponent>
+            <HeaderNavComponent dropdown >
                   About Fox
                   <HeaderDropDownIcon icon={faChevronDown}/>
             </HeaderNavComponent>

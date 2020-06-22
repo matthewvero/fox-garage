@@ -7,13 +7,14 @@ export const WidgetBox = styled.div`
       display: flex;
       flex-direction: row;
       flex-wrap: wrap; 
-      box-shadow: 0 0 10px #aaaaaa;
       overflow: hidden;
       margin: 20px;
-      background-color: white;
-
+      background-color: #666666;
+      box-shadow: 0 0 10px #222222;
       @media (max-width: 1000px){
             width: 90vw;
             flex-direction: column;
       }
 `
+
+//

@@ -10,19 +10,25 @@ import { connect } from "react-redux";
 import { setActiveMenu } from "../../redux/header/header.actions";
 
 class DropDownMenuItem extends React.Component {
+
+    state = {
+        animate: false
+    }
     handleClick = () => {
+        this.setState({animate: true})
 
         if(this.props.action === 'menu-link') {
             this.props.setActiveMenu(this.props.menu)
+
         }
     }
     
     render() {
         const {children, leftIcon, rightIcon} = this.props
         return (
-            <DropdownMenuItemContainer onClick={this.handleClick}>
+            <DropdownMenuItemContainer animate={this.state.animate} onClick={this.handleClick}>
                 <IconContainer>
-                    <DropdownMenuItemIcon icon={leftIcon} />
+                    {leftIcon ? <DropdownMenuItemIcon icon={leftIcon} /> : null}
                 </IconContainer>
                 <DropdownMenuItemText>{children}</DropdownMenuItemText>
                 {

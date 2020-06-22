@@ -5,11 +5,10 @@ export const HomepageContainer = styled.div`
       height: auto;
       display: flex;
       flex-direction: row;
-      align-items: center;
       flex-wrap: wrap;
-      align-items: center;
       justify-content: center;
-      
+      align-items: center;
+      align-content: stretch;
       @media (max-width: 800px) {
             flex-direction: column;
       }

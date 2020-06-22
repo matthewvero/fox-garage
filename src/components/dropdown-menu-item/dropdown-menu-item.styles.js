@@ -39,24 +39,12 @@ export const DropdownMenuItemContainer = styled.div`
       display: flex; 
       flex-flow: row nowrap;
       align-items: center;
-      transition: all 100ms ease;
+      transition: all 25ms ease;
       border-radius: 10px;
       cursor: pointer;
       z-index: 3;
-      &:hover {
-            background-color: #cccccc;
-      }
+      ${props => props.animate ? 'background-color: #444444;' : null}
 
-      @media (max-width: 1000px) {
-            &:hover {
-                  background-color: white;
-            } 
-            &:active {
-                  background-color: #cccccc;
-
-            } 
-
-      }
 
 
 `

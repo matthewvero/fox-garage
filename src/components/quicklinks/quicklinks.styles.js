@@ -19,7 +19,7 @@ export const QuickLinkTitle = styled.div`
       transform: scale(2);
       transition: all ease-out 100ms;
       opacity: 0;
-      color: #8899aa;
+      color: white;
       @media (max-width: 1000px) {
             font-size: 2vw;
             opacity: 1;
@@ -35,7 +35,7 @@ export const QuickLinkTitle = styled.div`
 
 export const QuickLinkIcon = styled(FontAwesomeIcon)`
       font-size: 5vw;
-      color: #8899aa;
+      color: DODGERBLUE;
       align-self: center;
       transition: transform linear 100ms ;
       @media (max-width: 1000px) {
@@ -48,7 +48,7 @@ export const QuickLinkIcon = styled(FontAwesomeIcon)`
       user-select: none
 
 `
-
+// color: #8899aa;
 
 export const QuickLinksButton = styled.div`
       flex-grow: 1;
@@ -58,13 +58,13 @@ export const QuickLinksButton = styled.div`
       margin: 0 2%;
       height: 30%;
       box-sizing: border-box;
-      box-shadow: 0 0px 5px #bbbbbb;
+      
       position: relative;
       justify-content: center;
       align-items: center;
       overflow:hidden;
       cursor: pointer;
-      background-color: #eeeeee;
+      background-color: #444444;
       
       @media (max-width: 1000px) {
             height: 100px;
@@ -80,6 +80,7 @@ export const QuickLinksButton = styled.div`
                   color: white;
             };
 
+
       }
 
       @media (min-width: 1000px) {
@@ -91,6 +92,9 @@ export const QuickLinksButton = styled.div`
       
             &:hover ${QuickLinkIcon} {
                   transform: scale(0);
+            }
+            &:hover ${QuickLinksButton} {
+                  background-color: #333333;
             }
       }
       

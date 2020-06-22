@@ -1,11 +1,12 @@
 import React from "react";
-import { DropDownButton, HamburgerLine } from "./header-dropdown-button.styles";
-import { HeaderNavComponent } from "../header-component/header.styles";
+import { DropDownButton, HamburgerLine } from "./mobile-dropdown-button.styles";
+import { HeaderNavComponent } from "../header/header.styles";
 import { CSSTransition } from "react-transition-group";
 import { connect } from "react-redux";
 import { toggleMobileMenu } from "../../../redux/header/header.actions";
 
-class HeaderDropDownButton extends React.Component {
+class MobileDropDownButton extends React.Component {
+    
     render() {
         return (
             <HeaderNavComponent>
@@ -38,4 +39,4 @@ const mapDispatch = (dispatch) => ({
     toggleMobileMenu: () => dispatch(toggleMobileMenu())
 });
 
-export default connect(mapState, mapDispatch)(HeaderDropDownButton);
+export default connect(mapState, mapDispatch)(MobileDropDownButton);

@@ -20,7 +20,7 @@ export const CustomButtonInput = styled.button`
       &:hover {
             transform: translate(0px, 0px);
             box-shadow: none;
-            background-color: #778899;
+            background-color: #666666;
       }
 
       @media (max-width: 1000px) {

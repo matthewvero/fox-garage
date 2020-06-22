@@ -9,14 +9,13 @@ import Banner from '../../components/banner/banner-component'
 import WidgetParagraph from '../../components/widget-paragraph/widget-paragraph.component'
 import Logo from '../../components/misc-components/logo/logo.component'
 import QuickLinks from '../../components/quicklinks/quicklinks.component'
-const Homepage = () => {
-      return (
+const Homepage = () => (
             <HomepageContainer>
 
                  
                   <WidgetCluster>
                         <Widget 
-                              backgroundcolor='#8899aa' 
+                              backgroundcolor='#666666' 
                               color='white'
                               otherStyles='
                                     text-align: left;     
@@ -27,7 +26,7 @@ const Homepage = () => {
                               </WidgetText>
                         </Widget>
                         <Widget backgroundcolor='white'>
-                              <WidgetText color='#8899aa' textSize='heading' >Call Us To Book </WidgetText>
+                              <WidgetText color='#666666' textSize='heading' >Call Us To Book </WidgetText>
                               <PhoneNumber/>
                               <CustomButton> Our Prices</CustomButton>
                         </Widget>
@@ -45,33 +44,21 @@ const Homepage = () => {
 
                   <WidgetCluster>
                   <Widget>
-                  
-                  </Widget>
-                  <Widget>
-                        <QuickLinks></QuickLinks>
-                  </Widget>
-            </WidgetCluster>
-
+                  <Logo/>
+                  <WidgetParagraph textSize='subtext' color='white'>
+                        Based in Camberley on the borders of three counties (Surrey, Hampshire and Berkshire) we are an independent service garage with Bosch and RAC accreditation. We provide a professional service, from your first call through until your vehicles return.
+                        Fox Garage Services Ltd carry out Services, MOTs and a range of repairs on all makes and models of car, using quality parts we deliver great customer service at competitive rates and our twelve month or 12,000 mile guarantee ensures you have the cover and peace of mind that you need.
+                        Our service team will be happy to provide quotes for services or repairs and make a booking for you, by phone on 01276 704600, or through the online booking facility.
+                  </WidgetParagraph>
+            
+            </Widget>
+                        <Widget>
+                              <QuickLinks></QuickLinks>
+                        </Widget>
+                  </WidgetCluster> 
 
                   <Banner/>
-
-                  <WidgetCluster width='wide'>
-                        <Widget></Widget>
-
-                        <Widget>
-                              <Logo alignment='start'/>
-                              <WidgetParagraph textSize='subtext'>
-                                    Based in Camberley on the borders of three counties (Surrey, Hampshire and Berkshire) we are an independent service garage with Bosch and RAC accreditation. We provide a professional service, from your first call through until your vehicles return.
-                                    Fox Garage Services Ltd carry out Services, MOTs and a range of repairs on all makes and models of car, using quality parts we deliver great customer service at competitive rates and our twelve month or 12,000 mile guarantee ensures you have the cover and peace of mind that you need.
-                                    Our service team will be happy to provide quotes for services or repairs and make a booking for you, by phone on 01276 704600, or through the online booking facility.
-                              </WidgetParagraph>
-                        
-                        </Widget>
-                  
-                  </WidgetCluster>
             
             </HomepageContainer>
       )
-}
-
 export default Homepage

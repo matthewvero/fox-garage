@@ -7,8 +7,8 @@ import {
     HeaderPhoneNo,
 } from "./header.styles";
 
-import HeaderDropDownButton from "../header-dropdown-button/header-dropdown-button.component";
-import HeaderNav from "../Header-Nav/header-nav.component";
+import MobileDropDownButton from "../mobile-dropdown-button/mobile-dropdown-button.component";
+import HeaderNav from '../header-Nav/header-nav.component';
 import DropDownMenuItem from "../../dropdown-menu-item/dropdown-menu-item.component";
 
 import DropdownMenu from "../../dropdown-menu/dropdown-menu.component";
@@ -25,6 +25,8 @@ import {
     faCircle,
     faChevronRight,
     faAlignJustify,
+    faBolt,
+    faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { CSSTransition } from "react-transition-group";
@@ -63,7 +65,7 @@ class Header extends React.Component {
                         <HeaderPhoneNo>01276 704600</HeaderPhoneNo>
                     </HeaderContactDetails>
                     {this.state.isMobile ? (
-                        <HeaderDropDownButton>
+                        <MobileDropDownButton>
                             <DropdownMenu>
                                 <CSSTransition
                                     in={this.props.activeMenu === 'main' ? true : false}
@@ -129,28 +131,22 @@ class Header extends React.Component {
                                             Back
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            leftIcon={faOilCan}
                                             
+                                            rightIcon={faChevronRight}
                                         >
-                                            Service
+                                            Less Than 2.0 Litres
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            leftIcon={faCheck}
                                             
+                                            rightIcon={faChevronRight}
                                         >
-                                            MOT
+                                            2.1 To 3.0 Litres
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            leftIcon={faSnowflake}
                                             
+                                            rightIcon={faChevronRight}
                                         >
-                                            AirCon 
-                                        </DropDownMenuItem>
-                                        <DropDownMenuItem
-                                            leftIcon={faCircle}
-                                            
-                                        >
-                                            Tyres
+                                            3.1 litres + 
                                         </DropDownMenuItem>
                                     </DropdownMenuSection>
                                 </CSSTransition>
@@ -169,28 +165,28 @@ class Header extends React.Component {
                                             Back
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            leftIcon={faOilCan}
-                                            
-                                        >
-                                            Service
-                                        </DropDownMenuItem>
-                                        <DropDownMenuItem
                                             leftIcon={faCheck}
                                             
                                         >
-                                            MOT
+                                            MOT Test
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            leftIcon={faSnowflake}
+                                            leftIcon={faOilCan}
                                             
                                         >
-                                            AirCon 
+                                            Complete Servicing
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            leftIcon={faSnowflake}
+                                            leftIcon={faOilCan}
                                             
                                         >
-                                            AirCon 
+                                            Standard Servicing 
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faBolt}
+                                            
+                                        >
+                                            Hybrid & Electric Cars 
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faSnowflake}
@@ -202,12 +198,107 @@ class Header extends React.Component {
                                             leftIcon={faCircle}
                                             
                                         >
-                                            Tyres
+                                            Tyre Fitting
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faBriefcase}
+                                            
+                                        >
+                                            Cam Belts
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faBriefcase}
+                                            
+                                        >
+                                            Free Brake Check
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faBriefcase}
+                                            
+                                        >
+                                            Clutch & Gearbox
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faBriefcase}
+                                            
+                                        >
+                                            Exhausts
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faBriefcase}
+                                            
+                                        >
+                                            Steering & Suspension
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            leftIcon={faBriefcase}
+                                            
+                                        >
+                                            Other
+                                        </DropDownMenuItem>
+                                    </DropdownMenuSection>
+                                </CSSTransition>
+                                <CSSTransition
+                                    in={this.props.activeMenu === "blog" ? true : false}
+                                    timeout={500}
+                                    classNames="menu-secondary"
+                                    unmountOnExit
+                                >
+                                    <DropdownMenuSection>
+                                        <DropDownMenuItem
+                                            leftIcon={faChevronLeft}
+                                            action={'menu-link'}
+                                            menu='main'
+                                        >
+                                            Back
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            rightIcon={faChevronRight}
+                                        >
+                                            Car Maintainance
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            rightIcon={faChevronRight}
+                                        >
+                                            How To Guides
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            rightIcon={faChevronRight}
+                                        >
+                                            Motor Industry News
+                                        </DropDownMenuItem>
+                                    </DropdownMenuSection>
+                                </CSSTransition>
+                                <CSSTransition
+                                    in={this.props.activeMenu === "about us" ? true : false}
+                                    timeout={500}
+                                    classNames="menu-secondary"
+                                    unmountOnExit
+                                >
+                                    <DropdownMenuSection>
+                                        <DropDownMenuItem
+                                            leftIcon={faChevronLeft}
+                                            action={'menu-link'}
+                                            menu='main'
+                                        >
+                                            Back
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            rightIcon={faChevronRight}
+                                        >
+                                            Our Company
+                                        </DropDownMenuItem>
+                                        <DropDownMenuItem
+                                            rightIcon={faChevronRight}
+                                        >
+                                            Our Loyalty Scheme
                                         </DropDownMenuItem>
                                     </DropdownMenuSection>
                                 </CSSTransition>
                             </DropdownMenu>
-                        </HeaderDropDownButton>
+                        </MobileDropDownButton>
+
+                        
                     ) : null}
                 </HeaderSection>
             </HeaderContainer>

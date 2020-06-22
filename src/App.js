@@ -1,9 +1,9 @@
 import React from "react";
 // import logo from './logo.svg';
 import "./App.css";
-import Header from "./components/header/header-component/header.component";
 import { Route, Switch } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.component";
+import Header from './components/header/header/header.component'
 
 
 function App() {

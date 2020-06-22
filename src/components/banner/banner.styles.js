@@ -27,7 +27,7 @@ export const BannerContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 10px #555555;
+    box-shadow: 0 0 10px #222222;
     overflow: hidden;
     &:hover ${BannerBackground} {
         transform: scale(1.1);

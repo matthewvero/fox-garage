@@ -16,6 +16,10 @@ class Banner extends React.Component {
             window.addEventListener('scroll', () => this.handleScroll(this.myRef))
       }
 
+      componentWillUnmount() {
+            window.removeEventListener('scroll', () => this.handleScroll(this.myRef))
+      }
+
       handleScroll(reference) {
             const elementHeight = reference.current.getBoundingClientRect().y
             const currentState = this.state.animate

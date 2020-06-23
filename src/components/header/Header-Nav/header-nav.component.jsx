@@ -3,7 +3,7 @@ import {
       HeaderDropDownIcon,
       HeaderSection,
 }                             from '../header/header.styles'
-import { faChevronDown, faChevronRight, faChevronLeft, faCheck, faOilCan, faBolt, faSnowflake, faCircle, faBriefcase }      from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronRight, faCheck, faOilCan, faBolt, faSnowflake, faCircle, faBriefcase }      from "@fortawesome/free-solid-svg-icons";
 import {HeaderNavComponent}   from './header-nav.styles'
 import { CSSTransition } from 'react-transition-group';
 import HeaderNavDropdown from '../header-nav-dropdown/header-nav-dropdown.component';

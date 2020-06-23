@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import DropDownMenuItem from '../dropdown-menu-item/dropdown-menu-item.component'
-
 export const DropdownMenuSectionContainer = styled.div`
       width: 100%;
       display: flex;

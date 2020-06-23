@@ -31,7 +31,7 @@ import {
 
 import { CSSTransition }        from "react-transition-group";
 import { connect }              from "react-redux";
-import HeaderNav                from '../header-nav/header-nav.component';
+import HeaderNav from "../Header-Nav/header-nav.component";
 
 class Header extends React.Component {
     state = {

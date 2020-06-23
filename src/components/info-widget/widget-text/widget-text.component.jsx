@@ -1,5 +1,8 @@
-import React from 'react'
-import { WidgetTextContainer, WidgetTextContent } from './widget-text.styles'
+import React                  from 'react'
+import { 
+      WidgetTextContainer,
+      WidgetTextContent
+}                             from './widget-text.styles'
 
 const WidgetText = ({children, ...otherprops}) => {
       return (

@@ -1,5 +1,8 @@
-import React from 'react'
-import { LogoContainer, LogoComponent } from './logo.styles'
+import React            from 'react'
+import { 
+      LogoContainer, 
+      LogoComponent 
+}                       from './logo.styles'
 
 const Logo = () => {
       return (

@@ -24,20 +24,25 @@ class DropDownMenuItem extends React.Component {
     }
     
     render() {
-        const {children, leftIcon, rightIcon} = this.props
+        const {children, leftIcon, rightIcon, header} = this.props
         return (
-            <DropdownMenuItemContainer animate={this.state.animate} onClick={this.handleClick}>
+            <DropdownMenuItemContainer header={header} animate={this.state.animate} onClick={this.handleClick}>
+
                 <IconContainer>
                     {leftIcon ? <DropdownMenuItemIcon icon={leftIcon} /> : null}
                 </IconContainer>
-                <DropdownMenuItemText>{children}</DropdownMenuItemText>
-                {
-                    rightIcon ?  
+
+                <DropdownMenuItemText header={header}>{children}</DropdownMenuItemText>
+
+                { rightIcon ?  
+
                     <IconContainer>
                         <DropdownMenuItemIcon icon={rightIcon} />
                     </IconContainer>
+                    
                     : null
                 }
+
             </DropdownMenuItemContainer>
         );
     }

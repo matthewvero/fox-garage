@@ -1,9 +1,9 @@
-import React from "react";
-import { DropDownButton, HamburgerLine } from "./mobile-dropdown-button.styles";
-import { HeaderNavComponent } from "../header/header.styles";
-import { CSSTransition } from "react-transition-group";
-import { connect } from "react-redux";
-import { toggleMobileMenu } from "../../../redux/header/header.actions";
+import React                                from "react";
+import { DropDownButton, HamburgerLine }    from "./mobile-dropdown-button.styles";
+import { HeaderNavComponent }               from "../header/header.styles";
+import { CSSTransition }                    from "react-transition-group";
+import { connect }                          from "react-redux";
+import { toggleMobileMenu }                 from "../../../redux/header/header.actions";
 
 class MobileDropDownButton extends React.Component {
     

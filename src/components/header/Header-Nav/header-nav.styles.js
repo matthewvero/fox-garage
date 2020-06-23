@@ -11,8 +11,8 @@ export const HeaderNavComponent = styled.div`
     align-items: center;
     cursor: pointer;
     position: relative;
-    transition: all 200ms ease;
-      width: 8vw;
+    transition: all 200ms  ease;
+    width: 8vw;
     ${props => props.dropdown? 
       `
             &:hover {

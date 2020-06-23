@@ -62,7 +62,7 @@ export const QuickLinksButton = styled.div`
       position: relative;
       justify-content: center;
       align-items: center;
-      overflow:hidden;
+      overflow: hidden;
       cursor: pointer;
       background-color: #444444;
       
@@ -93,7 +93,7 @@ export const QuickLinksButton = styled.div`
             &:hover ${QuickLinkIcon} {
                   transform: scale(0);
             }
-            &:hover ${QuickLinksButton} {
+            &:hover {
                   background-color: #333333;
             }
       }

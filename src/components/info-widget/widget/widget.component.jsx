@@ -1,5 +1,5 @@
-import React from 'react'
-import { SectionContainer } from './widget.styles'
+import React                  from 'react'
+import { SectionContainer }   from './widget.styles'
 
 const Widget = ({children, ...otherprops}) => {
       return (

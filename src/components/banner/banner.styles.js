@@ -15,7 +15,8 @@ export const BackgroundFade = styled.div`
     position: absolute;
     height: 100%;
     width: 100%;
-    transition: background-color ease 300ms;
+    transition: background-color ease 1s;
+    
 `;
 export const BannerContainer = styled.div`
     cursor: pointer;
@@ -26,6 +27,7 @@ export const BannerContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-self: flex-start;
     justify-content: space-between;
     box-shadow: 0 0 10px #222222;
     overflow: hidden;
@@ -33,7 +35,7 @@ export const BannerContainer = styled.div`
         transform: scale(1.1);
     }
     &:hover ${BackgroundFade} {
-        background-color: rgba(50, 50, 50, 0.8);
+        background-color: rgba(50, 50, 50, 0.2);
     }
 
     ${props => props.animate ? 
@@ -45,7 +47,8 @@ export const BannerContainer = styled.div`
             transform: scale(1.1);
         }
         ${BackgroundFade} {
-            background-color: rgba(50, 50, 50, 0.8);
+            transition: background-color ease 1s;
+            background-color: rgba(50, 50, 50, 0.2);
             
         }
         ` 

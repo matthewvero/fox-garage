@@ -1,17 +1,17 @@
-import React from "react";
+import React                    from "react";
 import {
     HeaderContainer,
     HeaderSection,
     HeaderLogo,
     HeaderContactDetails,
     HeaderPhoneNo,
-} from "./header.styles";
+}                               from "./header.styles";
 
-import MobileDropDownButton from "../mobile-dropdown-button/mobile-dropdown-button.component";
-import HeaderNav from '../header-nav/header-nav.component';
-import DropDownMenuItem from "../../dropdown-menu-item/dropdown-menu-item.component";
+import MobileDropDownButton     from "../mobile-dropdown-button/mobile-dropdown-button.component";
+import HeaderNav                from '../header-nav/header-nav.component';
+import DropDownMenuItem         from "../../dropdown-menu-item/dropdown-menu-item.component";
 
-import DropdownMenu from "../../dropdown-menu/dropdown-menu.component";
+import DropdownMenu             from "../../dropdown-menu/dropdown-menu.component";
 
 import {
     faPoundSign,
@@ -27,21 +27,21 @@ import {
     faAlignJustify,
     faBolt,
     faBriefcase,
-} from "@fortawesome/free-solid-svg-icons";
+}                               from "@fortawesome/free-solid-svg-icons";
 
-import { CSSTransition } from "react-transition-group";
-import DropdownMenuSection from "../../dropdown-menu-section/dropdown-menu-section.component";
-import { connect } from "react-redux";
+import { CSSTransition }        from "react-transition-group";
+import DropdownMenuSection      from "../../dropdown-menu-section/dropdown-menu-section.component";
+import { connect }              from "react-redux";
 
 class Header extends React.Component {
     state = {
-        isMobile: window.innerWidth < 850,
+        isMobile: window.innerWidth < 1150,
         menu: 'menu'
 
     };
 
     handleResize = () => {
-        this.setState({ isMobile: window.innerWidth < 850 });
+        this.setState({ isMobile: window.innerWidth < 1150 });
     };
 
     componentDidMount() {

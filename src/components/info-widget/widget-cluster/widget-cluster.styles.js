@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const WidgetBox = styled.div`
-      width: ${props => props.width === 'wide' ? '60vw' : '40vw'};
+      width: ${props => props.width === 'wide' ? '80vw' : '40vw'};
       min-height: 35vw;
       margin: 0 10%;
       display: flex;
@@ -14,6 +14,8 @@ export const WidgetBox = styled.div`
       @media (max-width: 1000px){
             width: 90vw;
             flex-direction: column;
+            min-height: 35vw;
+            max-height: none;
       }
 `
 

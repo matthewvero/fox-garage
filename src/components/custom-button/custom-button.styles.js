@@ -6,7 +6,7 @@ export const CustomButtonContainer = styled.div`
 
 export const CustomButtonInput = styled.button`
       margin: 0 10%;
-      padding: 10px 0;
+      padding: 5px 0;
       width: 80%;
       outline: none; 
       border-radius: 5px;

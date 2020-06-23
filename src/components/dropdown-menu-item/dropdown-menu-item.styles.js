@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export const DropdownMenuItemText = styled.div`
-      font-size: 1.75rem;
+      font-size: ${props => props.header ? '1rem' : '1.75rem'};
       margin-left: 10px;
       padding-left: 10px;
       height: 100%;
@@ -33,7 +33,7 @@ export const IconContainer = styled.div`
 
 
 export const DropdownMenuItemContainer = styled.div`
-      width: 90%;
+      width: ${props => props.header ? '100%' : '90%'};
       height: 50px;
       text-align: left;
       display: flex; 

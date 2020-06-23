@@ -1,5 +1,8 @@
-import React from 'react'
-import { PhoneNumberContainer, PhoneNumberText } from './phone-number.styles'
+import React                  from 'react'
+import { 
+      PhoneNumberContainer,
+      PhoneNumberText 
+}                             from './phone-number.styles'
 
 const PhoneNumber = () => {
       return (

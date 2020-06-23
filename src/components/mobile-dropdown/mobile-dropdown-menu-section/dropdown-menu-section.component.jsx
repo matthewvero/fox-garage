@@ -3,7 +3,7 @@ import { DropdownMenuSectionContainer } from './dropdown-menu-section.styles'
 import { createRef } from 'react'
 import { connect } from 'react-redux';
 
-import { setMobileMenuHeight } from '../../redux/header/header.actions'
+import { setMobileMenuHeight } from '../../../redux/header/header.actions'
 
 class DropdownMenuSection extends React.Component {
       constructor(props) {

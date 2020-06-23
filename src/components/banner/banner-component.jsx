@@ -1,5 +1,13 @@
-import React, { createRef } from 'react'
-import { BannerContainer, BackgroundFade, BannerTitle, BannerTextContainer, BannerImage, BannerSubtitle, BannerBackground } from './banner.styles'
+import React, { createRef }   from 'react'
+import { 
+      BannerContainer, 
+      BackgroundFade, 
+      BannerTitle, 
+      BannerTextContainer, 
+      BannerImage,
+      BannerSubtitle, 
+      BannerBackground 
+}                             from './banner.styles'
 
 class Banner extends React.Component {
       constructor(props) {

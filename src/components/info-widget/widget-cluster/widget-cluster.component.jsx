@@ -1,5 +1,5 @@
-import React from 'react'
-import { WidgetBox } from './widget-cluster.styles'
+import React            from 'react'
+import { WidgetBox }    from './widget-cluster.styles'
 
 
 const WidgetCluster = ({children, ...otherprops}) => {

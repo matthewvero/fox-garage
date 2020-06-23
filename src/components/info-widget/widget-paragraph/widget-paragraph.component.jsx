@@ -1,5 +1,8 @@
-import React from 'react'
-import { WidgetParagraphContainer, WidgetParagraphContent } from './widget-paragraph.styles'
+import React                        from 'react'
+import { 
+      WidgetParagraphContainer, 
+      WidgetParagraphContent 
+}                                   from './widget-paragraph.styles'
 
 const WidgetParagraph = ({children, ...otherprops}) => {
       return (

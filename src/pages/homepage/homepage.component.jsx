@@ -1,4 +1,4 @@
-import React                        from 'react'
+import React, { useState, useEffect }          from 'react'
 import { HomepageContainer }        from './homepage.styles'
 import WidgetCluster                from '../../components/info-widget/widget-cluster/widget-cluster.component'
 import Widget                       from '../../components/info-widget/widget/widget.component'
@@ -15,7 +15,22 @@ import CardHeader from '../../components/cards/card-header/card-header.component
 import CardText from '../../components/cards/card-text/card-text.component'
 import CardIcon from '../../components/cards/card-icon/card-icon.component'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
-const Homepage = () => (
+import Carousel from '../../components/carousel/carousel.component'
+
+const Homepage = () => {
+      const [isMobile, setIsMobile] = useState(false);
+
+      useEffect(() => {
+            const resizeListener = () => {
+                  setIsMobile(window.innerWidth > 1150 ? true : false)
+            }
+            window.addEventListener('resize', resizeListener)
+            return() => {
+                  window.removeEventListener('resize', resizeListener)
+            }
+      }, [isMobile])
+
+      return (
             <HomepageContainer>
 
                  
@@ -67,62 +82,82 @@ const Homepage = () => (
 
                   <Banner/>
 
-                  <WidgetCluster width='wide'>
-                        <Widget>
-                              <WidgetText textSize='heading' color='white'>
-                                    Thank You For Visiting Fox Garage Camberley
-                              </WidgetText>
-                        </Widget>
-                        <CardsContainerWidget>
-                              <Card>
-                                    <CardHeader>
-                                          HIGHLY TRAINED STAFF
-                                    </CardHeader>
-                                    <CardIcon icon={faCheck}/>
+                  { 
+                        isMobile ? 
+                              <WidgetCluster width='wide'>
+                                    <Widget>
+                                          <WidgetText textSize='heading' color='white'>
+                                                Thank You For Visiting Fox Garage Camberley
+                                          </WidgetText>
+                                    </Widget>
+                                    <CardsContainerWidget>
+                                          <Card>
+                                                <CardHeader>
+                                                      HIGHLY TRAINED STAFF
+                                                </CardHeader>
+                                                <CardIcon icon={faCheck}/>
 
-                                    <CardText>
-                                          As the motor industry evolves, our technicians do too. 
-                                          Our car mechanics are highly skilled, with years of experience and industry-recognised training behind them.
-                                    </CardText>
-                              </Card>
-                              <Card>
-                                    <CardHeader>
-                                          PROFESSIONAL SERVICE
-                                    </CardHeader>
-                                    <CardIcon icon={faCheck}/>
+                                                <CardText>
+                                                      As the motor industry evolves, our technicians do too. 
+                                                      Our car mechanics are highly skilled, with years of experience and industry-recognised training behind them.
+                                                </CardText>
+                                          </Card>
+                                          <Card>
+                                                <CardHeader>
+                                                      PROFESSIONAL SERVICE
+                                                </CardHeader>
+                                                <CardIcon icon={faCheck}/>
 
-                                    <CardText>
-                                    As a family run business, nothing is more important to us than providing a professional service and a great experience
-                                     - from our approachable sales team to our friendly receptionists.                                    
-                                    </CardText>
-                              </Card>
-                              <Card>
-                                    <CardHeader>
-                                          GREAT VALUE
-                                    </CardHeader>
-                                    <CardIcon icon={faCheck}/>
+                                                <CardText>
+                                                As a family run business, nothing is more important to us than providing a professional service and a great experience
+                                                - from our approachable sales team to our friendly receptionists.                                    
+                                                </CardText>
+                                          </Card>
+                                          <Card>
+                                                <CardHeader>
+                                                      GREAT VALUE
+                                                </CardHeader>
+                                                <CardIcon icon={faCheck}/>
 
-                                    <CardText>
-                                          Looking for a good price? Give us a call to get a quote for vehicle servicing, MOT testing, repairs, tyres, brakes and more.
-                                          We're open and honest with our pricing, so you can be sure you're getting what you pay for.   
-                                    
-                                    </CardText>
-                              </Card>
-                              <Card>
-                                    <CardHeader>
-                                          PEACE OF MIND
-                                    </CardHeader>
-                                    <CardIcon icon={faCheck}/>
-                                    <CardText>
-                                          Our skilled technicians have many years of experience servicing vehicles in Camberley and surrounding regions.
-                                          We're always here to offer you motoring advice, so pop in to see us today.
-                                    
-                                    </CardText>
-                              </Card>
-                        </CardsContainerWidget>
+                                                <CardText>
+                                                      Looking for a good price? Give us a call to get a quote for vehicle servicing, MOT testing, repairs, tyres, brakes and more.
+                                                      We're open and honest with our pricing, so you can be sure you're getting what you pay for.   
+                                                
+                                                </CardText>
+                                          </Card>
+                                          <Card>
+                                                <CardHeader>
+                                                      PEACE OF MIND
+                                                </CardHeader>
+                                                <CardIcon icon={faCheck}/>
+                                                <CardText>
+                                                      Our skilled technicians have many years of experience servicing vehicles in Camberley and surrounding regions.
+                                                      We're always here to offer you motoring advice, so pop in to see us today.
+                                                
+                                                </CardText>
+                                          </Card>
+                                    </CardsContainerWidget>
+                              
+                              </WidgetCluster>
+                        :
                   
-                  </WidgetCluster>
+                              <WidgetCluster width='wide'>
+                                    
+                                    <Widget>
+                                          <WidgetText textSize='heading' color='DODGERBLUE'>
+                                                Thank You For Visiting Fox Garage Camberley
+                                          </WidgetText>
+                                          <Carousel></Carousel>
+                                    </Widget>
+
+                              </WidgetCluster>
+
+                  }
+
+                 
+                  
+                 
             
             </HomepageContainer>
-      )
+      )}
 export default Homepage

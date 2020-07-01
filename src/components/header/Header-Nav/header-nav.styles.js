@@ -12,12 +12,13 @@ export const HeaderNavComponent = styled.div`
     cursor: pointer;
     position: relative;
     transition: all 200ms  ease;
-    width: 8vw;
+    width: 11vw;
+    box-sizing: border-box;
     ${props => props.dropdown? 
       `
             &:hover {
                   background-color: #444444;
-                  width: 200px;
+                  width: 20vw;
             }
       ` : null
 }      

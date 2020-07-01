@@ -1,9 +1,14 @@
 import React                        from 'react'
-import { CustomButtonInput }        from './custom-button.styles'
+import { CustomButtonInput, CustomButtonSlider, CustomButtonIcon }        from './custom-button.styles'
+import { faPoundSign } from '@fortawesome/free-solid-svg-icons'
 
 const CustomButton = ({children}) => {
       return (
-            <CustomButtonInput>{children}</CustomButtonInput>
+            <CustomButtonInput>
+                  <CustomButtonSlider/>
+                  <CustomButtonIcon icon={faPoundSign}/>
+                  {children}
+            </CustomButtonInput>
       )
 }
 

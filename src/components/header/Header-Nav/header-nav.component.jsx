@@ -3,7 +3,7 @@ import {
       HeaderDropDownIcon,
       HeaderSection,
 }                             from '../header/header.styles'
-import { faChevronDown, faChevronRight, faCheck, faOilCan, faBolt, faSnowflake, faCircle, faBriefcase }      from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronRight }      from "@fortawesome/free-solid-svg-icons";
 import {HeaderNavComponent}   from './header-nav.styles'
 import { CSSTransition } from 'react-transition-group';
 import HeaderNavDropdown from '../header-nav-dropdown/header-nav-dropdown.component';
@@ -70,73 +70,73 @@ class HeaderNav extends React.Component {
                               >
                               <HeaderNavDropdown>
                                     <DropDownMenuItem
-                                          leftIcon={faCheck}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           MOT Test
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faOilCan}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Complete Servicing
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faOilCan}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Standard Servicing 
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faBolt}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Hybrid & Electric Cars 
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faSnowflake}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           AirCon 
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faCircle}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Tyre Fitting
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faBriefcase}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Cam Belts
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faBriefcase}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Free Brake Check
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faBriefcase}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Clutch & Gearbox
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faBriefcase}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Exhausts
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faBriefcase}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Steering & Suspension
                                     </DropDownMenuItem>
                                     <DropDownMenuItem
-                                          leftIcon={faBriefcase}
+                                    rightIcon={faChevronRight}
                                           header
                                     >
                                           Other

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderDropDownContainer = styled.div`
       position: absolute; 
-      width: 250px;
+      width: 20vw;
       height: ${props => props.height}px;
       display: flex; 
       flex-direction: column;

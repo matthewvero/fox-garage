@@ -30,6 +30,7 @@
         "extends": "react-app"
     },
     "browserslist": [
+        "defaults",
         "since 2015"
     ]
 }

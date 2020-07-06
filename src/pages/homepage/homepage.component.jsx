@@ -14,11 +14,19 @@ import Card from "../../components/cards/card-container/card.container.component
 import CardHeader from "../../components/cards/card-header/card-header.component";
 import CardText from "../../components/cards/card-text/card-text.component";
 import CardIcon from "../../components/cards/card-icon/card-icon.component";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+    faCheck,
+    faOilCan,
+    faClipboardList,
+    faPlus,
+} from "@fortawesome/free-solid-svg-icons";
 import Carousel from "../../components/carousel/carousel.component";
+import {AppearHOC} from "../../components/appear-hoc/appear-hoc.component";
 
 const Homepage = () => {
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(
+        window.innerWidth > 1150 ? true : false
+    );
 
     useEffect(() => {
         const resizeListener = () => {
@@ -32,7 +40,7 @@ const Homepage = () => {
 
     return (
         <HomepageContainer>
-            <WidgetCluster>
+            <WidgetCluster width="40vw">
                 <Widget
                     backgroundcolor="#666666"
                     color="white"
@@ -46,10 +54,10 @@ const Homepage = () => {
                 </Widget>
                 <Widget backgroundcolor="white">
                     <WidgetText color="#666666" textSize="heading">
-                        Call Us To Book{" "}
+                        Call Us To Book
                     </WidgetText>
                     <PhoneNumber />
-                    <CustomButton> Our Prices</CustomButton>
+                    <CustomButton fontsize="2vw"> Our Prices</CustomButton>
                 </Widget>
                 <Widget large warning>
                     <WidgetText textSize="heading">
@@ -65,7 +73,7 @@ const Homepage = () => {
                 </Widget>
             </WidgetCluster>
 
-            <WidgetCluster>
+            <WidgetCluster width="40vw">
                 <Widget>
                     <Logo />
                     <WidgetParagraph textSize="subtext" color="white">
@@ -80,7 +88,7 @@ const Homepage = () => {
                         have the cover and peace of mind that you need. <br />
                         -Our service team will be happy to provide quotes for
                         services or repairs and make a booking for you, by phone
-                        on 01276 704600, or through the online booking facility.{" "}
+                        on 01276 704600, or through the online booking facility.
                         <br />
                     </WidgetParagraph>
                 </Widget>
@@ -92,10 +100,18 @@ const Homepage = () => {
             <Banner />
 
             {isMobile ? (
-                <WidgetCluster width="wide">
+                <AppearHOC isMobile={isMobile}>
+                
+                <WidgetCluster width="80vw">
                     <Widget>
-                        <WidgetText textSize="heading" color="white">
+                        <WidgetText textSize="heading" color="DODGERBLUE">
                             Thank You For Visiting Fox Garage Camberley
+                        </WidgetText>
+                        <WidgetText textSize="subtext" color="white">
+                            At Fox Garage in Camberley we are Bosch and RAC
+                            accredited and we have also been inspected by Motor
+                            Codes, Trading Standards, the AA and Farnborough
+                            Technology College.
                         </WidgetText>
                     </Widget>
                     <CardsContainerWidget>
@@ -146,11 +162,94 @@ const Homepage = () => {
                         </Card>
                     </CardsContainerWidget>
                 </WidgetCluster>
+                </AppearHOC>
             ) : (
                 <WidgetCluster width="wide">
                     <Widget>
-                        <WidgetText textSize="heading" color="white">
+                        <WidgetText textSize="heading" color="DODGERBLUE">
                             Thank You For Visiting Fox Garage Camberley
+                        </WidgetText>
+                        <WidgetText textSize="subtext" color="white">
+                            At Fox Garage in Camberley we are Bosch and RAC
+                            accredited and we have also been inspected by Motor
+                            Codes, Trading Standards, the AA and Farnborough
+                            Technology College.
+                        </WidgetText>
+                        <Carousel></Carousel>
+                    </Widget>
+                </WidgetCluster>
+            )}
+
+            {isMobile ? (
+                <AppearHOC>
+                <WidgetCluster width="60vw">
+                    <Widget>
+                        <WidgetText textSize="heading" color="DODGERBLUE">
+                            Our Top Services
+                        </WidgetText>
+                        <WidgetText textSize="subtext" color="white">
+                            Regular servicing helps to increase the life span of
+                            your vehicle and reduce the risk of breakdowns.
+                            Servicing is often based on the age or mileage of a
+                            vehicle, however, our service staff will work with
+                            you to find out what your vehicle needs.
+                        </WidgetText>
+                    </Widget>
+                    <CardsContainerWidget>
+                        <Card>
+                            <CardIcon icon={faOilCan} />
+                            <CardIcon icon={faPlus} />
+
+                            <CardHeader color="white">
+                                Complete Service
+                            </CardHeader>
+                            <CardHeader color="rgb(50, 255, 150)">
+                                £129
+                            </CardHeader>
+                            <CardText>2.0 Litre or Less</CardText>
+                            <CustomButton fontsize="1.5vw">
+                                Book Now
+                            </CustomButton>
+                        </Card>
+                        <Card>
+                            <CardIcon icon={faOilCan} />
+                            <CardHeader color="white">
+                                Standard Service
+                            </CardHeader>
+                            <CardHeader color="rgb(50, 255, 150)">
+                                £59
+                            </CardHeader>
+                            <CardText>2.0 Litre or Less</CardText>
+                            <CustomButton fontsize="1.5vw">
+                                Book Now
+                            </CustomButton>
+                        </Card>
+                        <Card>
+                            <CardIcon icon={faClipboardList} />
+                            <CardHeader color="white">M.O.T Test</CardHeader>
+                            <CardHeader color="rgb(50, 255, 150)">
+                                FREE
+                            </CardHeader>
+                            <CardText>2.0 Litre or Less</CardText>
+                            <CustomButton fontsize="1.5vw">
+                                Book Now
+                            </CustomButton>
+                        </Card>
+                    </CardsContainerWidget>
+                </WidgetCluster>
+                </AppearHOC>
+
+            ) : (
+                <WidgetCluster width="wide">
+                    <Widget>
+                        <WidgetText textSize="heading" color="DODGERBLUE">
+                            Thank You For Visiting Fox Garage Camberley
+                        </WidgetText>
+                        <WidgetText textSize="subtext" color="white">
+                            At Fox Garage in Camberley we are Bosch and RAC
+                            accredited and we have also been inspected by Motor
+                            Codes, Trading Standards, the AA and Farnborough
+                            Technology College.
                         </WidgetText>
                         <Carousel></Carousel>
                     </Widget>

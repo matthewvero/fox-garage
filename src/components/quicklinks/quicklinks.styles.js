@@ -65,18 +65,15 @@ export const QuickLinksButton = styled.div`
       overflow: hidden;
       cursor: pointer;
       background-color: #444444;
-      
+      box-shadow: inset 0 0 10px #222222;
       @media (max-width: 1000px) {
             height: 100px;
             margin: 1% 2%;
             justify-content: space-around;
             &:active {
-                  background-color: #aabbcc;
+                  background-color: #555555;
             }
             &:active ${QuickLinkTitle} {
-                  color: white;
-            };
-            &:active ${QuickLinkIcon} {
                   color: white;
             };
 

@@ -33,7 +33,7 @@ export const CustomButtonInput = styled.button`
       box-shadow: 0 0 5px #777777;
       background-color: DODGERBLUE;
       color: white;
-      font-size: 2vw;
+      font-size: ${props => props.fontsize};
       cursor: pointer;
       overflow: hidden;
       position: relative;
@@ -42,7 +42,8 @@ export const CustomButtonInput = styled.button`
       }
 
       &:hover ${CustomButtonSlider} {
-            transform: translate(100%, 0%);
+            transform: translate(100%, 0%) scaleX(1.1);
+
       }
 
       &:hover ${CustomButtonIcon} {

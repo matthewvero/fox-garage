@@ -10,7 +10,7 @@ export const HeaderDropDownContainer = styled.div`
       bottom: -${props => props.height}px;
       transform-origin: top;
       transition: all 75ms ease;
-
+      box-shadow: 0 10px 10px #333333;
       &.nav-menu-enter {
             position: absolute;
             transform: scaleY(0);

@@ -14,13 +14,11 @@ color: DODGERBLUE;
 border: solid 3px DODGERBLUE;
 border-radius: 50px;
 height: 60%;
+cursor: pointer;
 &:hover {
-    background-color: white;
     color: #bbbbbb;
     border-color: #bbbbbb;
 }
-
-
 
 align-self: ${props => props.alignment};
 justify-self: ${props => props.justify};

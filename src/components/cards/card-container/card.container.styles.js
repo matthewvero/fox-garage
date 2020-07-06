@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
       padding: 10px;
       justify-content: space-evenly;
       align-items: center;
+      box-shadow: inset 0 0 10px #222222;
 `
 
 

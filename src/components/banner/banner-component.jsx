@@ -21,21 +21,24 @@ class Banner extends React.Component {
       }
 
       componentDidMount() {
-            window.addEventListener('scroll', () => this.handleScroll(this.myRef))
+            window.addEventListener('scroll', () => this.handleScroll(this.myRef), {capture: true,
+                  passive: true})
       }
 
       componentWillUnmount() {
-            window.removeEventListener('scroll', () => this.handleScroll(this.myRef))
+            window.removeEventListener('scroll', () => this.handleScroll(this.myRef), {capture: true,
+                  passive: true})
       }
 
       handleScroll(reference) {
-            const elementHeight = reference.current.getBoundingClientRect().y
+            const elementHeight = reference.current.offsetTop - 500
             const currentState = this.state.animate
             if ( window.pageYOffset > elementHeight && currentState !== true) {
                   this.setState({animate: true}) 
             } else if (window.pageYOffset < elementHeight && currentState !== false){
                   this.setState({animate: false}) 
-            }
+                  
+            } 
                   
             
            

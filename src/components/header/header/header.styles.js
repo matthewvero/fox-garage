@@ -8,7 +8,7 @@ export const HeaderContainer = styled.div`
     top: 0px;
     display: flex;
     flex-direction: row;
-    height: 90px;
+    height: 10vh;
     justify-content: space-between;
     box-shadow: 2px 2px 10px #222222;
     background-color: #666666;
@@ -68,7 +68,6 @@ export const HeaderLogo = styled(HeaderNavComponent)`
     margin: 15px;
     height: 60%;
     &:hover {
-        background-color: white;
         color: #bbbbbb;
         border-color: #bbbbbb;
 

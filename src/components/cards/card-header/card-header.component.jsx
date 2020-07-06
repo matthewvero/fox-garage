@@ -1,9 +1,9 @@
 import React from 'react'
 import { CardHeaderDiv } from './card-header.styles'
 
-const CardHeader = ({children}) => {
+const CardHeader = ({children, color}) => {
       return (
-            <CardHeaderDiv>
+            <CardHeaderDiv color={color}>
                   {children}
             </CardHeaderDiv>
       )

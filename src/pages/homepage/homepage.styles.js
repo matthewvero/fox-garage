@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const HomepageContainer = styled.div`
       width: 100%;
-      height: auto;
       min-height: 100vh;
       display: flex;
       flex-direction: row;
@@ -14,4 +13,6 @@ export const HomepageContainer = styled.div`
             flex-direction: column;
             align-content: center;
       }
+      overflow: hidden;
+      background-color: #444444;
 `

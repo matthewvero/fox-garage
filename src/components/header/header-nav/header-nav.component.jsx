@@ -57,8 +57,8 @@ class HeaderNav extends React.Component {
                   </HeaderNavComponent>
                   <HeaderNavComponent 
                         dropdown 
-                        onMouseEnter={() => this.setState({activeMenu: 'services'})}
-                        onMouseLeave={() => this.setState({activeMenu: 'none'})}
+                        // onMouseEnter={() => this.setState({activeMenu: 'services'})}
+                        // onMouseLeave={() => this.setState({activeMenu: 'none'})}
                         >
                         Services 
                         <HeaderDropDownIcon icon={faChevronDown}/>
@@ -147,8 +147,8 @@ class HeaderNav extends React.Component {
                   </HeaderNavComponent>
                   <HeaderNavComponent 
                         dropdown 
-                        onMouseEnter={() => this.setState({activeMenu: 'blog'})}
-                        onMouseLeave={() => this.setState({activeMenu: 'none'})}
+                        // onMouseEnter={() => this.setState({activeMenu: 'blog'})}
+                        // onMouseLeave={() => this.setState({activeMenu: 'none'})}
                         >
                         Blog 
                         <HeaderDropDownIcon icon={faChevronDown}/>
@@ -184,8 +184,8 @@ class HeaderNav extends React.Component {
                   </HeaderNavComponent>
                   <HeaderNavComponent 
                         dropdown 
-                        onMouseEnter={() => this.setState({activeMenu: 'about'})}
-                        onMouseLeave={() => this.setState({activeMenu: 'none'})}
+                        // onMouseEnter={() => this.setState({activeMenu: 'about'})}
+                        // onMouseLeave={() => this.setState({activeMenu: 'none'})}
                         >
                         About Fox 
                         <HeaderDropDownIcon icon={faChevronDown}/>

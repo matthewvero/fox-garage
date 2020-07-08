@@ -11,7 +11,7 @@ import DropDownMenuItem from '../../dropdown-menu-item/dropdown-menu-item.compon
 
 class HeaderNav extends React.Component {
       state = { 
-            activeMenu: 'none'
+            activeMenu: 'prices'
       }
 
       render() {
@@ -21,7 +21,7 @@ class HeaderNav extends React.Component {
                   <HeaderNavComponent 
                         dropdown 
                         onMouseEnter={() => this.setState({activeMenu: 'prices'})}
-                        onMouseLeave={() => this.setState({activeMenu: 'none'})}
+                        // onMouseLeave={() => this.setState({activeMenu: 'none'})}
                   >
                         Prices 
                         <HeaderDropDownIcon icon={faChevronDown}/>

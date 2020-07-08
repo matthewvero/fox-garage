@@ -7,7 +7,7 @@ import {
 const PhoneNumber = () => {
       return (
             <PhoneNumberContainer>
-                  <PhoneNumberText>01276 704 600</PhoneNumberText>
+                  <PhoneNumberText></PhoneNumberText>
             </PhoneNumberContainer>
       )
 }

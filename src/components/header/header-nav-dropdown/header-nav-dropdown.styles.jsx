@@ -9,15 +9,15 @@ export const HeaderDropDownContainer = styled.div`
       background-color: #444444;
       bottom: -${props => props.height}px;
       transform-origin: top;
-      transition: all 75ms ease;
+      transition: all 150ms 200ms ease;
       box-shadow: 0 10px 10px #333333;
-      z-index: 4;
+      z-index: 0;
+      right: 0px;
       &.nav-menu-enter {
             position: absolute;
             transform: scaleY(0);
           }
       &.nav-menu-enter-active {
-            transition: all 100ms 125ms ease;
             transform: scaleY(1);
       }
       &.nav-menu-exit {

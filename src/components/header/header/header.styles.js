@@ -39,8 +39,7 @@ export const HeaderSection = styled.div`
 export const HeaderDropDownIcon = styled(FontAwesomeIcon)`
     bottom: 10px;
     color: DODGERBLUE;
-    position:absolute;
-
+    align-self: center;
 `;
 
 export const HeaderContactDetails = styled(HeaderNavComponent)`

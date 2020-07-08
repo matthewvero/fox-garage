@@ -14,6 +14,7 @@ export const HeaderNavComponent = styled.div`
     transition: all 200ms  ease;
     width: 11vw;
     box-sizing: border-box;
+    z-index: 1;
     ${props => props.dropdown? 
       `
             &:hover {

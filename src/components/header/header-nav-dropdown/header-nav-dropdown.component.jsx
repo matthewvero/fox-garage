@@ -1,12 +1,12 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useLayoutEffect, useRef} from 'react'
 import { HeaderDropDownContainer } from './header-nav-dropdown.styles'
 
 const HeaderNavDropdown = ({children}) => {
-      const [height, setHeight] = useState(0)
+      const [height, setHeight] = useState()
       const dropDownRef = useRef(null) 
 
-      useEffect(() => {
-            setHeight(dropDownRef.current.firstChild.offsetHeight * dropDownRef.current.children.length)
+      useLayoutEffect(() => {
+            window.setTimeout(() => setHeight(dropDownRef.current.firstChild.offsetHeight * dropDownRef.current.children.length), 10) 
       }, [height])
 
 

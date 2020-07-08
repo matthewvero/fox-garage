@@ -57,7 +57,7 @@ class HeaderNav extends React.Component {
                   </HeaderNavComponent>
                   <HeaderNavComponent 
                         dropdown 
-                        // onMouseEnter={() => this.setState({activeMenu: 'services'})}
+                        onMouseEnter={() => this.setState({activeMenu: 'services'})}
                         // onMouseLeave={() => this.setState({activeMenu: 'none'})}
                         >
                         Services 
@@ -147,7 +147,7 @@ class HeaderNav extends React.Component {
                   </HeaderNavComponent>
                   <HeaderNavComponent 
                         dropdown 
-                        // onMouseEnter={() => this.setState({activeMenu: 'blog'})}
+                        onMouseEnter={() => this.setState({activeMenu: 'blog'})}
                         // onMouseLeave={() => this.setState({activeMenu: 'none'})}
                         >
                         Blog 
@@ -184,7 +184,7 @@ class HeaderNav extends React.Component {
                   </HeaderNavComponent>
                   <HeaderNavComponent 
                         dropdown 
-                        // onMouseEnter={() => this.setState({activeMenu: 'about'})}
+                        onMouseEnter={() => this.setState({activeMenu: 'about'})}
                         // onMouseLeave={() => this.setState({activeMenu: 'none'})}
                         >
                         About Fox 

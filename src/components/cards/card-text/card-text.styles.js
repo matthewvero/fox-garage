@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const CardTextDiv = styled.div`
-    font-size: 1.2vw;
     color: white;
-    @media (max-width: 735px) {
-        font-size: 3vw;
+    @media (max-width: 750px) {
+        font-size: ${props => props.mini ? `2vw` : `3vw`};
     }
 
-    @media (max-width: 1150px) {
-        font-size: 2vw;
+    @media (min-width: 1150px) {
+        font-size: ${props => props.mini ? `1vw` : `1.4vw`};
     }
+
+
 `;

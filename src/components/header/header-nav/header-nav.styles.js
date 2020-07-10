@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import {HeaderDropDownIcon} from '../header/header.styles' 
+
 export const HeaderNavComponent = styled.div`
     padding: 0px 1.5vw;
     height: 100%;
@@ -15,6 +17,10 @@ export const HeaderNavComponent = styled.div`
     width: 11vw;
     box-sizing: border-box;
     z-index: 1;
+
+    &:hover ${HeaderDropDownIcon} {
+          transform: rotate(180deg);
+    }
     ${props => props.dropdown? 
       `
             &:hover {
@@ -22,5 +28,6 @@ export const HeaderNavComponent = styled.div`
                   width: 20vw;
             }
       ` : null
+
 }      
 `;

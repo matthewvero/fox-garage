@@ -22,6 +22,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "../../components/carousel/carousel.component";
 import {AppearHOC} from "../../components/appear-hoc/appear-hoc.component";
+import BookNowButton from "../../components/book-now-hovering-button/book-now.component";
+import VerticleBanner from "../../components/verticle-banner/verticle-banner.component";
 
 const Homepage = () => {
     const [isMobile, setIsMobile] = useState(
@@ -40,6 +42,7 @@ const Homepage = () => {
 
     return (
         <HomepageContainer>
+            <BookNowButton/>
             <WidgetCluster width="40vw">
                 <Widget
                     backgroundcolor="#666666"
@@ -97,7 +100,7 @@ const Homepage = () => {
                 </Widget>
             </WidgetCluster>
 
-            <Banner />
+            <Banner  />
 
             {isMobile ? (
                 <AppearHOC isMobile={isMobile}>
@@ -181,7 +184,9 @@ const Homepage = () => {
             )}
 
             {isMobile ? (
+            
                 <AppearHOC>
+                <VerticleBanner backgroundImage='https://images.unsplash.com/photo-1530484567812-2d5a2d82268c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'/>
                 <WidgetCluster width="60vw">
                     <Widget>
                         <WidgetText textSize="heading" color="DODGERBLUE">
@@ -200,13 +205,13 @@ const Homepage = () => {
                             <CardIcon icon={faOilCan} />
                             <CardIcon icon={faPlus} />
 
-                            <CardHeader color="white">
+                            <CardHeader color="white" >
                                 Complete Service
                             </CardHeader>
-                            <CardHeader color="rgb(50, 255, 150)">
+                            <CardHeader color="rgb(50, 255, 150)" >
                                 £129
                             </CardHeader>
-                            <CardText>2.0 Litre or Less</CardText>
+                            <CardText >2.0 Litre or Less</CardText>
                             <CustomButton fontsize="1.5vw">
                                 Book Now
                             </CustomButton>
@@ -237,8 +242,11 @@ const Homepage = () => {
                         </Card>
                     </CardsContainerWidget>
                 </WidgetCluster>
-                </AppearHOC>
+                <VerticleBanner backgroundImage='https://images.unsplash.com/photo-1502190643063-5e2579fa0317?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80'/>
 
+                </AppearHOC>
+                
+                
             ) : (
                 <WidgetCluster width="wide">
                     <Widget>
@@ -255,6 +263,82 @@ const Homepage = () => {
                     </Widget>
                 </WidgetCluster>
             )}
+
+            {
+                isMobile ? 
+                <AppearHOC isMobile={isMobile}>
+                
+                <WidgetCluster width="80vw">
+                    <Widget>
+                        <WidgetText textSize="heading" color="DODGERBLUE">
+                            Sevices at Fox Garage Camberley
+                        </WidgetText>
+                        <WidgetText textSize="subtext" color="white">
+                            Here are some of the services we offer at Fox Garage Camberley. 
+                            Your local service and repair centre for all major vehicle makes and models. 
+                            Our fully trained technicians are on hand to answer any questions and we will never carry out unnecessary work.
+
+
+                        </WidgetText>
+                    </Widget>
+                    <CardsContainerWidget>
+                        <Card mini>
+                            <CardHeader>Vehicle Servicing</CardHeader>
+
+                            <CardText>
+                                Complete and standard service options from £59.00. 
+                            </CardText>
+                        </Card>
+                        <Card mini>
+                            <CardHeader>MOT Testing</CardHeader>
+
+                            <CardText>
+                                Make sure your vehicle is road legal FREE for a limited time.
+                            </CardText>
+                        </Card>
+                        <Card mini>
+                            <CardHeader>Aircon Recharge</CardHeader>
+                            <CardText>
+                                Get a full re-gas in time for Summer from £59.00. 
+                            </CardText>
+                        </Card>
+                        <Card mini>
+                            <CardHeader>Free Brake Checks</CardHeader>
+                            <CardText>
+                                Get a free brake check to ensure your safety.
+                            </CardText>
+                        </Card>
+                        <Card mini>
+                            <CardHeader>Cam Belts</CardHeader>
+                            <CardText>
+                                Don't get caught short with your cam belt. Call us for a quote today.
+                            </CardText>
+                        </Card>
+                        <Card mini>
+                            <CardHeader>Tyre Fitting</CardHeader>
+                            <CardText>
+                                Don't get caught short with your cam belt. Call us for a quote today.
+                            </CardText>
+                        </Card>
+                        <Card mini>
+                            <CardHeader>Vehicle Repairs</CardHeader>
+                            <CardText>
+                                We can tackle almost any repair across all major vehicles.
+                            </CardText>
+                        </Card>
+                        <Card mini>
+                            <CardHeader>Suspension</CardHeader>
+                            <CardText>
+                                Having suspension trouble? Give us a call for diagnostic.
+                            </CardText>
+                        </Card>
+                    </CardsContainerWidget>
+                </WidgetCluster>
+                </AppearHOC>
+            :
+            null
+            }
+
         </HomepageContainer>
     );
 };

@@ -2,6 +2,15 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const CardIconElement = styled(FontAwesomeIcon)`
-      font-size: 2rem;
       color: DODGERBLUE;
+      ${props => props.mini ? 
+            `
+                font-size: 1.5rem;
+            `
+            :
+            `
+                  font-size: 2rem;
+
+            `
+            }
 `

@@ -8,12 +8,15 @@ export const ComponentContainer = styled.div`
       flex-direction: row; 
       justify-content: center;
       position: relative;
-      scroll-snap-align: start;
 `
 
 export const ComponentSlider = styled.div`
+position: absolute;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       &.appear-enter {
-            position: absolute;
             opacity: 0;
       }
       &.appear-enter-active {

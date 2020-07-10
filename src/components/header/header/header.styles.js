@@ -40,6 +40,8 @@ export const HeaderDropDownIcon = styled(FontAwesomeIcon)`
     bottom: 10px;
     color: DODGERBLUE;
     align-self: center;
+    margin-top: 10px;
+    transition: all 150ms 200ms linear;
 `;
 
 export const HeaderContactDetails = styled(HeaderNavComponent)`

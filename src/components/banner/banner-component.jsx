@@ -46,7 +46,7 @@ class Banner extends React.Component {
 
       render(){
             return (
-            <BannerContainer ref={this.myRef} animate={this.state.animate}>
+            <BannerContainer ref={this.myRef} animate={this.state.animate} verticle={this.props.verticle}>
                   <BannerBackground
                         backgroundImage='https://images.unsplash.com/photo-1471174617910-3e9c04f58ff5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80'
                   />

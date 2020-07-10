@@ -1,9 +1,9 @@
 import React from 'react'
 import { CardTextDiv } from './card-text.styles'
 
-const CardText = ({children}) => {
+const CardText = ({children, mini}) => {
       return (
-            <CardTextDiv>
+            <CardTextDiv mini={mini}>
                   {children}
             </CardTextDiv>
       )

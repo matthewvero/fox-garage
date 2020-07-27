@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const WidgetTextContainer = styled.div`
-
+      
 
 `
 
@@ -16,20 +16,22 @@ export const WidgetTextContent = styled.p`
                   return '2vw'
             }
       }};
-
       @media (max-width: 1000px) {
             font-size: ${props => {
                   switch(props.textSize) {
                         case 'subtext':
-                              return '3vw'
+                              return '3.2vw'
                         case 'heading':
-                              return '4.5vw'
+                              return '4.7vw'
                         default :
                         return '3.5vw'
                   }
             }};
       }
       color: ${props => props.color};
-      padding: 0 20px;
+      padding: 5px 20px;
       margin: 2%;
 `
+
+// background-color: #555555;
+// box-shadow: 0 0 10px #333333;

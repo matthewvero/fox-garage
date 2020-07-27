@@ -11,10 +11,10 @@ export const CarouselContainer = styled.div`
 `;
 
 export const CarouselCard = styled.div`
-    width: 60%;
+    width: 80%;
     height: 80%;
     position: absolute;
-    left: 20%;
+    left: 10%;
     top: 10%;
     background-color: #444444;
     display: flex;
@@ -32,7 +32,7 @@ export const CarouselCardSection = styled.div`
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     &.carouselcard-enter {
         position: absolute;
@@ -54,13 +54,13 @@ export const CarouselCardSection = styled.div`
 export const CarouselButton = styled(FontAwesomeIcon)`
     position: absolute;
     color: DODGERBLUE;
-    top: 45%;
+    top: 40%;
     padding: 30px 20px;
     &:hover {
         background-color: rgba(55, 55, 55, 0.6);
     }
     cursor: pointer;
-
+    font-size: 3rem;
     @media (max-width: 1150px) {
         &:hover {
             background-color: rgba(55, 55, 55, 0);
@@ -74,9 +74,9 @@ export const CarouselButton = styled(FontAwesomeIcon)`
 `;
 
 export const CarouselButtonLeft = styled(CarouselButton)`
-    left: 5%;
+    left: 1%;
 `;
 
 export const CarouselButtonRight = styled(CarouselButton)`
-    right: 5%;
+    right: 1%;
 `;

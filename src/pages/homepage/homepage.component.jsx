@@ -279,7 +279,7 @@ const Homepage = () => {
                 <WidgetCluster width="80vw">
                     <Widget>
                         <WidgetText textSize="heading" color="DODGERBLUE">
-                            Sevices at Fox Garage Camberley
+                            Services at Fox Garage Camberley
                         </WidgetText>
                         <WidgetText textSize="subtext" color="white">
                             Here are some of the services we offer at Fox Garage Camberley. 
@@ -319,13 +319,13 @@ const Homepage = () => {
                         <Card >
                             <CardHeader>Cam Belts</CardHeader>
                             <CardText>
-                                Don't get caught short with your cam belt. Call us for a quote today.
+                                Don't get caught short with your cam belt. Call for a quote today.
                             </CardText>
                         </Card>
                         <Card >
                             <CardHeader>Tyre Fitting</CardHeader>
                             <CardText>
-                                Don't get caught short with your cam belt. Call us for a quote today.
+                                Don't get caught short with your cam belt. Call for a quote today.
                             </CardText>
                         </Card>
                         <Card >

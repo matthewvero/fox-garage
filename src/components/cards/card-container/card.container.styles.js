@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
       ${
             props => props.mini ? 
             `
-                  height: 10vw;
+                  height: 5vw;
                   width: 25%; 
                   flex-direction: row;
                   flex-wrap: wrap;

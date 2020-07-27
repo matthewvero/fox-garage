@@ -24,6 +24,8 @@ import Carousel from "../../components/carousel/carousel.component";
 import {AppearHOC} from "../../components/appear-hoc/appear-hoc.component";
 import BookNowButton from "../../components/book-now-hovering-button/book-now.component";
 import VerticleBanner from "../../components/verticle-banner/verticle-banner.component";
+import { VerticleBannerHeading, VerticleBannerSlidingText } from "../../components/verticle-banner/verticle-banner.styles";
+import ImageCardContentBox from "../../components/cards/image-card-content-box/image-card-box.component";
 
 const Homepage = () => {
     const [isMobile, setIsMobile] = useState(
@@ -186,7 +188,15 @@ const Homepage = () => {
             {isMobile ? (
             
                 <AppearHOC>
-                <VerticleBanner backgroundImage='https://images.unsplash.com/photo-1530484567812-2d5a2d82268c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'/>
+                <VerticleBanner 
+                    backgroundImage='https://images.unsplash.com/photo-1530484567812-2d5a2d82268c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'>
+                    <VerticleBannerHeading>
+                        12,000 Mile Service Guarantee
+                    </VerticleBannerHeading>
+                    <VerticleBannerSlidingText>
+                        Here at fox we commit to 12,000 blah blah blah blah
+                    </VerticleBannerSlidingText>
+                </VerticleBanner>
                 <WidgetCluster width="60vw">
                     <Widget>
                         <WidgetText textSize="heading" color="DODGERBLUE">
@@ -264,8 +274,6 @@ const Homepage = () => {
                 </WidgetCluster>
             )}
 
-            {
-                isMobile ? 
                 <AppearHOC isMobile={isMobile}>
                 
                 <WidgetCluster width="80vw">
@@ -281,52 +289,52 @@ const Homepage = () => {
 
                         </WidgetText>
                     </Widget>
-                    <CardsContainerWidget>
-                        <Card mini>
+                    <CardsContainerWidget mini>
+                        <Card >
                             <CardHeader>Vehicle Servicing</CardHeader>
 
                             <CardText>
                                 Complete and standard service options from £59.00. 
                             </CardText>
                         </Card>
-                        <Card mini>
+                        <Card >
                             <CardHeader>MOT Testing</CardHeader>
 
                             <CardText>
                                 Make sure your vehicle is road legal FREE for a limited time.
                             </CardText>
                         </Card>
-                        <Card mini>
+                        <Card >
                             <CardHeader>Aircon Recharge</CardHeader>
                             <CardText>
                                 Get a full re-gas in time for Summer from £59.00. 
                             </CardText>
                         </Card>
-                        <Card mini>
+                        <Card >
                             <CardHeader>Free Brake Checks</CardHeader>
                             <CardText>
                                 Get a free brake check to ensure your safety.
                             </CardText>
                         </Card>
-                        <Card mini>
+                        <Card >
                             <CardHeader>Cam Belts</CardHeader>
                             <CardText>
                                 Don't get caught short with your cam belt. Call us for a quote today.
                             </CardText>
                         </Card>
-                        <Card mini>
+                        <Card >
                             <CardHeader>Tyre Fitting</CardHeader>
                             <CardText>
                                 Don't get caught short with your cam belt. Call us for a quote today.
                             </CardText>
                         </Card>
-                        <Card mini>
+                        <Card >
                             <CardHeader>Vehicle Repairs</CardHeader>
                             <CardText>
                                 We can tackle almost any repair across all major vehicles.
                             </CardText>
                         </Card>
-                        <Card mini>
+                        <Card >
                             <CardHeader>Suspension</CardHeader>
                             <CardText>
                                 Having suspension trouble? Give us a call for diagnostic.
@@ -335,9 +343,59 @@ const Homepage = () => {
                     </CardsContainerWidget>
                 </WidgetCluster>
                 </AppearHOC>
-            :
-            null
-            }
+
+                <AppearHOC isMobile={isMobile}>
+                
+                <WidgetCluster width="80vw">
+                    <Widget>
+                        <WidgetText textSize="heading" color="DODGERBLUE">
+                            Sevices at Fox Garage Camberley
+                        </WidgetText>
+                        <WidgetText textSize="subtext" color="white">
+                            Here are some of the services we offer at Fox Garage Camberley. 
+                            Your local service and repair centre for all major vehicle makes and models. 
+                            Our fully trained technicians are on hand to answer any questions and we will never carry out unnecessary work.
+
+
+                        </WidgetText>
+                    </Widget>
+                    <CardsContainerWidget >
+                        <Card 
+                            backgroundImage='https://images.unsplash.com/photo-1544361263-b86bdea95bf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'
+                        >
+                            <ImageCardContentBox  topColor='rgb(50,200,150)'/>
+                            
+                            <CardHeader>Vehicle Servicing</CardHeader>
+                            
+                            <CardText>
+                            Complete and standard service options from £59.00. 
+                            </CardText>
+                        </Card>
+                        <Card >
+                            <CardHeader>MOT Testing</CardHeader>
+
+                            <CardText>
+                                Make sure your vehicle is road legal FREE for a limited time.
+                            </CardText>
+                        </Card>
+                        <Card >
+                            <CardHeader>Aircon Recharge</CardHeader>
+                            <CardText>
+                                Get a full re-gas in time for Summer from £59.00. 
+                            </CardText>
+                        </Card>
+                        <Card >
+                            <CardHeader>Free Brake Checks</CardHeader>
+                            <CardText>
+                                Get a free brake check to ensure your safety.
+                            </CardText>
+                        </Card>
+                    </CardsContainerWidget>
+                </WidgetCluster>
+                </AppearHOC>
+
+
+
 
         </HomepageContainer>
     );

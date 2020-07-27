@@ -1,5 +1,5 @@
 import React from 'react'
-import { VerticleBannerContainer, VerticleBannerHeading, VerticleBannerFader } from './verticle-banner.styles'
+import { VerticleBannerContainer, VerticleBannerFader } from './verticle-banner.styles'
 
 const VerticleBanner = ({backgroundImage, children}) => {
       return (
@@ -9,5 +9,6 @@ const VerticleBanner = ({backgroundImage, children}) => {
             </VerticleBannerContainer>
       )
 }
+
 
 export default VerticleBanner

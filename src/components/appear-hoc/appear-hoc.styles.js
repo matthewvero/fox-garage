@@ -2,7 +2,10 @@ import styled, {keyframes} from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const ComponentContainer = styled.div`
-      height: 700px;
+      @media (max-width: 1000px) {
+            height: ${props => props.height + 100}px;
+      }
+      height: ${props => props.height + 50}px;
       width: 100%;
       display: flex; 
       flex-direction: row; 

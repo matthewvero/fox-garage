@@ -68,6 +68,7 @@ export const CarouselButton = styled(FontAwesomeIcon)`
 
         &:active {
             background-color: rgba(55, 55, 55, 0.6);
+            box-shadow: inset 0 0 5px #222222;
         }
     }
 `;

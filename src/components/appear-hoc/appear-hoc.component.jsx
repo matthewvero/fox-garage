@@ -6,11 +6,19 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 export const AppearHOC = ({children}) => {
 
       const [isVisible, setVisible] = useState(false)
+      const [height, setHeight] = useState(400)
       const myRef = useRef()
+      const childRef = useRef()
+      const checkChildHeight = (ref) => {
+            if (ref.current) {
+                  const childHeight = ref.current.firstChild.offsetHeight
+                  setHeight(childHeight)
+            }
+      }
       
       useEffect(() => {
 
-                  const checkHeight = (ref) => {
+                  const checkOffsetHeight = (ref) => {
                         
                         const elementHeight = ref.current.offsetTop - 500
                         
@@ -21,8 +29,11 @@ export const AppearHOC = ({children}) => {
                         }
                   }
                   // Check scroll height and change visible state if necessary
+
+                  checkChildHeight(childRef)
+
                   
-                  const handler = () => checkHeight(myRef)
+                  const handler = () => checkOffsetHeight(myRef)
 
                   window.addEventListener('scroll', handler, {passive: true})
                   return () => {
@@ -32,7 +43,7 @@ export const AppearHOC = ({children}) => {
       }, [myRef, isVisible])
 
       return(
-            <ComponentContainer ref={myRef}>
+            <ComponentContainer ref={myRef} height={height}>
                   <CSSTransition
                         in={isVisible ? true : false}
                         classNames={'appear'}
@@ -40,7 +51,7 @@ export const AppearHOC = ({children}) => {
                         unmountOnExit
                         ref={myRef}
                   >
-                        <ComponentSlider>
+                        <ComponentSlider ref={childRef}>
                               {children}
                         </ComponentSlider>
                   </CSSTransition>

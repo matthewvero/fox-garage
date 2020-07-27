@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const CardHeaderDiv = styled.div`
-    font-size: 1.75vw;
+    font-size: 2vw;
     color: ${(props) => (props.color ? props.color : "DODGERBLUE")};
     font-weight: 600;
+    z-index: 2;
     ${props => props.mini ? 
     `
         @media (max-width: 750px) {

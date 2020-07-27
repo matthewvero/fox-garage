@@ -13,6 +13,6 @@ export const HomepageContainer = styled.div`
             flex-direction: column;
             align-content: center;
       }
-      overflow: hidden;
+      overflow: auto;
       background-color: #444444;
 `

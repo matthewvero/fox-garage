@@ -20,9 +20,9 @@ export const WidgetTextContent = styled.p`
             font-size: ${props => {
                   switch(props.textSize) {
                         case 'subtext':
-                              return '3.2vw'
+                              return '4vw'
                         case 'heading':
-                              return '4.7vw'
+                              return '5vw'
                         default :
                         return '3.5vw'
                   }

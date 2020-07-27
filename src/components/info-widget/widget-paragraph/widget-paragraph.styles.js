@@ -8,7 +8,7 @@ export const WidgetParagraphContainer = styled.div`
 export const WidgetParagraphContent = styled.p`
       font-size: 1vw;
       @media (max-width: 1000px) {
-            font-size: 3vw;
+            font-size: 3.5vw;
       }
       color: ${props => props.color};
       padding: 0 20px;

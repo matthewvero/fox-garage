@@ -75,7 +75,7 @@ const Carousel = () => {
                 <CarouselCard key={el.id}>
                     <CSSTransition
                         in={activeCard === el.id ? true : false}
-                        timeout={1000}
+                        timeout={400}
                         classNames="carouselcard"
                         unmountOnExit
                     >

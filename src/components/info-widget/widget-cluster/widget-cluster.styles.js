@@ -11,7 +11,6 @@ export const WidgetBox = styled.div`
       margin: 20px;
       background-color: #666666;
       box-shadow: 0 0 20px #222222;
-      
       @media (max-width: 1000px){
             width: 90vw;
             flex-direction: column;

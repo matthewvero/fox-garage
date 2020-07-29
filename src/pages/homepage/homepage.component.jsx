@@ -26,6 +26,9 @@ import BookNowButton from "../../components/book-now-hovering-button/book-now.co
 import VerticleBanner from "../../components/verticle-banner/verticle-banner.component";
 import { VerticleBannerHeading, VerticleBannerSlidingText } from "../../components/verticle-banner/verticle-banner.styles";
 import ImageCardContentBox from "../../components/cards/image-card-content-box/image-card-box.component";
+import ImageCarousel from "../../components/image-carousel/image-carousel.component";
+import { ImageCarouselSlide, CarouselTitle, CarouselSubtitle } from "../../components/image-carousel/image-carousel.styles";
+
 
 const Homepage = () => {
     const [isMobile, setIsMobile] = useState(
@@ -44,7 +47,44 @@ const Homepage = () => {
 
     return (
         <HomepageContainer>
+
             <BookNowButton/>
+
+            <ImageCarousel>
+                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1486673748761-a8d18475c757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'>
+                    <CarouselTitle color='rgb(49,255, 150)' >
+                        This is a good deal or something!
+                    </CarouselTitle>
+                    <CarouselSubtitle color='white'>
+                        I swear the deal is great - only £££
+                    </CarouselSubtitle>
+                </ImageCarouselSlide>
+                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1457269449834-928af64c684d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2467&q=80'>
+                    <CarouselTitle color='rgb(49,255, 150)' alignment='left'>
+                        DEALS ON THE LEFT
+                    </CarouselTitle>
+                    <CarouselSubtitle color='white' alignment='left'>
+                        This deal will save you mucho pezos
+                    </CarouselSubtitle>
+                </ImageCarouselSlide>
+                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3589&q=80'>
+                <CarouselTitle color='DODGERBLUE'>
+                        COLORFUL 
+                    </CarouselTitle>
+                    <CarouselSubtitle color='white'>
+                        I swear the deal is great - only £££
+                    </CarouselSubtitle>
+                </ImageCarouselSlide>
+                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3578&q=80'>
+                <CarouselTitle color='rgb(49,255, 150)' alignment='right'>
+                        Far right fox propaganda!
+                    </CarouselTitle>
+                    <CarouselSubtitle color='white' alignment='right'>
+                        Fox is the BEST GARAGE
+                    </CarouselSubtitle>
+                </ImageCarouselSlide>
+            </ImageCarousel>
+
             <WidgetCluster width="40vw">
                 <Widget
                     backgroundcolor="#666666"
@@ -82,14 +122,14 @@ const Homepage = () => {
                 <Widget>
                     <Logo />
                     <WidgetParagraph textSize="subtext" color="white">
-                        - Based in Camberley bordering Surrey, Hampshire and
+                        - Located on the border of Surrey, Hampshire and
                         Berkshire. <br />
-                        - Bosch and RAC accreditation. <br />- Family run - We
-                        provide a professional service, from your first call
+                        
+                        - Bosch and RAC accreditation. <br />
+                        - Family run, professional service, from your first call
                         through until your vehicles return. <br />
-                        - We use quality parts and we deliver great customer
-                        service at competitive rates. <br />
-                        - Our twelve month or 12,000 mile guarantee ensures you
+                        - We use quality parts at competitive rates. <br />
+                        - Twelve month or 12,000 mile guarantee ensures you
                         have the cover and peace of mind that you need. <br />
                         -Our service team will be happy to provide quotes for
                         services or repairs and make a booking for you, by phone
@@ -319,19 +359,19 @@ const Homepage = () => {
                         <Card >
                             <CardHeader>Cam Belts</CardHeader>
                             <CardText>
-                                Don't get caught short with your cam belt. Call for a quote today.
+                                Don't get caught short with your cam belt.
                             </CardText>
                         </Card>
                         <Card >
                             <CardHeader>Tyre Fitting</CardHeader>
                             <CardText>
-                                Don't get caught short with your cam belt. Call for a quote today.
+                                Call for tyre fitting quotes
                             </CardText>
                         </Card>
                         <Card >
                             <CardHeader>Vehicle Repairs</CardHeader>
                             <CardText>
-                                We can tackle almost any repair across all major vehicles.
+                                We can tackle almost any repair for all major vehicles.
                             </CardText>
                         </Card>
                         <Card >
@@ -349,45 +389,57 @@ const Homepage = () => {
                 <WidgetCluster width="80vw">
                     <Widget>
                         <WidgetText textSize="heading" color="DODGERBLUE">
-                            Sevices at Fox Garage Camberley
-                        </WidgetText>
-                        <WidgetText textSize="subtext" color="white">
-                            Here are some of the services we offer at Fox Garage Camberley. 
-                            Your local service and repair centre for all major vehicle makes and models. 
-                            Our fully trained technicians are on hand to answer any questions and we will never carry out unnecessary work.
 
-
+                            Latest News
                         </WidgetText>
+                        
                     </Widget>
-                    <CardsContainerWidget >
+                    <CardsContainerWidget grid >
                         <Card 
                             backgroundImage='https://images.unsplash.com/photo-1544361263-b86bdea95bf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'
                         >
                             <ImageCardContentBox  topColor='rgb(50,200,150)'/>
                             
-                            <CardHeader>Vehicle Servicing</CardHeader>
+                            <CardHeader
+                            color='rgb(50,200,150)'
+                            >How To Guides</CardHeader>
                             
                             <CardText>
-                            Complete and standard service options from £59.00. 
+                                TOP 3 WINTER DRIVING TIPS
                             </CardText>
                         </Card>
-                        <Card >
-                            <CardHeader>MOT Testing</CardHeader>
+                        <Card backgroundImage='https://images.unsplash.com/photo-1545100400-91bc4c592aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2467&q=80'>
+                        <ImageCardContentBox  topColor='rgb(70,214,224)'/>
+                        <CardHeader
+                        color='rgb(70,214,224)'
+                        >Car Maintenance</CardHeader>
 
                             <CardText>
-                                Make sure your vehicle is road legal FREE for a limited time.
+                                3 SIGNS YOUR CAR BATTERY IS ABOUT TO DIE
                             </CardText>
                         </Card>
-                        <Card >
-                            <CardHeader>Aircon Recharge</CardHeader>
+                        <Card 
+                        backgroundImage='https://images.unsplash.com/photo-1551384051-7400776bbd49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'
+                        >
+
+                        <ImageCardContentBox  topColor='rgb(50,200,150)'/>
+
+                            <CardHeader
+                            color='rgb(50,200,150)'
+                            >How To Guides</CardHeader>
                             <CardText>
-                                Get a full re-gas in time for Summer from £59.00. 
+                                HOW TO PREPARE YOUR CAR FOR THE COLDEST WINTER IN 5 YEARS
                             </CardText>
                         </Card>
-                        <Card >
-                            <CardHeader>Free Brake Checks</CardHeader>
+                        <Card 
+                        backgroundImage='https://images.unsplash.com/photo-1571775300511-ef41b23ce413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'>
+                        <ImageCardContentBox  topColor='rgb(100,100,255)'/>
+
+                            <CardHeader
+                            color='rgb(100,100,255)'
+                            >Motor Industry News</CardHeader>
                             <CardText>
-                                Get a free brake check to ensure your safety.
+                                WHAT IS THE FOXY LADY DRIVING CLUB
                             </CardText>
                         </Card>
                     </CardsContainerWidget>

@@ -15,4 +15,5 @@ export const HomepageContainer = styled.div`
       }
       overflow: auto;
       background-color: #444444;
+
 `

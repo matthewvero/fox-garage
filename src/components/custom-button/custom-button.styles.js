@@ -21,7 +21,7 @@ export const CustomButtonIcon = styled(FontAwesomeIcon)`
       right: 45%;
       opacity: 0;
       z-index: 2;
-      `
+`
 
 export const CustomButtonInput = styled.button`
       margin: 0 10%;
@@ -47,7 +47,6 @@ export const CustomButtonInput = styled.button`
             transition: opacity 300ms 200ms ease;
             transition: color 300ms 300ms ease;
             color: rgb(50, 255, 150);
-
             opacity: 1;
 
       }

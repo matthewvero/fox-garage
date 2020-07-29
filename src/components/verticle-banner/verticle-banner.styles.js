@@ -45,7 +45,7 @@ export const VerticleBannerContainer = styled.div`
       &:hover ${VerticleBannerHeading} {
             transition: all 200ms ease;
 
-            transform: translateY(30vw);
+            transform: translateY(29vw);
 
       }
       &:hover ${VerticleBannerSlidingText} {

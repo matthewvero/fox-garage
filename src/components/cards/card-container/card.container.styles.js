@@ -31,7 +31,7 @@ export const CardContainer = styled.div`
             :
             `
                   height: 20vw;
-                  width: 20%;
+                  width: 40%;
             `
       
       }

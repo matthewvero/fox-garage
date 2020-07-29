@@ -50,6 +50,10 @@ export const CarouselButton = styled(FontAwesomeIcon)`
   transition: all 100ms ease;
   z-index: 1;
   padding: 0 100px;
+  @media (max-width: 1000px){
+    padding: 0 50px;
+
+  }
   &:hover {
         background-color: rgba(50,50,50, 0.7);
   }
@@ -66,17 +70,18 @@ export const RightCarouselButton = styled(CarouselButton)`
 
 
 export const CarouselSlideIndicator = styled.div`
-  height: 20px;
-  width: 20px; 
+  height: 1vw;
+  width: 1vw; 
   border: solid 3px white;
   border-radius: 50%;
   ${props => props.active ? 'background-color: white;' : null}
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0 0.5vw;
+
 `
 export const CarouselSlideIndicatorGroup = styled.div`
-  height: 40px;
-  border-radius: 10px;
+  height: 30px;
+  border-radius: 15px;
   background-color: rgba(50,50,50,0.5);
   display: flex;
   flex-direction: row; 

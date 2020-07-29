@@ -85,7 +85,7 @@ const Homepage = () => {
                 </ImageCarouselSlide>
             </ImageCarousel>
 
-            <WidgetCluster width="40vw">
+            <WidgetCluster width="45vw">
                 <Widget
                     backgroundcolor="#666666"
                     color="white"
@@ -118,7 +118,7 @@ const Homepage = () => {
                 </Widget>
             </WidgetCluster>
 
-            <WidgetCluster width="40vw">
+            <WidgetCluster width="45vw">
                 <Widget>
                     <Logo />
                     <WidgetParagraph textSize="subtext" color="white">

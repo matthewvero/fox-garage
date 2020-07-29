@@ -6,7 +6,7 @@ export const WidgetParagraphContainer = styled.div`
 `
 
 export const WidgetParagraphContent = styled.p`
-      font-size: 1vw;
+      font-size: 1.1vw;
       @media (max-width: 1000px) {
             font-size: 3.5vw;
       }

@@ -20,7 +20,7 @@ export const BackgroundFade = styled.div`
 `;
 export const BannerContainer = styled.div`
     cursor: pointer;
-    width: 95vwd;
+    width: 95vw;
     min-height: 150px;
     margin: 50px 0;
     position: relative;

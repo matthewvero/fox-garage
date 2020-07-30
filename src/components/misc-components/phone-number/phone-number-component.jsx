@@ -4,10 +4,10 @@ import {
       PhoneNumberText 
 }                             from './phone-number.styles'
 
-const PhoneNumber = () => {
+const PhoneNumber = ({children}) => {
       return (
             <PhoneNumberContainer>
-                  <PhoneNumberText></PhoneNumberText>
+                  <PhoneNumberText>{children}</PhoneNumberText>
             </PhoneNumberContainer>
       )
 }

@@ -80,7 +80,7 @@ export const CarouselSlideIndicator = styled.div`
 
 `
 export const CarouselSlideIndicatorGroup = styled.div`
-  height: 30px;
+  height: 2vw;
   border-radius: 15px;
   background-color: rgba(50,50,50,0.5);
   display: flex;

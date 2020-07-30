@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
       display: flex;
       flex-direction: column;
       padding: 10px;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       box-shadow: inset 0 0 10px #222222;
       background-image: url('${props => props.backgroundImage}');

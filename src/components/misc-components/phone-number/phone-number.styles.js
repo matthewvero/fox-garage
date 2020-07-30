@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const PhoneNumberContainer = styled.div`
+      width: 100%;
+      height: 30%;
 `
 
 export const PhoneNumberText = styled.span`
@@ -9,4 +11,5 @@ export const PhoneNumberText = styled.span`
       @media (max-width: 1000px) {
             font-size: 4vw;
       }
+
 `

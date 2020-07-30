@@ -33,7 +33,7 @@ export const CustomButtonInput = styled.button`
       box-shadow: 0 0 5px #222222;
       background-color: DODGERBLUE;
       color: white;
-      font-size: ${props => props.fontsize};
+      font-size: ${props => props.$fontsize};
       cursor: pointer;
       overflow: hidden;
       position: relative;

@@ -1,7 +1,7 @@
 import React from 'react'
 import {BookNowButtonContainer, BookNowIcon, BookNowText} from './book-now.styles'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-const BookNowButton = () => {
+const HoveringBookNowButton = () => {
       return (
             <BookNowButtonContainer>
                    <BookNowIcon icon={faPlus}/>
@@ -12,4 +12,4 @@ const BookNowButton = () => {
       )
 }
 
-export default BookNowButton
+export default HoveringBookNowButton

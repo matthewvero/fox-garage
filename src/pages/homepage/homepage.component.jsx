@@ -22,12 +22,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "../../components/carousel/carousel.component";
 import {AppearHOC} from "../../components/appear-hoc/appear-hoc.component";
-import BookNowButton from "../../components/book-now-hovering-button/book-now.component";
+import HoveringBookNowButton from "../../components/book-now-hovering-button/book-now.component";
 import VerticleBanner from "../../components/verticle-banner/verticle-banner.component";
 import { VerticleBannerHeading, VerticleBannerSlidingText } from "../../components/verticle-banner/verticle-banner.styles";
 import ImageCardContentBox from "../../components/cards/image-card-content-box/image-card-box.component";
 import ImageCarousel from "../../components/image-carousel/image-carousel.component";
 import { ImageCarouselSlide, CarouselTitle, CarouselSubtitle } from "../../components/image-carousel/image-carousel.styles";
+import CardSection from "../../components/cards/card-section/card-section.component";
 
 
 const Homepage = () => {
@@ -48,7 +49,7 @@ const Homepage = () => {
     return (
         <HomepageContainer>
 
-            <BookNowButton/>
+            <HoveringBookNowButton/>
 
             <ImageCarousel>
                 <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1486673748761-a8d18475c757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'>
@@ -102,7 +103,7 @@ const Homepage = () => {
                         Call Us To Book
                     </WidgetText>
                     <PhoneNumber />
-                    <CustomButton fontsize="2vw"> Our Prices</CustomButton>
+                    <CustomButton $fontsize="2vw"> Our Prices</CustomButton>
                 </Widget>
                 <Widget large warning>
                     <WidgetText textSize="heading">
@@ -119,24 +120,7 @@ const Homepage = () => {
             </WidgetCluster>
 
             <WidgetCluster width="45vw">
-                <Widget>
-                    <Logo />
-                    <WidgetParagraph textSize="subtext" color="white">
-                        - Located on the border of Surrey, Hampshire and
-                        Berkshire. <br />
-                        
-                        - Bosch and RAC accreditation. <br />
-                        - Family run, professional service, from your first call
-                        through until your vehicles return. <br />
-                        - We use quality parts at competitive rates. <br />
-                        - Twelve month or 12,000 mile guarantee ensures you
-                        have the cover and peace of mind that you need. <br />
-                        -Our service team will be happy to provide quotes for
-                        services or repairs and make a booking for you, by phone
-                        on 01276 704600, or through the online booking facility.
-                        <br />
-                    </WidgetParagraph>
-                </Widget>
+               
                 <Widget>
                     <QuickLinks></QuickLinks>
                 </Widget>
@@ -252,43 +236,62 @@ const Homepage = () => {
                     </Widget>
                     <CardsContainerWidget>
                         <Card>
-                            <CardIcon icon={faOilCan} />
-                            <CardIcon icon={faPlus} />
+                            <CardSection row>
+                                <CardIcon icon={faOilCan} />
+                                <CardIcon icon={faPlus} />
+                            </CardSection>
+                            <CardSection>
+                                <CardHeader color="white" >
+                                    Complete Service
+                                </CardHeader>
+                                <CardHeader color="rgb(50, 255, 150)" >
+                                    £129
+                                </CardHeader>
+                                <CardText >2.0 Litre or Less</CardText>
+                            </CardSection>
+                            <CardSection>
+                                <CustomButton $fontsize="1.5vw">
+                                    Book Now
+                                </CustomButton>
+                            </CardSection>
+                        </Card>
 
-                            <CardHeader color="white" >
-                                Complete Service
-                            </CardHeader>
-                            <CardHeader color="rgb(50, 255, 150)" >
-                                £129
-                            </CardHeader>
-                            <CardText >2.0 Litre or Less</CardText>
-                            <CustomButton fontsize="1.5vw">
-                                Book Now
-                            </CustomButton>
-                        </Card>
                         <Card>
-                            <CardIcon icon={faOilCan} />
-                            <CardHeader color="white">
-                                Standard Service
-                            </CardHeader>
-                            <CardHeader color="rgb(50, 255, 150)">
-                                £59
-                            </CardHeader>
-                            <CardText>2.0 Litre or Less</CardText>
-                            <CustomButton fontsize="1.5vw">
-                                Book Now
-                            </CustomButton>
+                            <CardSection>
+                                <CardIcon icon={faOilCan} />
+                            </CardSection>
+                            <CardSection>
+                                <CardHeader color="white">
+                                    Standard Service
+                                </CardHeader>
+                                <CardHeader color="rgb(50, 255, 150)">
+                                    £59
+                                </CardHeader>
+                                <CardText>2.0 Litre or Less</CardText>
+                            </CardSection>
+                            <CardSection>
+                                <CustomButton $fontsize="1.5vw">
+                                    Book Now
+                                </CustomButton>
+                            </CardSection>
                         </Card>
+
                         <Card>
-                            <CardIcon icon={faClipboardList} />
-                            <CardHeader color="white">M.O.T Test</CardHeader>
-                            <CardHeader color="rgb(50, 255, 150)">
-                                FREE
-                            </CardHeader>
-                            <CardText>2.0 Litre or Less</CardText>
-                            <CustomButton fontsize="1.5vw">
-                                Book Now
-                            </CustomButton>
+                            <CardSection>
+                                <CardIcon icon={faClipboardList} />
+                            </CardSection>
+                            <CardSection>
+                                <CardHeader color="white">M.O.T Test</CardHeader>
+                                <CardHeader color="rgb(50, 255, 150)">
+                                    FREE
+                                </CardHeader>
+                                <CardText>2.0 Litre or Less</CardText>
+                            </CardSection>
+                            <CardSection>
+                                <CustomButton $fontsize="1.5vw">
+                                    Book Now
+                                </CustomButton>
+                            </CardSection>
                         </Card>
                     </CardsContainerWidget>
                 </WidgetCluster>

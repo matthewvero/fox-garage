@@ -8,19 +8,19 @@ export const CarouselImageContainer = styled.img`
       left: 0;
       object-fit: cover;
 
-      ${props => props.preload && 'z-index: 1'}
-      &.preLoadImage-enter {
+      ${props => props.preload ? 'z-index: 1;' : 'z-index: 0;'}
+      &.preloadimage-enter {
             opacity: 0;
-          }
-          &.preLoadImage-enter-active {
+      }
+      &.preloadimage-enter-active {
             opacity: 1;
-            transition: opacity 400ms ease;
-          }
-          &.preLoadImage-exit {
-            opacity: 1;
-          }
-          &.preLoadImage-exit-active {
-            opacity: 0;
-            transition: opacity 400ms ease;
-          }
+            transition: opacity 500ms linear;
+      }
+      &.preloadimage-exit {
+            transform: translateY(0%);
+      }
+      &.preloadimage-exit-active {
+            transition: transform 500ms linear;
+            transform: translateY(100%);
+      }
 `

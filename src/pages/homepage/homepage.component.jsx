@@ -37,6 +37,7 @@ import CardSection from "../../components/cards/card-section/card-section.compon
 import Page from "../page/page.component";
 import { foxGarageTopServices, foxGarageServices } from "../../data/data";
 import QuickLinksButton from "../../components/quicklinks/quicklinks-button/quicklinks-button.component";
+import CarouselImage from "../../components/image-carousel/carousel-image/carousel-image.component";
 
 
 
@@ -49,15 +50,23 @@ const Homepage = ({isMobile, history}) => {
             <HoveringBookNowButton/>
 
             <ImageCarousel>
-                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1486673748761-a8d18475c757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'>
-                    <CarouselTitle color='rgb(49,255, 150)' >
+                <ImageCarouselSlide>
+                    <CarouselImage 
+                        $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1486673748761-a8d18475c757.jpeg'
+                        $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1486673748761-a8d18475c757.jpeg?profile=blurred%20preload&w=200&h=200&blur=15'
+                    />
+                <CarouselTitle color='rgb(49,255, 150)' >
                         This is a good deal or something!
                     </CarouselTitle>
                     <CarouselSubtitle color='white'>
                         I swear the deal is great - only £££
                     </CarouselSubtitle>
                 </ImageCarouselSlide>
-                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1457269449834-928af64c684d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2467&q=80'>
+                <ImageCarouselSlide >
+                    <CarouselImage 
+                        $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1457269449834-928af64c684d.jpeg'
+                        $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1457269449834-928af64c684d.jpeg?profile=blurred%20preload&blur=15'
+                    />
                     <CarouselTitle color='rgb(49,255, 150)' alignment='left'>
                         DEALS ON THE LEFT
                     </CarouselTitle>
@@ -65,7 +74,11 @@ const Homepage = ({isMobile, history}) => {
                         This deal will save you mucho pezos
                     </CarouselSubtitle>
                 </ImageCarouselSlide>
-                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3589&q=80'>
+                <ImageCarouselSlide >
+                    <CarouselImage 
+                        $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1489824904134-891ab64532f1.jpeg?w=1000&h=1000'
+                        $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1489824904134-891ab64532f1.jpeg?profile=blurred%20preload'
+                    />
                 <CarouselTitle color='DODGERBLUE'>
                         COLORFUL 
                     </CarouselTitle>
@@ -73,7 +86,11 @@ const Homepage = ({isMobile, history}) => {
                         I swear the deal is great - only £££
                     </CarouselSubtitle>
                 </ImageCarouselSlide>
-                <ImageCarouselSlide backgroundImage='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3578&q=80'>
+                <ImageCarouselSlide >
+                <CarouselImage 
+                        $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1486262715619-67b85e0b08d3.jpeg'
+                        $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1486262715619-67b85e0b08d3.jpeg?profile=blurred%20preload'
+                    />
                 <CarouselTitle color='rgb(49,255, 150)' alignment='right'>
                         Far right fox propaganda!
                     </CarouselTitle>
@@ -218,7 +235,7 @@ const Homepage = ({isMobile, history}) => {
             
                 <AppearHOC>
                 <VerticleBanner 
-                    backgroundImage='https://images.unsplash.com/photo-1530484567812-2d5a2d82268c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'>
+                    backgroundImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1502190643063-5e2579fa0317.jpeg'>
                     <VerticleBannerHeading>
                         12,000 Mile Service Guarantee
                     </VerticleBannerHeading>
@@ -300,7 +317,7 @@ const Homepage = ({isMobile, history}) => {
                         </Card>
                     </CardsContainerWidget>
                 </WidgetCluster>
-                <VerticleBanner backgroundImage='https://images.unsplash.com/photo-1502190643063-5e2579fa0317?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80'/>
+                <VerticleBanner backgroundImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1530484567812-2d5a2d82268c.jpeg'/>
 
                 </AppearHOC>
                 

@@ -37,11 +37,14 @@ export const CustomButtonInput = styled.button`
       cursor: pointer;
       overflow: hidden;
       position: relative;
-     
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       &:hover ${CustomButtonSlider} {
             transform: translate(100%, 0%) scaleX(1.1);
 
       }
+      z-index: 2;
 
       &:hover ${CustomButtonIcon} {
             transition: opacity 300ms 200ms ease;

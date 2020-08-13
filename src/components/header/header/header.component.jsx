@@ -32,6 +32,7 @@ import {
 import { CSSTransition }        from "react-transition-group";
 import { connect }              from "react-redux";
 import HeaderNav from "../header-nav/header-nav.component";
+import { withRouter } from "react-router";
 
 class Header extends React.Component {
     state = {
@@ -56,7 +57,7 @@ class Header extends React.Component {
         return (
             <HeaderContainer>
                 <HeaderSection>
-                    <HeaderLogo>F O X</HeaderLogo>
+                    <HeaderLogo onClick={() => this.props.history.push('/')}>F O X</HeaderLogo>
                 </HeaderSection>
                 <HeaderSection>
                     {this.state.isMobile ? null : <HeaderNav />}
@@ -310,4 +311,4 @@ const mapState = (state) => ({
     activeMenu: state.header.activeMobileMenu,
 });
 
-export default connect(mapState)(Header)
+export default withRouter(connect(mapState)(Header))

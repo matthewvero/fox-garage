@@ -20,15 +20,9 @@ class Banner extends React.Component {
 
       }
 
-      componentDidMount() {
-            window.addEventListener('scroll', () => this.handleScroll(this.myRef), {capture: true,
-                  passive: true})
-      }
+      
 
-      componentWillUnmount() {
-            window.removeEventListener('scroll', () => this.handleScroll(this.myRef), {capture: true,
-                  passive: true})
-      }
+      
 
       handleScroll(reference) {
             const elementHeight = reference.current.offsetTop - 500
@@ -42,6 +36,19 @@ class Banner extends React.Component {
                   
             
            
+      }
+
+      scrollHandler = () => {
+            this.handleScroll(this.myRef)
+      }
+
+      componentDidMount = () => {
+            window.addEventListener('scroll', this.scrollHandler, {capture: true,
+                  passive: true})
+      }
+
+      componentWillUnmount() {
+            window.removeEventListener('scroll', this.scrollHandler, true)
       }
 
       render(){

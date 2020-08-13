@@ -1,15 +1,21 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const QuickLinksContainer = styled.div`
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; 
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-`
+export const QuickLinkIcon = styled(FontAwesomeIcon)`
+      font-size: 5vw;
+      color: DODGERBLUE;
+      align-self: center;
+      transition: transform linear 100ms ;
+      @media (max-width: 1000px) {
+            font-size: 5vw;
 
+      }
+      @media (max-width: 750px) {
+            font-size: 7vw;
+      }
+      user-select: none
+
+`
 
 export const QuickLinkTitle = styled.div`
       font-size: 1.3vw;
@@ -33,24 +39,8 @@ export const QuickLinkTitle = styled.div`
       
 `
 
-export const QuickLinkIcon = styled(FontAwesomeIcon)`
-      font-size: 5vw;
-      color: DODGERBLUE;
-      align-self: center;
-      transition: transform linear 100ms ;
-      @media (max-width: 1000px) {
-            font-size: 5vw;
 
-      }
-      @media (max-width: 750px) {
-            font-size: 7vw;
-      }
-      user-select: none
-
-`
-// color: #8899aa;
-
-export const QuickLinksButton = styled.div`
+export const QuickLinksButtonContainer = styled.div`
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -96,3 +86,5 @@ export const QuickLinksButton = styled.div`
       }
       
 `
+
+

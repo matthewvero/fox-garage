@@ -16,34 +16,9 @@ import CardHeader from "../cards/card-header/card-header.component";
 import CardIcon from "../cards/card-icon/card-icon.component";
 import CardText from "../cards/card-text/card-text.component";
 
-const items = [
-    {
-        id: 1,
-        title: "HIGHLY TRAINED STAFF",
-        text:
-            "As the motor industry evolves, our technicians do too. Our car mechanics are highly skilled, with years of experience and industry-recognised training behind them.",
-    },
-    {
-        id: 2,
-        title: "PROFESSIONAL SERVICE",
-        text:
-            "As a family run business, nothing is more important to us than providing a professional service and a great experience - from our approachable sales team to our friendly receptionists.",
-    },
-    {
-        id: 3,
-        title: "GREAT VALUE",
-        text:
-            "Looking for a good price? Give us a call to get a quote for vehicle servicing, MOT testing, repairs, tyres, brakes and more. We're open and honest with our pricing, so you can be sure you're getting what you pay for.",
-    },
-    {
-        id: 4,
-        title: "PEACE OF MIND",
-        text:
-            "Our skilled technicians have many years of experience servicing vehicles in Camberley and surrounding regions. We're always here to offer you motoring advice, so pop in to see us today.",
-    },
-];
 
-const Carousel = () => {
+
+const Carousel = ({items}) => {
     const left = "+";
     const right = "-";
     const [activeCard, setActiveCard] = useState(1);

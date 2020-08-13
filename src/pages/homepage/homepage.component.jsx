@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { HomepageContainer } from "./homepage.styles";
+import React from "react";
+import { connect } from "react-redux";
+
+// COMPONENTS
 import WidgetCluster from "../../components/info-widget/widget-cluster/widget-cluster.component";
 import Widget from "../../components/info-widget/widget/widget.component";
 import PhoneNumber from "../../components/misc-components/phone-number/phone-number-component";
 import CustomButton from "../../components/custom-button/custom-button.component";
 import WidgetText from "../../components/info-widget/widget-text/widget-text.component";
 import Banner from "../../components/banner/banner-component";
-import WidgetParagraph from "../../components/info-widget/widget-paragraph/widget-paragraph.component";
-import Logo from "../../components/misc-components/logo/logo.component";
-import QuickLinks from "../../components/quicklinks/quicklinks.component";
+import QuickLinks from "../../components/quicklinks/quicklinks-container/quicklinks.component";
 import CardsContainerWidget from "../../components/cards/cards-widget/cards-widget.component";
 import Card from "../../components/cards/card-container/card.container.component";
 import CardHeader from "../../components/cards/card-header/card-header.component";
@@ -19,6 +19,11 @@ import {
     faOilCan,
     faClipboardList,
     faPlus,
+    faListAlt, 
+    faSnowflake, 
+    faDotCircle, 
+    faCogs, 
+    faBolt 
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "../../components/carousel/carousel.component";
 import {AppearHOC} from "../../components/appear-hoc/appear-hoc.component";
@@ -29,25 +34,17 @@ import ImageCardContentBox from "../../components/cards/image-card-content-box/i
 import ImageCarousel from "../../components/image-carousel/image-carousel.component";
 import { ImageCarouselSlide, CarouselTitle, CarouselSubtitle } from "../../components/image-carousel/image-carousel.styles";
 import CardSection from "../../components/cards/card-section/card-section.component";
+import Page from "../page/page.component";
+import { foxGarageTopServices, foxGarageServices } from "../../data/data";
+import QuickLinksButton from "../../components/quicklinks/quicklinks-button/quicklinks-button.component";
 
 
-const Homepage = () => {
-    const [isMobile, setIsMobile] = useState(
-        window.innerWidth > 1150 ? true : false
-    );
 
-    useEffect(() => {
-        const resizeListener = () => {
-            setIsMobile(window.innerWidth > 1150 ? true : false);
-        };
-        window.addEventListener("resize", resizeListener);
-        return () => {
-            window.removeEventListener("resize", resizeListener);
-        };
-    }, [isMobile]);
-
+const Homepage = ({isMobile, history}) => {
+    console.log(history)
     return (
-        <HomepageContainer>
+        
+        <Page>
 
             <HoveringBookNowButton/>
 
@@ -95,15 +92,15 @@ const Homepage = () => {
                               "
                 >
                     <WidgetText>
-                        BOSCH ACCREDITED AND RAC APPROVED SERVICING
+                        <span style={{color: 'DODGERBLUE'}}>BOSCH</span> ACCREDITED AND <span style={{color: 'orange'}}>RAC</span> APPROVED SERVICING
                     </WidgetText>
                 </Widget>
                 <Widget backgroundcolor="white">
                     <WidgetText color="#666666" textSize="heading">
                         Call Us To Book
                     </WidgetText>
-                    <PhoneNumber />
-                    <CustomButton $fontsize="2vw"> Our Prices</CustomButton>
+                    <PhoneNumber>01276 704600</PhoneNumber>
+                    <CustomButton $fontsize="2vw" $function={() => history.push('/prices')}> Book Now</CustomButton>
                 </Widget>
                 <Widget large warning>
                     <WidgetText textSize="heading">
@@ -122,7 +119,15 @@ const Homepage = () => {
             <WidgetCluster width="45vw">
                
                 <Widget>
-                    <QuickLinks></QuickLinks>
+                    <QuickLinks>
+                        <QuickLinksButton title='MOT' icon={faListAlt}/>
+                        <QuickLinksButton title='SERVICE' icon={faOilCan}/>
+                        <QuickLinksButton title='AIRCON' icon={faSnowflake}/>
+                        <QuickLinksButton title='TYRE FITTING' icon={faDotCircle}/>
+                        <QuickLinksButton title='CAMBELTS' icon={faCogs}/>
+                        <QuickLinksButton title='EV' icon={faBolt}/>
+
+                    </QuickLinks>
                 </Widget>
             </WidgetCluster>
 
@@ -204,7 +209,7 @@ const Homepage = () => {
                             Codes, Trading Standards, the AA and Farnborough
                             Technology College.
                         </WidgetText>
-                        <Carousel></Carousel>
+                        <Carousel items={foxGarageServices}></Carousel>
                     </Widget>
                 </WidgetCluster>
             )}
@@ -312,7 +317,7 @@ const Homepage = () => {
                             Codes, Trading Standards, the AA and Farnborough
                             Technology College.
                         </WidgetText>
-                        <Carousel></Carousel>
+                        <Carousel items={foxGarageTopServices}></Carousel>
                     </Widget>
                 </WidgetCluster>
             )}
@@ -449,10 +454,11 @@ const Homepage = () => {
                 </WidgetCluster>
                 </AppearHOC>
 
-
-
-
-        </HomepageContainer>
+        </Page>
     );
 };
-export default Homepage;
+
+const mapState = (state) => ({
+    isMobile: state.screenSize.isMobile
+})
+export default connect(mapState)(Homepage) ;

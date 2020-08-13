@@ -99,7 +99,7 @@ export const CarouselSlideIndicatorGroup = styled.div`
 export const CarouselIndicatorContainer = styled.div`
   width: 100%;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   height: 50px;
   display: flex; 
   flex-direction: row;

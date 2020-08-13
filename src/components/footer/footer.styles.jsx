@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
       max-width: 100vw;
-      height: 400px;
       display: flex;
-      flex-flow: row no-wrap; 
+      @media (max-width: 1000px) {
+            flex-flow: column nowrap; 
+            align-items: center;
+            justify-content: space-between;
+      }
+      flex-flow: row nowrap; 
       justify-content: space-between;
       background-color: #666666;
       padding: 20px;
@@ -14,7 +18,11 @@ export const FooterContainer = styled.div`
 export const FooterSection = styled.div`
       display: flex; 
       flex-flow: row wrap; 
-      width: 30%;
+      width: 40%;
+      @media (max-width: 1000px){
+            width: 80%;
+            margin: 20px 0;
+      }
       padding: 20px;
       justify-content: space-between;
       background-color: #444444;

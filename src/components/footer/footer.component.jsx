@@ -46,12 +46,12 @@ const Footer = () => {
                         </FooterList>
                         <FooterList>
                               <FooterHeader>OPENING TIMES</FooterHeader>
-                              <FooterListItem><span>Monday:</span> <span>08:00 to 18:00</span></FooterListItem>
-                              <FooterListItem><span>Tuesday:</span> <span>08:00 to 18:00</span></FooterListItem>
-                              <FooterListItem><span>Wednesday:</span> <span>08:00 to 18:00</span></FooterListItem>
-                              <FooterListItem><span>Thursday:</span> <span>08:00 to 18:00</span></FooterListItem>
-                              <FooterListItem><span>Friday:</span> <span>08:00 to 18:00</span></FooterListItem>
-                              <FooterListItem><span>Saturday:</span> <span>08:00 to 14:00</span></FooterListItem>
+                              <FooterListItem><span>Monday:</span> <span>08:00 - 18:00</span></FooterListItem>
+                              <FooterListItem><span>Tuesday:</span> <span>08:00 - 18:00</span></FooterListItem>
+                              <FooterListItem><span>Wednesday:</span> <span>08:00 - 18:00</span></FooterListItem>
+                              <FooterListItem><span>Thursday:</span> <span>08:00 - 18:00</span></FooterListItem>
+                              <FooterListItem><span>Friday:</span> <span>08:00 - 18:00</span></FooterListItem>
+                              <FooterListItem><span>Saturday:</span> <span>08:00 - 14:00</span></FooterListItem>
                               <FooterListItem><span>Sunday:</span> <span>Closed</span></FooterListItem>
                               
 

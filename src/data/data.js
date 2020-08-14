@@ -64,8 +64,9 @@ export const servicesAndPrices = {
                 },
                 title: "Standard Service With MOT",
                 key: "standardServiceMOT",
-                backgroundImage:
-                    "https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg",
+                image:
+                "https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg", 
+                preLoadImage: 'https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -75,8 +76,9 @@ export const servicesAndPrices = {
                 },
                 title: "Complete Service With MOT",
                 key: "completeServiceMOT",
-                backgroundImage:
+                image:
                     "https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -86,8 +88,9 @@ export const servicesAndPrices = {
                 },
                 title: "MOT Check: All Engines",
                 key: "MOTCheck",
-                backgroundImage:
-                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg",
+                image:
+                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?w=600&h=500",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -97,8 +100,9 @@ export const servicesAndPrices = {
                 },
                 title: "MOT Check: New Customers",
                 key: "MOTCheckNewCustomers",
-                backgroundImage:
-                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg",
+                image:
+                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?w=600&h=500",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?profile=blurred%20preload'
             },
         ],
     },
@@ -113,8 +117,9 @@ export const servicesAndPrices = {
                 },
                 title: "Standard Service",
                 key: "standardService",
-                backgroundImage:
+                image:
                     "https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -124,8 +129,9 @@ export const servicesAndPrices = {
                 },
                 title: "Complete Service",
                 key: "completeService",
-                backgroundImage:
+                image:
                     "https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1487754180451-c456f719a1fc.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -135,8 +141,9 @@ export const servicesAndPrices = {
                 },
                 title: "Standard Service With MOT",
                 key: "standardServiceMOT",
-                backgroundImage:
-                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg",
+                image:
+                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?w=600&h=500",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -146,8 +153,9 @@ export const servicesAndPrices = {
                 },
                 title: "Complete Service With MOT",
                 key: "completeServiceMOT",
-                backgroundImage:
-                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg",
+                image:
+                    "https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?w=600&h=500",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1530046339160-ce3e530c7d2f.jpeg?profile=blurred%20preload'
             },
         ],
     },
@@ -162,8 +170,9 @@ export const servicesAndPrices = {
                 },
                 title: "Free Winter Safety Check",
                 key: "winterSafetyCheck",
-                backgroundImage:
-                    "https://printrat.sirv.com/fox/photo-1512566393827-78dc4c8d8292.jpeg",
+                image:
+                    "https://printrat.sirv.com/fox/photo-1512566393827-78dc4c8d8292.jpeg?h=900",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1512566393827-78dc4c8d8292.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -173,8 +182,9 @@ export const servicesAndPrices = {
                 },
                 title: "Free Wheel Alignment Check",
                 key: "wheelAlignmentCheck",
-                backgroundImage:
+                image:
                     "https://printrat.sirv.com/fox/photo-1542377281-73d08e3a10aa.jpeg",
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1542377281-73d08e3a10aa.jpeg?profile=blurred%20preload'
             },
             {
                 prices: {
@@ -184,8 +194,9 @@ export const servicesAndPrices = {
                 },
                 title: "Free Battery Check",
                 key: "freeBatteryCheck",
-                backgroundImage:
-                    "https://printrat.sirv.com/fox/photo-1523349858072-b5440e970531.jpeg",
+                image:
+                    "https://printrat.sirv.com/fox/photo-1523349858072-b5440e970531.jpeg?w=1000", 
+                    preLoadImage: 'https://printrat.sirv.com/fox/photo-1523349858072-b5440e970531.jpeg?profile=blurred%20preload'
             },
         ],
     },

@@ -5,8 +5,8 @@ export const VerticleBannerHeading = styled.div`
       color: white;
       font-weight: 600;
       text-align: left;
-      z-index: 2;
-      position: absolute
+      z-index: 1;
+      position: absolute;
       top: 20px;
       left: 20px;
       transition: all 200ms 200ms ease;
@@ -29,9 +29,6 @@ export const VerticleBannerFader = styled.div`
 export const VerticleBannerContainer = styled.div`
       width: 15vw;
       height: 35vw;
-      background-image: url(${props => props.backgroundImage});
-      background-position: center;
-      background-size: cover; 
       position: relative;
       box-shadow: 0 0 10px #222222;
       cursor: pointer;

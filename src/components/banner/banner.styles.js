@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const BannerBackground = styled.div`
     width: 100%;
     height: 100%;
@@ -31,30 +30,9 @@ export const BannerContainer = styled.div`
     justify-content: space-between;
     box-shadow: 0 0 10px #222222;
     overflow: hidden;
-    &:hover ${BannerBackground} {
-        transform: scale(1.1);
-    }
     &:hover ${BackgroundFade} {
         background-color: rgba(50, 50, 50, 0.2);
     }
-
-    ${props => props.animate ? 
-        `
-        &:hover ${BackgroundFade}{
-            background-color: rgba(75, 75, 75, 0.8);
-        }
-        ${BannerBackground} {
-            transform: scale(1.1);
-        }
-        ${BackgroundFade} {
-            transition: background-color ease 1s;
-            background-color: rgba(50, 50, 50, 0.2);
-            
-        }
-        ` 
-        : null
-    }
-
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);

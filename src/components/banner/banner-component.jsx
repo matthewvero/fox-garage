@@ -1,61 +1,23 @@
-import React, { createRef }   from 'react'
+import React from 'react'
 import { 
       BannerContainer, 
       BackgroundFade, 
       BannerTitle, 
       BannerTextContainer, 
       BannerImage,
-      BannerSubtitle, 
-      BannerBackground 
-}                             from './banner.styles'
+      BannerSubtitle,  
+} from './banner.styles'
+import Image from '../image/image.component';
 
 class Banner extends React.Component {
-      constructor(props) {
-            super(props)
-            this.myRef = createRef();
-      }
-      
-      state = {
-            animate: false
 
-      }
-
-      
-
-      
-
-      handleScroll(reference) {
-            const elementHeight = reference.current.offsetTop - 500
-            const currentState = this.state.animate
-            if ( window.pageYOffset > elementHeight && currentState !== true) {
-                  this.setState({animate: true}) 
-            } else if (window.pageYOffset < elementHeight && currentState !== false){
-                  this.setState({animate: false}) 
-                  
-            } 
-                  
-            
-           
-      }
-
-      scrollHandler = () => {
-            this.handleScroll(this.myRef)
-      }
-
-      componentDidMount = () => {
-            window.addEventListener('scroll', this.scrollHandler, {capture: true,
-                  passive: true})
-      }
-
-      componentWillUnmount() {
-            window.removeEventListener('scroll', this.scrollHandler, true)
-      }
 
       render(){
             return (
-            <BannerContainer ref={this.myRef} animate={this.state.animate} verticle={this.props.verticle}>
-                  <BannerBackground
-                        backgroundImage='https://images.unsplash.com/photo-1471174617910-3e9c04f58ff5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80'
+            <BannerContainer >
+                  <Image
+                        $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1471174617910-3e9c04f58ff5.jpeg?cy=1000&ch=500'
+                        $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1471174617910-3e9c04f58ff5.jpeg?cy=80&ch=50&blur=15&h=200'
                   />
                   <BackgroundFade/>
                   <BannerTextContainer>

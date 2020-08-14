@@ -10,9 +10,6 @@ export const ImageCarouselContainer = styled.div`
 export const ImageCarouselSlide = styled.div`
       width: 100%;
       height: 100%;
-      background-image: url('${props => props.backgroundImage}');
-      background-position: center;
-      background-size: cover; 
       display: flex; 
       flex-direction: column;
       align-content: center; 

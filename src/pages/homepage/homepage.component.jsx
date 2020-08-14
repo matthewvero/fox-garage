@@ -425,49 +425,68 @@ const Homepage = ({isMobile, history}) => {
                         
                     </Widget>
                     <CardsContainerWidget grid >
-                        <Card 
-                            backgroundImage='https://images.unsplash.com/photo-1544361263-b86bdea95bf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'
-                        >
+                        <Card>
+                            <Image 
+                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1544361263-b86bdea95bf3.jpeg?w=500&h=600'
+                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1544361263-b86bdea95bf3.jpeg?profile=blurred%20preload'    
+                            />
                             <ImageCardContentBox  topColor='rgb(50,200,150)'/>
                             
                             <CardHeader
-                            color='rgb(50,200,150)'
-                            >How To Guides</CardHeader>
+                                color='rgb(50,200,150)'
+                            >
+                                How To Guides
+                            </CardHeader>
                             
                             <CardText>
                                 TOP 3 WINTER DRIVING TIPS
                             </CardText>
                         </Card>
-                        <Card backgroundImage='https://images.unsplash.com/photo-1545100400-91bc4c592aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2467&q=80'>
-                        <ImageCardContentBox  topColor='rgb(70,214,224)'/>
-                        <CardHeader
-                        color='rgb(70,214,224)'
-                        >Car Maintenance</CardHeader>
+
+                        <Card>
+                            <Image 
+                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1545100400-91bc4c592aa0.jpeg?w=500&h=600'
+                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1545100400-91bc4c592aa0.jpeg?profile=blurred%20preload'    
+                            />
+                            <ImageCardContentBox  topColor='rgb(70,214,224)'/>
+                            <CardHeader
+                                color='rgb(70,214,224)'
+                            >
+                                Car Maintenance
+                            </CardHeader>
 
                             <CardText>
                                 3 SIGNS YOUR CAR BATTERY IS ABOUT TO DIE
                             </CardText>
                         </Card>
-                        <Card 
-                        backgroundImage='https://images.unsplash.com/photo-1551384051-7400776bbd49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'
-                        >
-
-                        <ImageCardContentBox  topColor='rgb(50,200,150)'/>
+                        <Card >
+                            <Image 
+                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1551384051-7400776bbd49.jpeg?w=500&h=600'
+                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1551384051-7400776bbd49.jpeg?profile=blurred%20preload'    
+                            />
+                            <ImageCardContentBox  topColor='rgb(50,200,150)'/>
 
                             <CardHeader
-                            color='rgb(50,200,150)'
-                            >How To Guides</CardHeader>
+                                color='rgb(50,200,150)'
+                            >
+                                How To Guides
+                            </CardHeader>
                             <CardText>
                                 HOW TO PREPARE YOUR CAR FOR THE COLDEST WINTER IN 5 YEARS
                             </CardText>
                         </Card>
-                        <Card 
-                        backgroundImage='https://images.unsplash.com/photo-1571775300511-ef41b23ce413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'>
-                        <ImageCardContentBox  topColor='rgb(100,100,255)'/>
+                        <Card>
+                            <Image 
+                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1571775300511-ef41b23ce413.jpeg?w=500&h=600'
+                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1571775300511-ef41b23ce413.jpeg?profile=blurred%20preload'    
+                            />
+                            <ImageCardContentBox  topColor='rgb(100,100,255)'/>
 
                             <CardHeader
-                            color='rgb(100,100,255)'
-                            >Motor Industry News</CardHeader>
+                                color='rgb(100,100,255)'
+                            >
+                                Motor Industry News
+                            </CardHeader>
                             <CardText>
                                 WHAT IS THE FOXY LADY DRIVING CLUB
                             </CardText>

@@ -33,6 +33,7 @@ import { CSSTransition }        from "react-transition-group";
 import { connect }              from "react-redux";
 import HeaderNav from "../header-nav/header-nav.component";
 import { withRouter } from "react-router";
+import { selectEngineType } from "../../../redux/engine-selector/engine-selector.actions";
 
 class Header extends React.Component {
     state = {
@@ -77,33 +78,32 @@ class Header extends React.Component {
                                     <DropdownMenuSection>
                                         <DropDownMenuItem
                                             leftIcon={faPoundSign}
-                                            action={'menu-link'}
-                                            menu='prices'
+                                            $action={'menu-link'}
+                                            $menu='prices'
                                             rightIcon={faChevronRight}
                                         >
                                             Prices
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faAlignJustify}
-                                            action={'menu-link'}
-                                            menu='services'
+                                            $action={'menu-link'}
+                                            $menu='services'
                                             rightIcon={faChevronRight}
-
                                         >
                                             Services
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faComment}
-                                            action={'menu-link'}
-                                            menu='blog'
+                                            $action={'menu-link'}
+                                            $menu='blog'
                                             rightIcon={faChevronRight}
                                         >
                                             Blog
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faCloud}
-                                            action={'menu-link'}
-                                            menu='about us'
+                                            $action={'menu-link'}
+                                            $menu='about us'
                                             rightIcon={faChevronRight}
 
                                         >
@@ -126,26 +126,33 @@ class Header extends React.Component {
                                     <DropdownMenuSection>
                                         <DropDownMenuItem
                                             leftIcon={faChevronLeft}
-                                            action={'menu-link'}
-                                            menu='main'
+                                            $action={'menu-link'}
+                                            $menu='main'
                                         >
                                             Back
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            
+                                            $action={'link'}
+                                            $route={'/prices'}
                                             rightIcon={faChevronRight}
+                                            $function={() => this.props.dispatch(selectEngineType('2L'))}
                                         >
                                             Less Than 2.0 Litres
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            
+                                            $action={'link'}
+                                            $route={'/prices'}
                                             rightIcon={faChevronRight}
+                                            $function={() => this.props.dispatch(selectEngineType('2L-3L'))}
                                         >
                                             2.1 To 3.0 Litres
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            
+                                            $action={'link'}
+                                            $route={'/prices'}
                                             rightIcon={faChevronRight}
+                                            $location={this.props.location.pathname}
+                                            $function={() => this.props.dispatch(selectEngineType('3L+'))}
                                         >
                                             3.1 litres + 
                                         </DropDownMenuItem>
@@ -160,8 +167,8 @@ class Header extends React.Component {
                                     <DropdownMenuSection>
                                     <DropDownMenuItem
                                             leftIcon={faChevronLeft}
-                                            action={'menu-link'}
-                                            menu='main'
+                                            $action={'menu-link'}
+                                            $menu='main'
                                         >
                                             Back
                                         </DropDownMenuItem>
@@ -248,8 +255,8 @@ class Header extends React.Component {
                                     <DropdownMenuSection>
                                         <DropDownMenuItem
                                             leftIcon={faChevronLeft}
-                                            action={'menu-link'}
-                                            menu='main'
+                                            $action={'menu-link'}
+                                            $menu='main'
                                         >
                                             Back
                                         </DropDownMenuItem>
@@ -279,8 +286,8 @@ class Header extends React.Component {
                                     <DropdownMenuSection>
                                         <DropDownMenuItem
                                             leftIcon={faChevronLeft}
-                                            action={'menu-link'}
-                                            menu='main'
+                                            $action={'menu-link'}
+                                            $menu='main'
                                         >
                                             Back
                                         </DropDownMenuItem>

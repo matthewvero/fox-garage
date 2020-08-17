@@ -8,6 +8,7 @@ import {
 } from "./dropdown-menu-item.styles";
 import { connect } from "react-redux";
 import { setActiveMenu } from "../../redux/header/header.actions";
+import { withRouter } from "react-router";
 
 class DropDownMenuItem extends React.Component {
 
@@ -17,10 +18,19 @@ class DropDownMenuItem extends React.Component {
     handleClick = () => {
         this.setState({animate: true})
 
-        if(this.props.action === 'menu-link') {
-            this.props.setActiveMenu(this.props.menu)
+        if(this.props.$action === 'menu-link') {
+            this.props.setActiveMenu(this.props.$menu)
 
         }
+
+        if(this.props.$action === 'link') {
+            this.props.history.push(`/${this.props.$route}`)
+        }
+
+        if(this.props.$function) {
+            this.props.$function()
+        }
+
     }
     
     render() {
@@ -53,4 +63,4 @@ const dispatchProps = (dispatch) => ({
 
 })
 
-export default connect(null, dispatchProps)(DropDownMenuItem);
+export default withRouter(connect(null, dispatchProps)(DropDownMenuItem));

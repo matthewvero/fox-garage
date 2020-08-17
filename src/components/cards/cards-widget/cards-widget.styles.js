@@ -13,7 +13,7 @@ export const CardsWidgetcontainer = styled.div`
       }
 
       @media (max-width: 1000px){
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             ${props => props.mini ? 
                   'flex-flow: row wrap;'
                   :

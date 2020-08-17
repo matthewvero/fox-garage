@@ -6,7 +6,7 @@ import { QuickLinksContainer }  from './quicklinks.styles'
 const QuickLinks = ({children}) => {
       return (
             
-                  <QuickLinksContainer>
+                  <QuickLinksContainer >
                         {children}
                   </QuickLinksContainer>
       

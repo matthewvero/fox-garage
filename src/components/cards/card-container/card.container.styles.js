@@ -26,12 +26,14 @@ export const CardContainer = styled.div`
                         width: 80%;
                         height: 10vw;
                         justify-content: space-between;
+                        margin: 5px;
                   }
             `
             :
             `
             @media (max-width: 1000px) {
-                  width: 35%;
+                  margin: 20px 0;
+                  width: 40%;
                   justify-content: center;
             }
                   height: 20vw;

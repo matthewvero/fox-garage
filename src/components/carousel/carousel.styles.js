@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const CarouselContainer = styled.div`
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-color: white;
     overflow: hidden;
     position: relative;
@@ -28,7 +28,7 @@ export const CarouselCard = styled.div`
 `;
 
 export const CarouselCardSection = styled.div`
-    padding: 10px;
+    padding: 30px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -73,9 +73,9 @@ export const CarouselButton = styled(FontAwesomeIcon)`
 `;
 
 export const CarouselButtonLeft = styled(CarouselButton)`
-    left: 5%;
+    left: 0%;
 `;
 
 export const CarouselButtonRight = styled(CarouselButton)`
-    right: 5%;
+    right: 0%;
 `;

@@ -10,19 +10,24 @@ import { setIsMobile } from "./redux/screen-size/screen-size.actions";
 import { connect } from "react-redux";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Wrapper } from "./pages/page/page-transition-wrapper";
+import MOTPage from "./pages/motpage/motpage.component";
 
-
-function App({setIsMobile, location}) {
+function App({setIsMobile, location, history}) {
 
     const [isMobile, setIsMobileHook] = useState(window.innerWidth > 1150 ? true : false);
 
     const debouncedIsMobile = useDebounce(isMobile, 500)
+    // prevent resize listener from firing too quickly
+
+    history.listen((location, action) => {
+      window.scrollTo(0, 0)
+    }) // Check if the history changes and reset scroll
+  
 
     useEffect(() => {
         const resizeListener = () => {
             setIsMobileHook(window.innerWidth > 1150 ? true : false);
         };
-
         window.addEventListener("resize", resizeListener, {passive: true});
         return () => {
             window.removeEventListener("resize", resizeListener);
@@ -47,6 +52,7 @@ function App({setIsMobile, location}) {
                 <Switch location={location}>
                     <Route exact path="/" component={Homepage} />
                     <Route  exact path="/prices" component={BookingPage} />
+                    <Route exact path='/mot' component={MOTPage}/>
                 </Switch>
                 </CSSTransition>
               </TransitionGroup>

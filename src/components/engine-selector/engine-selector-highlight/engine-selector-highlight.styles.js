@@ -14,8 +14,6 @@ export const EngineSelectorButtonHighlight = styled.div`
                   return 'transform: translateX(0);'
             }
       }}
-
-      ${props => console.log(props)}
       right: 0;
       top: 0px;
       z-index: 1;

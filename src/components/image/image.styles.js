@@ -11,5 +11,4 @@ export const ImageMain = styled.img`
 export const ImagePreLoad = styled(ImageMain)`
       transition: opacity 400ms ease;
       opacity: ${props => props.loaded ? '0' : '1'};
-      ${props => props.loaded && console.log('loaded verticle')}
 `

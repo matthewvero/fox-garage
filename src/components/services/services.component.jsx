@@ -1,7 +1,6 @@
 import React from 'react'
-import { ServicesContainer, ServiceTileContainer, ServiceTileTitle, ServiceTileBackgroundFader } from './services.styles'
+import { ServicesContainer, ServiceTileContainer, ServiceTileTitle, ServiceTileBackgroundFader, ServiceTileButton } from './services.styles'
 import { connect } from 'react-redux'
-import CustomButton from '../custom-button/custom-button.component'
 import Image from '../image/image.component'
 
 const Services = ({engineSize, data, tileColor}) => {
@@ -13,14 +12,14 @@ const Services = ({engineSize, data, tileColor}) => {
                   {
                         data.services.map (el => {
                               return (
-                                    <ServiceTileContainer $backgroundImage={el.backgroundImage}>
+                                    <ServiceTileContainer $backgroundImage={el.backgroundImage} $titleBlock>
                                           <Image
                                                 $image={el.image}
                                                 $preLoadImage={el.preLoadImage}
                                           />
                                           <ServiceTileBackgroundFader/>
                                           <ServiceTileTitle>{el.title}</ServiceTileTitle>
-                                          <CustomButton $fontsize='1.2vw'><span>Book Now</span><span>{el.prices[engineSize]}</span></CustomButton>
+                                          <ServiceTileButton><span>Book Now</span><span>{el.prices[engineSize]}</span></ServiceTileButton>
                                     </ServiceTileContainer>
                               )
                         })

@@ -42,7 +42,6 @@ import Image from "../../components/image/image.component";
 
 
 const Homepage = ({isMobile, history}) => {
-    console.log(history)
     return (
         
         <Page>
@@ -137,7 +136,7 @@ const Homepage = ({isMobile, history}) => {
                
                 <Widget>
                     <QuickLinks>
-                        <QuickLinksButton title='MOT' icon={faListAlt}/>
+                        <QuickLinksButton title='MOT' icon={faListAlt} $function={() => history.push('/mot')}/>
                         <QuickLinksButton title='SERVICE' icon={faOilCan}/>
                         <QuickLinksButton title='AIRCON' icon={faSnowflake}/>
                         <QuickLinksButton title='TYRE FITTING' icon={faDotCircle}/>

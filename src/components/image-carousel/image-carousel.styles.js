@@ -49,10 +49,20 @@ export const CarouselButton = styled(FontAwesomeIcon)`
   padding: 0 100px;
   @media (max-width: 1000px){
     padding: 0 50px;
+    &:active {
+      background-color: rgba(50,50,50, 0.7);
+    }
+  }
+  @media (max-with: 800px) {
+    padding: 0 25px;
 
   }
-  &:hover {
-        background-color: rgba(50,50,50, 0.7);
+
+  @media (min-width: 1000px) {
+    &:hover {
+          background-color: rgba(50,50,50, 0.7);
+    }
+
   }
 `
 
@@ -114,21 +124,27 @@ export const CarouselFader = styled.div`
 `
 
 export const CarouselTitle = styled.div`
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 600;
   color: ${props => props.color};
   ${props => props.alignment === 'left' ? 'align-self: flex-start;' : null}
   ${props => props.alignment === 'right' ? 'align-self: flex-end;' : null}
   margin: 0 15vw;
   z-index: 1;
+  @media (max-width: 1150px) {
+    font-size: 5vw;
+  }
 
 `
 export const CarouselSubtitle = styled.div`
-  font-size: 2rem; 
+  font-size: 2vw; 
   color: ${props => props.color};
   font-weight: 600;
   ${props => props.alignment === 'left' ? 'align-self: flex-start;' : null}
   ${props => props.alignment === 'right' ? 'align-self: flex-end;' : null}
   margin: 0 15vw;
   z-index: 1;
+  @media (max-width: 1150px) {
+    font-size: 4vw;
+  }
   `

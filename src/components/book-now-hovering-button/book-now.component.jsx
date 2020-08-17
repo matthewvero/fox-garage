@@ -1,9 +1,10 @@
 import React from 'react'
 import {BookNowButtonContainer, BookNowIcon, BookNowText} from './book-now.styles'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-const HoveringBookNowButton = () => {
+import { withRouter } from 'react-router'
+const HoveringBookNowButton = ({history}) => {
       return (
-            <BookNowButtonContainer>
+            <BookNowButtonContainer onClick={() => history.push('/prices')}>
                    <BookNowIcon icon={faPlus}/>
                   <BookNowText>
                         Book Now
@@ -12,4 +13,4 @@ const HoveringBookNowButton = () => {
       )
 }
 
-export default HoveringBookNowButton
+export default withRouter(HoveringBookNowButton) 

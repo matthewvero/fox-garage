@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const EngineSelectorContainer = styled.div`
       width: 100%;
-      height: 25vh;
+      height: 10vw;
       background-color: #555555;
       display: flex;
       flex-direction: row;
@@ -28,6 +28,10 @@ export const EngineSelectorContainer = styled.div`
             transform: translateY(-100%);
             transition: transform 400ms ease;
           }
+
+      @media (max-width: 1150px) {
+            height: 15vw;
+      }
 `
 
 export const EngineSelectorButtonGroup = styled.div`
@@ -58,12 +62,18 @@ export const EngineSelectorButtonIcon = styled(FontAwesomeIcon)`
       font-size: 2vw;
       color: DODGERBLUE;
       margin: 5px;
+      @media (max-width: 1150px) {
+            font-size: 3vw;
+      }
 `
 export const EngineSelectorButtonTitle = styled.div`
       height: 30%;
       width: 100%;
       font-size: 2vw;
       color: white;
+      @media (max-width: 1150px) {
+            font-size: 3vw;
+      }
 `
 
 export const EngineSelectorTitle = styled.div`
@@ -75,4 +85,7 @@ export const EngineSelectorTitle = styled.div`
           align-items: center;
           font-size: 1.5vw;
           color: white;
+          @media (max-width: 1150px) {
+                font-size: 2vw;
+          }
 `

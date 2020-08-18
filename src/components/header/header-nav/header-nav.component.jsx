@@ -8,6 +8,8 @@ import { HeaderNavComponent } from "./header-nav.styles";
 import { CSSTransition } from "react-transition-group";
 import HeaderNavDropdown from "../header-nav-dropdown/header-nav-dropdown.component";
 import DropDownMenuItem from "../../dropdown-menu-item/dropdown-menu-item.component";
+import { connect } from "react-redux";
+import { selectEngineType } from "../../../redux/engine-selector/engine-selector.actions";
 
 class HeaderNav extends React.Component {
     state = {
@@ -31,13 +33,31 @@ class HeaderNav extends React.Component {
                         unmountOnExit
                     >
                         <HeaderNavDropdown>
-                            <DropDownMenuItem header rightIcon={faChevronRight}>
+                            <DropDownMenuItem 
+                                header
+                                rightIcon={faChevronRight}
+                                $action='link'
+                                $route='prices'
+                                $function={() => this.props.dispatch(selectEngineType('2L'))}
+                            >
                                 Less Than 2.0 Litres
                             </DropDownMenuItem>
-                            <DropDownMenuItem header rightIcon={faChevronRight}>
+                            <DropDownMenuItem 
+                                header
+                                rightIcon={faChevronRight}
+                                $action='link'
+                                $route='prices'
+                                $function={() => this.props.dispatch(selectEngineType('2L-3L'))}
+                            >
                                 2.1 To 3.0 Litres
                             </DropDownMenuItem>
-                            <DropDownMenuItem header rightIcon={faChevronRight}>
+                            <DropDownMenuItem 
+                                header
+                                rightIcon={faChevronRight}
+                                $action='link'
+                                $route='prices'
+                                $function={() => this.props.dispatch(selectEngineType('3L+'))}
+                            >
                                 3.1 litres +
                             </DropDownMenuItem>
                         </HeaderNavDropdown>
@@ -59,7 +79,12 @@ class HeaderNav extends React.Component {
                         unmountOnExit
                     >
                         <HeaderNavDropdown>
-                            <DropDownMenuItem rightIcon={faChevronRight} header>
+                            <DropDownMenuItem 
+                                header
+                                rightIcon={faChevronRight}
+                                $action='link'
+                                $route='mot'
+                            >
                                 MOT Test
                             </DropDownMenuItem>
                             <DropDownMenuItem rightIcon={faChevronRight} header>
@@ -154,4 +179,4 @@ class HeaderNav extends React.Component {
     }
 }
 
-export default HeaderNav;
+export default connect()(HeaderNav)

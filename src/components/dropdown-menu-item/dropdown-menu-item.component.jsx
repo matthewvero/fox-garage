@@ -7,8 +7,9 @@ import {
     IconContainer,
 } from "./dropdown-menu-item.styles";
 import { connect } from "react-redux";
-import { setActiveMenu } from "../../redux/header/header.actions";
+import { setActiveMenu, toggleMobileMenu } from "../../redux/header/header.actions";
 import { withRouter } from "react-router";
+
 
 class DropDownMenuItem extends React.Component {
 
@@ -18,18 +19,26 @@ class DropDownMenuItem extends React.Component {
     handleClick = () => {
         this.setState({animate: true})
 
-        if(this.props.$action === 'menu-link') {
-            this.props.setActiveMenu(this.props.$menu)
-
-        }
-
-        if(this.props.$action === 'link') {
-            this.props.history.push(`/${this.props.$route}`)
+        switch(this.props.$action) {
+            case('menu-link'):
+                this.props.setActiveMenu(this.props.$menu)
+                break;
+            case('link'):
+                this.props.history.push(this.props.$route)
+                break;
+            case('mobile-menu-link'):
+                this.props.history.push(`${this.props.$route}`)
+                this.props.toggleMobileMenu()
+                break;
+            default:
+                return;
         }
 
         if(this.props.$function) {
             this.props.$function()
         }
+
+        
 
     }
     
@@ -59,7 +68,8 @@ class DropDownMenuItem extends React.Component {
 };
 
 const dispatchProps = (dispatch) => ({
-    setActiveMenu: menu => dispatch(setActiveMenu(menu))
+    setActiveMenu: menu => dispatch(setActiveMenu(menu)),
+    toggleMobileMenu: () => dispatch(toggleMobileMenu())
 
 })
 

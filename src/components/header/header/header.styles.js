@@ -10,12 +10,12 @@ export const HeaderContainer = styled.div`
     flex-direction: row;
     height: 10vh;
     justify-content: space-between;
-
+    box-shadow: 2px 2px 10px #222222;
     background-color: #666666;
     z-index: 5;
     color: white;
 `;
-//    box-shadow: 2px 2px 10px #222222;
+//    
 export const HeaderNavComponent = styled.div`
     padding: 0px 1.5vw;
     height: 100%;

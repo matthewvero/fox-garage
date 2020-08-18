@@ -132,7 +132,7 @@ class Header extends React.Component {
                                             Back
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            $action={'link'}
+                                            $action={'mobile-menu-link'}
                                             $route={'/prices'}
                                             rightIcon={faChevronRight}
                                             $function={() => this.props.dispatch(selectEngineType('2L'))}
@@ -140,7 +140,7 @@ class Header extends React.Component {
                                             Less Than 2.0 Litres
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            $action={'link'}
+                                            $action={'mobile-menu-link'}
                                             $route={'/prices'}
                                             rightIcon={faChevronRight}
                                             $function={() => this.props.dispatch(selectEngineType('2L-3L'))}
@@ -148,7 +148,7 @@ class Header extends React.Component {
                                             2.1 To 3.0 Litres
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
-                                            $action={'link'}
+                                            $action={'mobile-menu-link'}
                                             $route={'/prices'}
                                             rightIcon={faChevronRight}
                                             $location={this.props.location.pathname}
@@ -167,14 +167,15 @@ class Header extends React.Component {
                                     <DropdownMenuSection>
                                     <DropDownMenuItem
                                             leftIcon={faChevronLeft}
-                                            $action={'menu-link'}
+                                            $action='menu-link'
                                             $menu='main'
                                         >
                                             Back
                                         </DropDownMenuItem>
                                         <DropDownMenuItem
                                             leftIcon={faCheck}
-                                            
+                                            $action='mobile-menu-link'
+                                            $route='mot'
                                         >
                                             MOT Test
                                         </DropDownMenuItem>

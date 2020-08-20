@@ -12,7 +12,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Wrapper } from "./pages/page/page-transition-wrapper";
 import MOTPage from "./pages/motpage/motpage.component";
 import CompleteServicePage from "./pages/completeservicepage/completeservicepage.component";
-
+import StandardServicePage from './pages/standardservicepage/standardservicepage.component';
 function App({setIsMobile, location, history}) {
 
     const [isMobile, setIsMobileHook] = useState(window.innerWidth > 1150 ? true : false);
@@ -55,7 +55,7 @@ function App({setIsMobile, location, history}) {
                     <Route exact path="/prices" component={BookingPage} />
                     <Route exact path='/mot' component={MOTPage}/>
                     <Route exact path='/completeservice' component={CompleteServicePage}/>
-                    <Route exact path='/standardservice' component={CompleteServicePage}/>
+                    <Route exact path='/standardservice' component={StandardServicePage}/>
                     
                 </Switch>
                 </CSSTransition>

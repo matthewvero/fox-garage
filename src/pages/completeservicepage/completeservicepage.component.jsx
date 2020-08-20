@@ -22,72 +22,71 @@ import QuickLinks from '../../components/quicklinks/quicklinks-container/quickli
 import QuickLinksButton from '../../components/quicklinks/quicklinks-button/quicklinks-button.component';
 import NewsCards from '../../components/news-cards/news-cards.component';
 import { connect } from 'react-redux';
-import CustomButton from '../../components/custom-button/custom-button.component';
 const CompleteServicePage = ({isMobile, history}) => {
       
       return (
-            <Page>
+      <Page>
             <InfoPageHeader>
-            <InfoPageHeaderTextContainer>
+                  <InfoPageHeaderTextContainer>
 
-                  <InfoPageTextHeadingSection>
-                        <span>Fox Garage Camberley</span>
-                  </InfoPageTextHeadingSection>
+                        <InfoPageTextHeadingSection>
+                              <span>Fox Garage Camberley</span>
+                        </InfoPageTextHeadingSection>
 
-                  <InfoPageTextHeadingSection>
-                        <span>Complete Service</span>
-                  </InfoPageTextHeadingSection>
+                        <InfoPageTextHeadingSection>
+                              <span>Complete Service</span>
+                        </InfoPageTextHeadingSection>
 
-                  <InfoPageTextList>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span> 
-                              Fully Qualified Technicians
-                        </InfoPageTextListItem>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span>
-                              All Makes & Models
-                        </InfoPageTextListItem>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span>
-                              Comprehensive Checks
-                        </InfoPageTextListItem>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span>
-                              Collection Service
-                        </InfoPageTextListItem>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span>
-                              Simple Online Booking
-                        </InfoPageTextListItem>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span>
-                              Competitive Pricing
-                        </InfoPageTextListItem>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span>
-                              Three Types of Service
-                        </InfoPageTextListItem>
-                        <InfoPageTextListItem>
-                              <span>
-                                    <FontAwesomeIcon icon={faChevronRight}/>
-                              </span>
-                              Fox Garage Warranty
-                        </InfoPageTextListItem>
-                  </InfoPageTextList>
+                        <InfoPageTextList>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span> 
+                                    Fully Qualified Technicians
+                              </InfoPageTextListItem>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span>
+                                    All Makes & Models
+                              </InfoPageTextListItem>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span>
+                                    Comprehensive Checks
+                              </InfoPageTextListItem>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span>
+                                    Collection Service
+                              </InfoPageTextListItem>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span>
+                                    Simple Online Booking
+                              </InfoPageTextListItem>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span>
+                                    Competitive Pricing
+                              </InfoPageTextListItem>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span>
+                                    Three Types of Service
+                              </InfoPageTextListItem>
+                              <InfoPageTextListItem>
+                                    <span>
+                                          <FontAwesomeIcon icon={faChevronRight}/>
+                                    </span>
+                                    Fox Garage Warranty
+                              </InfoPageTextListItem>
+                        </InfoPageTextList>
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
@@ -169,6 +168,16 @@ const CompleteServicePage = ({isMobile, history}) => {
                                           <FontAwesomeIcon  icon={faChevronRight}/>
                                           Full service inspection in line with manufacturer’s specification
 
+                                    </WidgetText>
+                                    <WidgetText
+                                          $textAlign='start'
+                                          $color='white'
+                                          $fontWeight='400'
+                                          $textSize='subtext'
+                                          style={{margin: '0px 30px'}}
+                                    >
+                                          
+                                          <span style={{fontWeight:'600'}} >Time Required:</span> 1.5 Hours
                                     </WidgetText>
                               </div>
                               

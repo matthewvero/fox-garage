@@ -126,7 +126,7 @@ const StandardServicePage = ({history, isMobile}) => {
                                           
                                     >
                                           <FontAwesomeIcon icon={faChevronRight}/>
-                                          Oil Filter
+                                          Replace Oil
                                     </WidgetText>
                                     <WidgetText
                                           $textAlign='start'
@@ -136,7 +136,7 @@ const StandardServicePage = ({history, isMobile}) => {
                                           style={{margin: '0px 30px'}}
                                     >
                                           <FontAwesomeIcon icon={faChevronRight}/>
-                                          Air Filter
+                                          36 Point Safety Check
                                     </WidgetText>
                                     <WidgetText
                                           $textAlign='start'
@@ -145,30 +145,10 @@ const StandardServicePage = ({history, isMobile}) => {
                                           $textSize='subtext'
                                           style={{margin: '0px 30px'}}
                                     >
-                                          <FontAwesomeIcon icon={faChevronRight}/>
-                                          Fuel Filter
+                                          
+                                          <span style={{fontWeight:'600'}} >Time Required:</span> 1.5 Hours
                                     </WidgetText>
-                                    <WidgetText
-                                          $textAlign='start'
-                                          $color='white'
-                                          $fontWeight='400'
-                                          $textSize='subtext'
-                                          style={{margin: '0px 30px'}}
-                                    >
-                                          <FontAwesomeIcon icon={faChevronRight}/>
-                                          Replace Filter
-                                    </WidgetText>
-                                    <WidgetText
-                                          $textAlign='start'
-                                          $color='white'
-                                          $fontWeight='400'
-                                          $textSize='subtext'
-                                          style={{margin: '0px 30px'}}
-                                    >
-                                          <FontAwesomeIcon  icon={faChevronRight}/>
-                                          Full service inspection in line with manufacturer’s specification
-
-                                    </WidgetText>
+                                    
                               </div>
                               
                         </div>
@@ -179,15 +159,44 @@ const StandardServicePage = ({history, isMobile}) => {
                               $color='white'
                               $textAlign='start'
                         >
-                              The complete service is recommended every twenty four months or 20,000 miles – 
-                              whichever comes first. It includes the oil change, the oil filter change, 
-                              the air filter change and a comprehensive 54-point safety check.
+                              Regular servicing helps to increase the life span of your vehicle and reduce the risk of breakdowns.
+                              Servicing is often based on the age or mileage of a vehicle, however, 
+                              our service staff will work with you to find out what your vehicle needs.
 
-                              We use original equipment quality parts on all of our services and we use high quality, low ash, 
-                              fully synthetic 05W30 oil as standard. Specially developed for all makes and models including Audi, BMW, Ford, VW, Seat, Skoda and Vauxhall. 
-                              05W30 fully synthetic oil provides the ultimate protection for exhaust treatment devices such as diesel particulate filters and catalytic converters. 
-                              
                         </WidgetParagraph>
+                        <WidgetParagraph 
+                              $color='white'
+                              $textAlign='start'
+                        >     
+
+                              Our fully qualified technicians will carry out a thorough examination of your vehicle and we will advise you of any faults or concerns 
+                              regarding the safety and reliability of your vehicle, no work will ever be carried out on your vehicle without your permission.
+                        
+                        </WidgetParagraph>
+
+                        <WidgetParagraph 
+                              $color='white'
+                              $textAlign='start'
+                        >
+
+                              This service is recommended every 12 months or every 10,000 miles – whichever comes first. 
+                              It is a comprehensive range of services for interim maintenance between your major servicing. 
+                        
+                        </WidgetParagraph>
+
+
+                        <WidgetParagraph 
+                              $color='white'
+                              $textAlign='start'
+                        >
+                        
+                              We use original equipment quality parts on all of our services and we use high quality, low ash,
+                              fully synthetic 05W30 oil as standard. Specially developed for all makes and models including Audi, BMW, Ford, VW, Seat, 
+                              Skoda and Vauxhall. 05W30 fully synthetic oil provides the ultimate protection for exhaust treatment devices such as diesel 
+                              particulate filters and catalytic converters. 
+                        
+                        </WidgetParagraph>
+
                         <WidgetParagraph 
                               $color='white'
                               $textAlign='start'

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components/macro";
 
 export const SectionContainer = styled.div`
       width: 100%;
@@ -18,7 +18,7 @@ export const SectionContainer = styled.div`
       box-sizing: border-box;
 
       ${props => props.warning ? 
-            'background-color: rgb(255, 100, 100); color: white;' : null}
+            'background-color: rgb(255, 60, 60); color: white;' : null}
 
       @media (max-width: 1000px){
             flex-basis: 100%;

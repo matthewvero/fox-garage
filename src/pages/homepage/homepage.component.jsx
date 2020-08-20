@@ -30,14 +30,14 @@ import {AppearHOC} from "../../components/appear-hoc/appear-hoc.component";
 import HoveringBookNowButton from "../../components/book-now-hovering-button/book-now.component";
 import VerticleBanner from "../../components/verticle-banner/verticle-banner.component";
 import { VerticleBannerHeading, VerticleBannerSlidingText } from "../../components/verticle-banner/verticle-banner.styles";
-import ImageCardContentBox from "../../components/cards/image-card-content-box/image-card-box.component";
 import ImageCarousel from "../../components/image-carousel/image-carousel.component";
 import { ImageCarouselSlide, CarouselTitle, CarouselSubtitle } from "../../components/image-carousel/image-carousel.styles";
 import CardSection from "../../components/cards/card-section/card-section.component";
 import Page from "../page/page.component";
-import { foxGarageTopServices, foxGarageServices } from "../../data/data";
+import { foxGarageTopServices, foxGarageServices, LatestNews } from "../../data/data";
 import QuickLinksButton from "../../components/quicklinks/quicklinks-button/quicklinks-button.component";
 import Image from "../../components/image/image.component";
+import NewsCards from "../../components/news-cards/news-cards.component";
 
 
 
@@ -112,17 +112,17 @@ const Homepage = ({isMobile, history}) => {
                     </WidgetText>
                 </Widget>
                 <Widget backgroundcolor="white">
-                    <WidgetText color="#666666" textSize="heading">
+                    <WidgetText $color="#666666" $textSize="heading">
                         Call Us To Book
                     </WidgetText>
                     <PhoneNumber>01276 704600</PhoneNumber>
                     <CustomButton $fontsize="2vw" $function={() => history.push('/prices')}> Book Now</CustomButton>
                 </Widget>
                 <Widget large warning>
-                    <WidgetText textSize="heading">
+                    <WidgetText $textSize="heading">
                         COVID-19 - WE'RE OPEN
                     </WidgetText>
-                    <WidgetText textSize="subtext">
+                    <WidgetText $textSize="subtext">
                         During this difficult time Fox Garage Camberley is
                         committed to keeping our roads safe. So for a limited
                         time MOT's are FREE to all customers and our service
@@ -154,10 +154,10 @@ const Homepage = ({isMobile, history}) => {
                 
                 <WidgetCluster width="80vw">
                     <Widget>
-                        <WidgetText textSize="heading" color="DODGERBLUE">
+                        <WidgetText $textSize="heading" $color="DODGERBLUE">
                             Thank You For Visiting Fox Garage Camberley
                         </WidgetText>
-                        <WidgetText textSize="subtext" color="white">
+                        <WidgetText $textSize="subtext" $color="white">
                             At Fox Garage in Camberley we are Bosch and RAC
                             accredited and we have also been inspected by Motor
                             Codes, Trading Standards, the AA and Farnborough
@@ -216,16 +216,16 @@ const Homepage = ({isMobile, history}) => {
             ) : (
                 <WidgetCluster width="wide">
                     <Widget>
-                        <WidgetText textSize="heading" color="DODGERBLUE">
+                        <WidgetText $textSize="heading" $color="DODGERBLUE">
                             Thank You For Visiting Fox Garage Camberley
                         </WidgetText>
-                        <WidgetText textSize="subtext" color="white">
+                        <WidgetText $textSize="subtext" $color="white">
                             At Fox Garage in Camberley we are Bosch and RAC
                             accredited and we have also been inspected by Motor
                             Codes, Trading Standards, the AA and Farnborough
                             Technology College.
                         </WidgetText>
-                        <Carousel items={foxGarageServices}></Carousel>
+                        <Carousel $items={foxGarageServices}></Carousel>
                     </Widget>
                 </WidgetCluster>
             )}
@@ -234,8 +234,8 @@ const Homepage = ({isMobile, history}) => {
             
                 <AppearHOC>
                 <VerticleBanner 
-                    image='https://printrat.sirv.com/fox/homepagecarousel/photo-1530484567812-2d5a2d82268c.jpeg'
-                    preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1530484567812-2d5a2d82268c.jpeg?profile=blurred%20preload'
+                    $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1530484567812-2d5a2d82268c.jpeg'
+                    $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1530484567812-2d5a2d82268c.jpeg?profile=blurred%20preload'
                     >
                     <VerticleBannerHeading>
                         12,000 Mile Service Guarantee
@@ -246,10 +246,10 @@ const Homepage = ({isMobile, history}) => {
                 </VerticleBanner>
                 <WidgetCluster width="60vw">
                     <Widget>
-                        <WidgetText textSize="heading" color="DODGERBLUE">
+                        <WidgetText $textSize="heading" $color="DODGERBLUE">
                             Our Top Services
                         </WidgetText>
-                        <WidgetText textSize="subtext" color="white">
+                        <WidgetText $textSize="subtext" $color="white">
                             Regular servicing helps to increase the life span of
                             your vehicle and reduce the risk of breakdowns.
                             Servicing is often based on the age or mileage of a
@@ -319,8 +319,8 @@ const Homepage = ({isMobile, history}) => {
                     </CardsContainerWidget>
                 </WidgetCluster>
                 <VerticleBanner 
-                    image='https://printrat.sirv.com/fox/homepagecarousel/photo-1502190643063-5e2579fa0317.jpeg'
-                    preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1502190643063-5e2579fa0317.jpeg?profile=blurred%20preload'
+                    $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1502190643063-5e2579fa0317.jpeg'
+                    $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1502190643063-5e2579fa0317.jpeg?profile=blurred%20preload'
                 />
 
                 </AppearHOC>
@@ -329,16 +329,16 @@ const Homepage = ({isMobile, history}) => {
             ) : (
                 <WidgetCluster width="wide">
                     <Widget>
-                        <WidgetText textSize="heading" color="DODGERBLUE">
+                        <WidgetText $textSize="heading" $color="DODGERBLUE">
                             Thank You For Visiting Fox Garage Camberley
                         </WidgetText>
-                        <WidgetText textSize="subtext" color="white">
+                        <WidgetText $textSize="subtext" $color="white">
                             At Fox Garage in Camberley we are Bosch and RAC
                             accredited and we have also been inspected by Motor
                             Codes, Trading Standards, the AA and Farnborough
                             Technology College.
                         </WidgetText>
-                        <Carousel items={foxGarageTopServices}></Carousel>
+                        <Carousel $items={foxGarageTopServices}></Carousel>
                     </Widget>
                 </WidgetCluster>
             )}
@@ -347,10 +347,10 @@ const Homepage = ({isMobile, history}) => {
                 
                 <WidgetCluster width="80vw">
                     <Widget>
-                        <WidgetText textSize="heading" color="DODGERBLUE">
+                        <WidgetText $textSize="heading" $color="DODGERBLUE">
                             Services at Fox Garage Camberley
                         </WidgetText>
-                        <WidgetText textSize="subtext" color="white">
+                        <WidgetText $textSize="subtext" $color="white">
                             Here are some of the services we offer at Fox Garage Camberley. 
                             Your local service and repair centre for all major vehicle makes and models. 
                             Our fully trained technicians are on hand to answer any questions and we will never carry out unnecessary work.
@@ -358,7 +358,7 @@ const Homepage = ({isMobile, history}) => {
 
                         </WidgetText>
                     </Widget>
-                    <CardsContainerWidget mini>
+                    <CardsContainerWidget $mini>
                         <Card >
                             <CardHeader>Vehicle Servicing</CardHeader>
 
@@ -415,83 +415,8 @@ const Homepage = ({isMobile, history}) => {
 
                 <AppearHOC isMobile={isMobile}>
                 
-                <WidgetCluster width="80vw">
-                    <Widget>
-                        <WidgetText textSize="heading" color="DODGERBLUE">
+                <NewsCards $items={LatestNews}/>
 
-                            Latest News
-                        </WidgetText>
-                        
-                    </Widget>
-                    <CardsContainerWidget grid >
-                        <Card>
-                            <Image 
-                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1544361263-b86bdea95bf3.jpeg?w=500&h=600'
-                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1544361263-b86bdea95bf3.jpeg?profile=blurred%20preload'    
-                            />
-                            <ImageCardContentBox  topColor='rgb(50,200,150)'/>
-                            
-                            <CardHeader
-                                color='rgb(50,200,150)'
-                            >
-                                How To Guides
-                            </CardHeader>
-                            
-                            <CardText>
-                                TOP 3 WINTER DRIVING TIPS
-                            </CardText>
-                        </Card>
-
-                        <Card>
-                            <Image 
-                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1545100400-91bc4c592aa0.jpeg?w=500&h=600'
-                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1545100400-91bc4c592aa0.jpeg?profile=blurred%20preload'    
-                            />
-                            <ImageCardContentBox  topColor='rgb(70,214,224)'/>
-                            <CardHeader
-                                color='rgb(70,214,224)'
-                            >
-                                Car Maintenance
-                            </CardHeader>
-
-                            <CardText>
-                                3 SIGNS YOUR CAR BATTERY IS ABOUT TO DIE
-                            </CardText>
-                        </Card>
-                        <Card >
-                            <Image 
-                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1551384051-7400776bbd49.jpeg?w=500&h=600'
-                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1551384051-7400776bbd49.jpeg?profile=blurred%20preload'    
-                            />
-                            <ImageCardContentBox  topColor='rgb(50,200,150)'/>
-
-                            <CardHeader
-                                color='rgb(50,200,150)'
-                            >
-                                How To Guides
-                            </CardHeader>
-                            <CardText>
-                                HOW TO PREPARE YOUR CAR FOR THE COLDEST WINTER IN 5 YEARS
-                            </CardText>
-                        </Card>
-                        <Card>
-                            <Image 
-                                $image='https://printrat.sirv.com/fox/homepagecarousel/photo-1571775300511-ef41b23ce413.jpeg?w=500&h=600'
-                                $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1571775300511-ef41b23ce413.jpeg?profile=blurred%20preload'    
-                            />
-                            <ImageCardContentBox  topColor='rgb(100,100,255)'/>
-
-                            <CardHeader
-                                color='rgb(100,100,255)'
-                            >
-                                Motor Industry News
-                            </CardHeader>
-                            <CardText>
-                                WHAT IS THE FOXY LADY DRIVING CLUB
-                            </CardText>
-                        </Card>
-                    </CardsContainerWidget>
-                </WidgetCluster>
                 </AppearHOC>
 
         </Page>

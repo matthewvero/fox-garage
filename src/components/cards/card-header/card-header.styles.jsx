@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const CardHeaderDiv = styled.div`
     font-size: 3vw;

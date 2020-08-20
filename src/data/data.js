@@ -201,3 +201,109 @@ export const servicesAndPrices = {
         ],
     },
 };
+
+export const latestOffers = [
+
+    {
+        title: 'Under 2 Litres',
+        services: [
+            {
+                title: 'Complete Service and MOT',
+                price: '£129.00'
+
+            },
+            
+            {
+                title: 'Complete Service',
+                price: '£129.00'
+
+            }
+        ]
+    },
+    {
+        title: '2.1 to 3 Litres',
+        services: [
+            {
+                title: 'Complete Service and MOT',
+                price: '£209.00'
+
+            },
+            
+            {
+                title: 'Complete Service',
+                price: '£209.00'
+
+            }
+        ]
+    },
+    {
+        title: '3.1 Litres or More',
+        services: [
+            {
+                title: 'Complete Service and MOT',
+                price: '£239.00'
+
+            },
+            
+            {
+                title: 'Complete Service',
+                price: '259.00'
+
+            }
+        ]
+    },
+    {
+        title: 'Free Services',
+        services: [
+            {
+                title: 'Battery Check',
+                price: 'Free'
+
+            },
+            
+            {
+                title: 'Wheel Alignment Check',
+                price: 'Free'
+
+            },
+            
+            {
+                title: 'Winter Safety Check',
+                price: 'Free'
+
+            }
+        ]
+    }
+]
+
+export const LatestNews = [
+    {
+          title: 'TOP 3 WINTER DRIVING TIPS', 
+          type: 'How To Guides',
+          link: '#',
+          image: 'https://printrat.sirv.com/fox/homepagecarousel/photo-1544361263-b86bdea95bf3.jpeg?w=500&h=600',
+            preLoadImage: 'https://printrat.sirv.com/fox/homepagecarousel/photo-1544361263-b86bdea95bf3.jpeg?profile=blurred%20preload'  
+    },
+    {
+          title: '3 SIGNS YOUR CAR BATTERY IS ABOUT TO DIE', 
+          type: 'Car Maintenance',
+          link: '#',
+          image: 'https://printrat.sirv.com/fox/homepagecarousel/photo-1545100400-91bc4c592aa0.jpeg?w=500&h=600',
+            preLoadImage: 'https://printrat.sirv.com/fox/homepagecarousel/photo-1545100400-91bc4c592aa0.jpeg?profile=blurred%20preload'  
+    }, 
+    {
+          title: 'TOP 3 WINTER DRIVING TIPS', 
+          type: 'How To Guides',
+          link: '#',
+          image:'https://printrat.sirv.com/fox/homepagecarousel/photo-1551384051-7400776bbd49.jpeg?w=500&h=600',
+            preLoadImage: 'https://printrat.sirv.com/fox/homepagecarousel/photo-1551384051-7400776bbd49.jpeg?profile=blurred%20preload'    
+    }, 
+    {
+          title: 'WHAT IS THE FOXY LADY DRIVING CLUB?', 
+          type: 'Motor Industry News',
+          link: '#',
+          image: 'https://printrat.sirv.com/fox/homepagecarousel/photo-1571775300511-ef41b23ce413.jpeg?w=500&h=600',
+            preLoadImage: 'https://printrat.sirv.com/fox/homepagecarousel/photo-1571775300511-ef41b23ce413.jpeg?profile=blurred%20preload'
+    }
+
+]

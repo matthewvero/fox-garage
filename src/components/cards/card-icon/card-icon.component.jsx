@@ -1,9 +1,9 @@
 import React from 'react'
 import { CardIconElement } from './card-icon.styles'
 
-const CardIcon = ({icon, mini}) => {
+const CardIcon = ({icon, $mini}) => {
       return (
-            <CardIconElement icon={icon} mini={mini}/>
+            <CardIconElement icon={icon} mini={$mini}/>
       )
 }
 

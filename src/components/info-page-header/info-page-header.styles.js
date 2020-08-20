@@ -1,11 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components/macro";
 
 export const InfoPageHeaderContainer = styled.div`
       width: 100vw;
       display: flex;
       flex-direction: row; 
       flex-wrap: nowrap; 
-      background-color: red;
+      @media (max-width: 1150px) {
+            flex-direction: column;
+      }
 `
 
 export const InfoPageHeaderTextContainer = styled.div`
@@ -17,6 +19,10 @@ export const InfoPageHeaderTextContainer = styled.div`
       background-color: DODGERBLUE;
       align-items: flex-end;
       padding-top: 30px;
+      @media (max-width: 1150px) {
+            width: 100%;
+            align-items: center;
+      }
 `
 
 export const InfoPageTextList = styled.div`
@@ -29,6 +35,10 @@ export const InfoPageTextList = styled.div`
       align-content: flex-start;
       color: white;
       padding: 20px 0;
+      @media (max-width: 1150px) {
+            width: 100%;
+            align-content: center;
+      }
 `
 
 export const InfoPageTextHeadingSection = styled.div`
@@ -43,6 +53,14 @@ export const InfoPageTextHeadingSection = styled.div`
       font-size: 2vw;
       color: white;
       font-weight: 600;
+      @media (max-width: 1150px) {
+            width: 100%;
+            align-content: center;
+            font-size: 3vw
+      }
+      @media (max-width: 500px) {
+        font-size: 4vw;
+    }
 `
 
 
@@ -55,9 +73,22 @@ export const InfoPageTextListItem = styled.div`
       display: flex;
       flex-flow: row nowrap;
       justify-content: start;
+      @media (max-width: 1150px) {
+            font-size: 2vw;
+            justify-content: center;
+            text-align: left;
+      }
+      @media (max-width: 500px) {
+        font-size: 3vw;
+    }
 `
 
 export const InfoPageImageContainer = styled.div`
       width: 50%;
       position: relative;
+      @media (max-width: 1150px) {
+            width: 100%;
+            height: 10vh;
+            
+      }
 `

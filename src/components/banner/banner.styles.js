@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 export const BannerBackground = styled.div`
     width: 100%;
     height: 100%;
@@ -45,7 +45,7 @@ export const BannerTitle = styled.div`
     z-index: 2;
     margin: 0 40px;
     text-align: end;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     @media (max-width: 1000px) {
         margin: 0;
@@ -61,7 +61,7 @@ export const BannerSubtitle = styled.div`
     z-index: 2;
     margin: 0 40px;
     color: rgb(50, 255, 150);
-    font-weight: 600;
+    font-weight: 400;
     @media (max-width: 1000px) {
         margin: 0;
     }

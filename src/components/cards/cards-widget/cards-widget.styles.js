@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components/macro";
 
 export const CardsWidgetcontainer = styled.div`
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
-      ${props => props.mini ? 
+      ${props => props.$mini ? 
             'flex-flow: row wrap;'
             :
             'flex-flow: row nowrap' 
@@ -14,7 +14,7 @@ export const CardsWidgetcontainer = styled.div`
 
       @media (max-width: 1000px){
             flex-flow: row nowrap;
-            ${props => props.mini ? 
+            ${props => props.$mini ? 
                   'flex-flow: row wrap;'
                   :
                   'flex-flow: row nowrap' 
@@ -24,9 +24,8 @@ export const CardsWidgetcontainer = styled.div`
             
       }
 
-      ${props => props.grid ? 
+      ${props => props.$grid &&
             " @media (max-width: 1200px) {flex-wrap: wrap;}"
-            : null
       }
       
 `

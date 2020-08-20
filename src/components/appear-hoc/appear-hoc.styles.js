@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components';
+import styled, {keyframes} from "styled-components/macro";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const ComponentContainer = styled.div`
@@ -10,7 +10,9 @@ export const ComponentContainer = styled.div`
       display: flex; 
       flex-direction: row; 
       justify-content: center;
+      align-items: space-around;
       position: relative;
+      margin: 10px 0;
 `
 
 export const ComponentSlider = styled.div`

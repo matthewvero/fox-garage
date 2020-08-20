@@ -18,7 +18,7 @@ import CardText from "../cards/card-text/card-text.component";
 
 
 
-const Carousel = ({items}) => {
+const Carousel = ({$items}) => {
     const left = "+";
     const right = "-";
     const [activeCard, setActiveCard] = useState(1);
@@ -31,8 +31,8 @@ const Carousel = ({items}) => {
         // Sets the direction in which the current card will enter and exit.
 
         if (activeCard === 1 && direction === left) {
-            setActiveCard(items.length);
-        } else if ((activeCard === items.length) & (direction === right)) {
+            setActiveCard($items.length);
+        } else if ((activeCard === $items.length) & (direction === right)) {
             setActiveCard(1);
         } else {
             setActiveCard(direction === left ? activeCard - 1 : activeCard + 1);
@@ -46,7 +46,7 @@ const Carousel = ({items}) => {
                 icon={faChevronLeft}
                 onClick={() => handleClick(right)}
             />
-            {items.map((el) => (
+            {$items.map((el) => (
                 <CarouselCard key={el.id}>
                     <CSSTransition
                         in={activeCard === el.id ? true : false}

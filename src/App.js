@@ -11,6 +11,7 @@ import { connect } from "react-redux";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Wrapper } from "./pages/page/page-transition-wrapper";
 import MOTPage from "./pages/motpage/motpage.component";
+import CompleteServicePage from "./pages/completeservicepage/completeservicepage.component";
 
 function App({setIsMobile, location, history}) {
 
@@ -51,8 +52,11 @@ function App({setIsMobile, location, history}) {
                 >
                 <Switch location={location}>
                     <Route exact path="/" component={Homepage} />
-                    <Route  exact path="/prices" component={BookingPage} />
+                    <Route exact path="/prices" component={BookingPage} />
                     <Route exact path='/mot' component={MOTPage}/>
+                    <Route exact path='/completeservice' component={CompleteServicePage}/>
+                    <Route exact path='/standardservice' component={CompleteServicePage}/>
+                    
                 </Switch>
                 </CSSTransition>
               </TransitionGroup>

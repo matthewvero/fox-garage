@@ -15,5 +15,4 @@ export const PageContainer = styled.div`
       }
       overflow: auto;
       background-color: #444444;
-
 `

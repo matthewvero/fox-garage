@@ -2,10 +2,10 @@ import React from 'react'
 import WidgetCluster from '../../components/info-widget/widget-cluster/widget-cluster.component'
 
 import InfoPageHeader from '../../components/info-page-header/info-page-header.component'
-import { InfoPageHeaderTextContainer, InfoPageTextHeadingSection, InfoPageTextList, InfoPageTextListItem, InfoPageImageContainer } from '../../components/info-page-header/info-page-header.styles'
+import { InfoPageHeaderTextContainer, InfoPageTextHeading, InfoPageTextSubHeading, InfoPageTextList, InfoPageTextListItem, InfoPageImageContainer } from '../../components/info-page-header/info-page-header.styles'
 import Page from '../page/page.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faListAlt, faOilCan, faSnowflake, faDotCircle, faCogs, faBolt, faCloudMeatball } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faOilCan, faSnowflake, faDotCircle, faCogs, faBolt, faCloudMeatball } from '@fortawesome/free-solid-svg-icons';
 import Image from '../../components/image/image.component';
 import WidgetText from '../../components/info-widget/widget-text/widget-text.component';
 import Widget from '../../components/info-widget/widget/widget.component';
@@ -18,21 +18,23 @@ import { connect } from 'react-redux';
 import NewsCards from '../../components/news-cards/news-cards.component';
 import QuickLinks from '../../components/quicklinks/quicklinks-container/quicklinks.component';
 import QuickLinksButton from '../../components/quicklinks/quicklinks-button/quicklinks-button.component';
+import HoveringBookNowButton from '../../components/book-now-hovering-button/book-now.component';
+
 const MOTPage = ({isMobile, history}) => {
       return (
             <Page>
             
-            
+            <HoveringBookNowButton/>
                   <InfoPageHeader>
                         <InfoPageHeaderTextContainer>
 
-                              <InfoPageTextHeadingSection>
+                              <InfoPageTextSubHeading>
                                     <span>Fox Garage Camberley</span>
-                              </InfoPageTextHeadingSection>
+                              </InfoPageTextSubHeading>
 
-                              <InfoPageTextHeadingSection>
+                              <InfoPageTextHeading>
                                     <span>MOT</span>
-                              </InfoPageTextHeadingSection>
+                              </InfoPageTextHeading>
 
                               <InfoPageTextList>
                                     <InfoPageTextListItem>
@@ -177,12 +179,12 @@ const MOTPage = ({isMobile, history}) => {
                               Quick Links
                         </WidgetText>
                               <QuickLinks>
-                                    <QuickLinksButton title='EXHAUST' icon={faCloudMeatball} $function={() => history.push('/mot')}/>
-                                    <QuickLinksButton title='SERVICE' icon={faOilCan}/>
-                                    <QuickLinksButton title='AIRCON' icon={faSnowflake}/>
-                                    <QuickLinksButton title='TYRE FITTING' icon={faDotCircle}/>
-                                    <QuickLinksButton title='CAMBELTS' icon={faCogs}/>
-                                    <QuickLinksButton title='EV' icon={faBolt}/>
+                              <QuickLinksButton title='EXHAUST' icon={faCloudMeatball} $function={() => history.push('/exhaust')}/>                           
+                              <QuickLinksButton title='SERVICE' icon={faOilCan} $function={() => history.push('/completeservice')}/>
+                              <QuickLinksButton title='AIRCON' icon={faSnowflake} $function={() => history.push('/aircon')}/>
+                              <QuickLinksButton title='TYRE FITTING' icon={faDotCircle} $function={() => history.push('/tyrefitting')}/>
+                              <QuickLinksButton title='CAMBELTS' icon={faCogs} $function={() => history.push('/cambelts')}/>
+                              <QuickLinksButton title='EV' icon={faBolt} $function={() => history.push('/hybridandev')}/>
 
                               </QuickLinks>
                         </Widget>

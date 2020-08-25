@@ -6,8 +6,8 @@ export const WidgetParagraphContainer = styled.div`
 `
 
 export const WidgetParagraphContent = styled.p`
-      font-size: 1.25vw;
-      font-weight: 400;
+      font-size: ${props => props.$fontSize ? props.$fontSize : '1.25vw'};
+      font-weight: ${props => props.$fontWeight ? props.$fontWeight : '400'};
       color: ${props => props.$color};
       padding: 0 20px;
       margin: 0;

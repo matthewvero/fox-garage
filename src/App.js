@@ -13,6 +13,15 @@ import { Wrapper } from "./pages/page/page-transition-wrapper";
 import MOTPage from "./pages/motpage/motpage.component";
 import CompleteServicePage from "./pages/completeservicepage/completeservicepage.component";
 import StandardServicePage from './pages/standardservicepage/standardservicepage.component';
+import AirconPage from './pages/airconpage/airconpage.component';
+import TyreFittingPage from "./pages/tyrefittingpage/tyrefittingpage.component";
+import CambeltsPage from "./pages/cambeltspage/cambeltspage.component";
+import BrakeCheckPage from "./pages/brakecheckpage/brakecheckpage.component";
+import ClutchAndGearboxPage from "./pages/clutchandgearboxpage/clutchandgearboxpage.component";
+import ExhaustPage from "./pages/exhaustpage/exhaustpage.component";
+import SteeringAndSuspensionPage from "./pages/steeringandsuspension/steeringandsuspension.component";
+import OtherServicesPage from "./pages/otherservicespage/otherservicespage.component";
+import HybridAndEvPage from "./pages/hybridandevpage/hybridandevpage.component";
 function App({setIsMobile, location, history}) {
 
     const [isMobile, setIsMobileHook] = useState(window.innerWidth > 1150 ? true : false);
@@ -56,7 +65,15 @@ function App({setIsMobile, location, history}) {
                     <Route exact path='/mot' component={MOTPage}/>
                     <Route exact path='/completeservice' component={CompleteServicePage}/>
                     <Route exact path='/standardservice' component={StandardServicePage}/>
-                    
+                    <Route exact path='/aircon' component={AirconPage}/>
+                    <Route exact path='/tyrefitting' component={TyreFittingPage}/>
+                    <Route exact path='/cambelts' component={CambeltsPage}/>
+                    <Route exact path='/brakecheck' component={BrakeCheckPage}/>
+                    <Route exact path='/clutchandgearbox' component={ClutchAndGearboxPage}/>
+                    <Route exact path='/exhaust' component={ExhaustPage}/>
+                    <Route exact path='/steeringandsuspension' component={SteeringAndSuspensionPage}/>
+                    <Route exact path='/other' component={OtherServicesPage}/>
+                    <Route exact path='/hybridandev' component={HybridAndEvPage}/>
                 </Switch>
                 </CSSTransition>
               </TransitionGroup>

@@ -137,11 +137,11 @@ const Homepage = ({isMobile, history}) => {
                 <Widget>
                     <QuickLinks>
                         <QuickLinksButton title='MOT' icon={faListAlt} $function={() => history.push('/mot')}/>
-                        <QuickLinksButton title='SERVICE' icon={faOilCan}/>
-                        <QuickLinksButton title='AIRCON' icon={faSnowflake}/>
-                        <QuickLinksButton title='TYRE FITTING' icon={faDotCircle}/>
-                        <QuickLinksButton title='CAMBELTS' icon={faCogs}/>
-                        <QuickLinksButton title='EV' icon={faBolt}/>
+                        <QuickLinksButton title='SERVICE' icon={faOilCan} $function={() => history.push('/completeservice')}/>
+                        <QuickLinksButton title='AIRCON' icon={faSnowflake} $function={() => history.push('/aircon')}/>
+                        <QuickLinksButton title='TYRE FITTING' icon={faDotCircle} $function={() => history.push('/tyrefitting')}/>
+                        <QuickLinksButton title='CAMBELTS' icon={faCogs} $function={() => history.push('/cambelts')}/>
+                        <QuickLinksButton title='EV' icon={faBolt} $function={() => history.push('/hybridandev')}/>
 
                     </QuickLinks>
                 </Widget>

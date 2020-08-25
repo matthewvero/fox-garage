@@ -10,6 +10,7 @@ import {servicesAndPrices} from '../../data/data'
 const BookingPage = () => {
       return (
             <Page>
+            
                   <EngineSelector></EngineSelector>
                   <WidgetCluster width='95vw'>
                         <Widget>

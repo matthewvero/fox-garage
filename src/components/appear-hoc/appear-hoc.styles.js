@@ -16,8 +16,8 @@ export const ComponentContainer = styled.div`
 `
 
 export const ComponentSlider = styled.div`
-position: absolute;
-
+      position: absolute;
+      will-change: opacity;
       display: flex;
       flex-direction: row;
       align-items: center;

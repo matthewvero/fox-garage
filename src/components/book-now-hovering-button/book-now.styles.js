@@ -43,4 +43,15 @@ export const BookNowButtonContainer = styled.div`
             transition: opacity 200ms 100ms ease; 
 
       }
+
+      ${props => props.animate && `
+            width: 300px;
+
+            ${BookNowText} {
+                  width: 200px;
+                  opacity: 1;
+                  transition: opacity 200ms 100ms ease; 
+
+            }
+      `}
 `

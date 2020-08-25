@@ -16,7 +16,7 @@ export const InfoPageHeaderTextContainer = styled.div`
       display: flex;
       flex-direction: column; 
       flex-wrap: nowrap; 
-      background-color: DODGERBLUE;
+      background-color: ${props => props.$color ? props.$color : 'DODGERBLUE'};
       align-items: flex-end;
       padding-top: 30px;
       @media (max-width: 1150px) {
@@ -41,7 +41,7 @@ export const InfoPageTextList = styled.div`
       }
 `
 
-export const InfoPageTextHeadingSection = styled.div`
+export const InfoPageTextSubHeading = styled.div`
       width: 40vw;
       height: 30%;
       display: flex;
@@ -52,6 +52,19 @@ export const InfoPageTextHeadingSection = styled.div`
       padding: 10px 0; 
       font-size: 2vw;
       color: white;
+      font-weight: 400;
+      @media (max-width: 1150px) {
+            width: 100%;
+            align-content: center;
+            font-size: 3vw
+      }
+      @media (max-width: 500px) {
+        font-size: 4vw;
+      }
+`
+
+export const InfoPageTextHeading = styled(InfoPageTextSubHeading)`
+      font-size: 2.3vw;
       font-weight: 600;
       @media (max-width: 1150px) {
             width: 100%;

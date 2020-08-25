@@ -11,7 +11,7 @@ const NewsCards = ({ $items}) => {
                   
                   {
 
-                        $items.map(el => {
+                        $items.map((el, idx) => {
                               let color
                               switch(el.type) {
                               case 'How To Guides': 
@@ -29,7 +29,7 @@ const NewsCards = ({ $items}) => {
                               }
                               return (
 
-                              <NewsCard $color={color}>
+                              <NewsCard key={idx} $color={color}>
                                     <Image
                                           $image={el.image}
                                           $preLoadImage={el.preLoadImage}

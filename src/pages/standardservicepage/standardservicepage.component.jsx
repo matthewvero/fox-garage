@@ -3,13 +3,14 @@ import { connect } from 'react-redux';
 import Page from '../page/page.component';
 import {
       InfoPageHeaderTextContainer, 
-      InfoPageTextHeadingSection, 
+      InfoPageTextHeading, 
+      InfoPageTextSubHeading,
       InfoPageTextList, 
       InfoPageTextListItem,
       InfoPageImageContainer
 } from '../../components/info-page-header/info-page-header.styles';
 import InfoPageHeader from '../../components/info-page-header/info-page-header.component';
-import {faChevronRight, faCloudMeatball, faOilCan, faSnowflake, faDotCircle, faCogs, faBolt} from '@fortawesome/free-solid-svg-icons';
+import {faChevronRight, faCloudMeatball, faSnowflake, faDotCircle, faCogs, faBolt, faListAlt} from '@fortawesome/free-solid-svg-icons';
 import Image from '../../components/image/image.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WidgetCluster from '../../components/info-widget/widget-cluster/widget-cluster.component';
@@ -22,20 +23,22 @@ import { AppearHOC } from '../../components/appear-hoc/appear-hoc.component';
 import QuickLinks from '../../components/quicklinks/quicklinks-container/quicklinks.component';
 import QuickLinksButton from '../../components/quicklinks/quicklinks-button/quicklinks-button.component';
 import NewsCards from '../../components/news-cards/news-cards.component';
+import HoveringBookNowButton from '../../components/book-now-hovering-button/book-now.component';
 
 const StandardServicePage = ({history, isMobile}) => {
       return (
             <Page>
+            <HoveringBookNowButton/>
             <InfoPageHeader>
                   <InfoPageHeaderTextContainer>
 
-                        <InfoPageTextHeadingSection>
+                        <InfoPageTextSubHeading>
                               <span>Fox Garage Camberley</span>
-                        </InfoPageTextHeadingSection>
+                        </InfoPageTextSubHeading>
 
-                        <InfoPageTextHeadingSection>
+                        <InfoPageTextHeading>
                               <span>Standard Service</span>
-                        </InfoPageTextHeadingSection>
+                        </InfoPageTextHeading>
 
                         <InfoPageTextList>
                               <InfoPageTextListItem>
@@ -235,11 +238,11 @@ const StandardServicePage = ({history, isMobile}) => {
                   </WidgetText>
                         <QuickLinks>
                               <QuickLinksButton title='EXHAUST' icon={faCloudMeatball} $function={() => history.push('/mot')}/>
-                              <QuickLinksButton title='SERVICE' icon={faOilCan}/>
-                              <QuickLinksButton title='AIRCON' icon={faSnowflake}/>
-                              <QuickLinksButton title='TYRE FITTING' icon={faDotCircle}/>
-                              <QuickLinksButton title='CAMBELTS' icon={faCogs}/>
-                              <QuickLinksButton title='EV' icon={faBolt}/>
+                              <QuickLinksButton title='MOT' icon={faListAlt} $function={() => history.push('/mot')}/>
+                              <QuickLinksButton title='AIRCON' icon={faSnowflake} $function={() => history.push('/aircon')}/>
+                              <QuickLinksButton title='TYRE FITTING' icon={faDotCircle} $function={() => history.push('/tyrefitting')}/>
+                              <QuickLinksButton title='CAMBELTS' icon={faCogs} $function={() => history.push('/cambelts')}/>
+                              <QuickLinksButton title='EV' icon={faBolt} $function={() => history.push('/hybridandev')}/>
 
                         </QuickLinks>
                   </Widget>

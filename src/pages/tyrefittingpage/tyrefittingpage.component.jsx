@@ -91,6 +91,7 @@ const TyreFittingPage = ({isMobile, history}) => {
                         <Image
                               $image="https://printrat.sirv.com/fox/mot%20page/photo-1477823986828-5aff156284aa.jpeg?w=1000"
                               $preLoadImage='https://printrat.sirv.com/fox/mot%20page/photo-1477823986828-5aff156284aa.jpeg?profile=blurred%20preload'
+                              $alt='stacked up tyres'
                         />
                   </InfoPageImageContainer>
             </InfoPageHeader>

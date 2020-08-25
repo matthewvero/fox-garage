@@ -36,6 +36,7 @@ const HybridAndEvPage = ({history, isMobile}) => {
                         <Image
                               $image="https://printrat.sirv.com/fox/evpage/photo-1571987502227-9231b837d92a.jpeg"
                               $preLoadImage='https://printrat.sirv.com/fox/evpage/photo-1571987502227-9231b837d92a.jpeg?profile=blurred%20preload'
+                              $alt='electric vehicle image'
                         />
                   </InfoPageImageContainer>
                   <InfoPageHeaderTextContainer 
@@ -112,7 +113,7 @@ const HybridAndEvPage = ({history, isMobile}) => {
                               </EVServiceContainer> 
                               <EVServiceContainer>
 
-                              
+
                               </EVServiceContainer> 
                         </div>
 

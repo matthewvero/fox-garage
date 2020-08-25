@@ -65,6 +65,7 @@ const CambeltsPage = ({history, isMobile}) => {
                         <Image
                               $image="https://printrat.sirv.com/fox/homepagecarousel/photo-1486262715619-67b85e0b08d3.jpeg?w=1000"
                               $preLoadImage='https://printrat.sirv.com/fox/homepagecarousel/photo-1486262715619-67b85e0b08d3.jpeg?profile=blurred%20preload'
+                              $alt='Picture of engine cam belt'
                         />
                   </InfoPageImageContainer>
             </InfoPageHeader>

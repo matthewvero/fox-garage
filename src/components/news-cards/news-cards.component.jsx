@@ -33,6 +33,7 @@ const NewsCards = ({ $items}) => {
                                     <Image
                                           $image={el.image}
                                           $preLoadImage={el.preLoadImage}
+                                          $alt='generic image'
                                     />
                                     <NewCardInfoBox $color={color}>
                                     <NewsCardTypeText $color={color}>{el.type}</NewsCardTypeText>

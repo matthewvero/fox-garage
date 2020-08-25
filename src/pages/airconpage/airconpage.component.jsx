@@ -70,6 +70,7 @@ const AirconPage = ({isMobile, history}) => {
                         <Image
                         $image="https://printrat.sirv.com/fox/mot%20page/photo-1525490829609-d166ddb58678-2.jpeg?w=1000"
                         $preLoadImage='https://printrat.sirv.com/fox/mot%20page/photo-1525490829609-d166ddb58678-2.jpeg?profile=blurred%20preload'
+                        $alt='Sunny Sky background'
                         />
                   </InfoPageImageContainer>
             </InfoPageHeader>

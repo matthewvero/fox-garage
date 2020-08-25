@@ -12,10 +12,11 @@ const Services = ({engineSize, data, tileColor}) => {
                   {
                         data.services.map (el => {
                               return (
-                                    <ServiceTileContainer $backgroundImage={el.backgroundImage} $titleBlock>
+                                    <ServiceTileContainer $titleBlock>
                                           <Image
                                                 $image={el.image}
                                                 $preLoadImage={el.preLoadImage}
+                                                $alt='generic background image'
                                           />
                                           <ServiceTileBackgroundFader/>
                                           <ServiceTileTitle>{el.title}</ServiceTileTitle>

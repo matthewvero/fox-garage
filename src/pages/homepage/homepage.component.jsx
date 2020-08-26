@@ -51,8 +51,7 @@ const Homepage = ({isMobile, history}) => {
             <ImageCarousel>
                 <ImageCarouselSlide>
                     <Image 
-                        $image='https://printrat.sirv.com/fox/fox/photo-1486673748761-a8d18475c757-min.jpeg?cx=center&cy=40%25&cw=75%25&ch=30%25'
-                        $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1486673748761-a8d18475c757-min.jpeg?profile=blurred%20preload&cx=center&cy=40%25&cw=75%25&ch=30%25'
+                        $image='https://printrat.sirv.com/fox/fox/photo-1486673748761-a8d18475c757-min.jpeg'
                         $alt='Picture of country road'
                     />
                 <CarouselTitle color='rgb(49,255, 150)' >
@@ -64,8 +63,7 @@ const Homepage = ({isMobile, history}) => {
                 </ImageCarouselSlide>
                 <ImageCarouselSlide >
                     <Image 
-                        $image='https://printrat.sirv.com/fox/fox/photo-1457269449834-928af64c684d-min.jpeg?cy=30%25&cw=75%25&ch=30%25'
-                        $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1457269449834-928af64c684d-min.jpeg?profile=blurred%20preload&cy=30%25&cw=75%25&ch=30%25'
+                        $image='https://printrat.sirv.com/fox/fox/photo-1457269449834-928af64c684d-min.jpeg'
                         $alt='snowflake background'
                     />
                     <CarouselTitle color='rgb(49,255, 150)' alignment='left'>
@@ -77,8 +75,7 @@ const Homepage = ({isMobile, history}) => {
                 </ImageCarouselSlide>
                 <ImageCarouselSlide >
                     <Image
-                        $image='https://printrat.sirv.com/fox/fox/photo-1489824904134-891ab64532f1-min.jpeg?cx=13%25&cy=30%25&cw=75%25&ch=30%25'
-                        $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1489824904134-891ab64532f1-min.jpeg?profile=blurred%20preload&cx=13%25&cy=30%25&cw=75%25&ch=30%25'
+                        $image='https://printrat.sirv.com/fox/fox/photo-1489824904134-891ab64532f1-min.jpeg'
                         $alt='Brightly coloured vehicle'
                     />
                 <CarouselTitle color='DODGERBLUE'>
@@ -90,8 +87,7 @@ const Homepage = ({isMobile, history}) => {
                 </ImageCarouselSlide>
                 <ImageCarouselSlide >
                     <Image 
-                        $image='https://printrat.sirv.com/fox/fox/photo-1486262715619-67b85e0b08d3-min.jpeg?cx=0.00%25&cy=30%25&cw=75%25&ch=30%25'
-                        $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1486262715619-67b85e0b08d3-min.jpeg?profile=blurred%20preload&cy=30&cw=75%25&ch=30%25'
+                        $image='https://printrat.sirv.com/fox/fox/photo-1486262715619-67b85e0b08d3-min.jpeg'
                         $alt='Background image of an engine
                         '
                     />
@@ -239,8 +235,7 @@ const Homepage = ({isMobile, history}) => {
             
                 <AppearHOC>
                 <VerticleBanner 
-                    $image='https://printrat.sirv.com/fox/fox/photo-1530484567812-2d5a2d82268c-min.jpeg?cx=30%25&cy=20%25&cw=30%25&ch=70%25'
-                    $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1530484567812-2d5a2d82268c-min.jpeg?cx=30%25&cy=20%25&cw=30%25&ch=70%25&blur=15&w=10%25&h=10%25'
+                    $image='https://printrat.sirv.com/fox/fox/photo-1530484567812-2d5a2d82268c-min.jpeg'
                     $alt='car bonnet'
                     >
                     <VerticleBannerHeading>
@@ -325,8 +320,7 @@ const Homepage = ({isMobile, history}) => {
                     </CardsContainerWidget>
                 </WidgetCluster>
                 <VerticleBanner 
-                    $image='https://printrat.sirv.com/fox/fox/photo-1502190643063-5e2579fa0317-min.jpeg?cw=70%25&ch=100%25&w=29.98%25&h=36.2%25'
-                    $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1502190643063-5e2579fa0317-min.jpeg?cw=70%25&ch=100%25&blur=15&w=10%25&h=16%25'
+                    $image='https://printrat.sirv.com/fox/fox/photo-1502190643063-5e2579fa0317-min.jpeg'
                     $alt='car interior'
                 />
 

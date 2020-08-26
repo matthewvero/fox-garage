@@ -72,8 +72,7 @@ const OtherServicesPage = ({history, isMobile}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg?ch=80%25&h=35%25"
-                              $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg?ch=80%25&blur=15&h=5%25'
+                              $image="https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg"
                               $alt='tool chest'
                         />
                   </InfoPageImageContainer>

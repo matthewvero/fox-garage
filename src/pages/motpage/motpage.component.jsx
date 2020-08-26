@@ -89,8 +89,7 @@ const MOTPage = ({isMobile, history}) => {
                         </InfoPageHeaderTextContainer>
                         <InfoPageImageContainer>
                               <Image 
-                                    $image='https://printrat.sirv.com/fox/fox/photo-1429772011165-0c2e054367b8-min.jpeg?ch=85%25&blur=15&w=5%25'
-                                    $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1429772011165-0c2e054367b8-min.jpeg?ch=85%25&w=28%25'
+                                    $image='https://printrat.sirv.com/fox/fox/photo-1429772011165-0c2e054367b8-min.jpeg'
                                     $alt='engine parts'
                               />
                         </InfoPageImageContainer>

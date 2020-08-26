@@ -94,8 +94,7 @@ const CompleteServicePage = ({isMobile, history}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg?ch=80%25&w=35%25&h=100%25"
-                              $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg?ch=80%25&blur=15&w=5%25&h=100%25'
+                              $image="https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg"
                               $alt='picture of tool chest'
                         />
                   </InfoPageImageContainer>

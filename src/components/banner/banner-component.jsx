@@ -16,8 +16,7 @@ class Banner extends React.Component {
             return (
             <BannerContainer >
                   <Image
-                        $image='https://printrat.sirv.com/fox/fox/photo-1471174617910-3e9c04f58ff5-min.jpeg?cx=20%25&cy=30%25&cw=75%25&ch=30%25&w=75%25'
-                        $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1471174617910-3e9c04f58ff5-min.jpeg?profile=blurred%20preload&cx=20%25&cy=30%25&cw=75%25&ch=30%25'
+                        $image='https://printrat.sirv.com/fox/fox/photo-1471174617910-3e9c04f58ff5-min.jpeg'
                         $alt='background image of car interior'
                   />
                   <BackgroundFade/>

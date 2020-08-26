@@ -16,7 +16,7 @@ const Image = ({$image, $alt}) => {
                   <ImageMain 
                         onLoad={() => setLoaded(true)} 
                         alt={$alt} 
-                        src={`${$image}?cy=center&ch=${height}&w=${width}`}
+                        src={`${$image}?cy=center&ch=${height}&w=${width + 100}`}
                   />
                   <ImagePreLoad 
                         ref={myRef} 

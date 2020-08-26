@@ -71,8 +71,8 @@ const ExhaustPage = ({history, isMobile}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/photo-1572435759312-848041b1d659-2.jpeg?w=1000"
-                              $preLoadImage='https://printrat.sirv.com/fox/photo-1572435759312-848041b1d659-2.jpeg?profile=blurred%20preload'
+                              $image="https://printrat.sirv.com/fox/fox/photo-1572435759312-848041b1d659-2-min.jpeg?ch=90%25&w=35%25"
+                              $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1572435759312-848041b1d659-2-min.jpeg?ch=90%25&blur=15&w=5%25'
                               $alt='picture of vehicle exhaust pipe'
                         />
                   </InfoPageImageContainer>

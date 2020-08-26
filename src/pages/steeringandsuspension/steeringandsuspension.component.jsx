@@ -73,8 +73,9 @@ const SteeringAndSuspensionPage = ({history, isMobile}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/photo-1542377281-73d08e3a10aa.jpeg"
-                              $preLoadImage='https://printrat.sirv.com/fox/photo-1542377281-73d08e3a10aa.jpeg?profile=blurred%20preload'
+                              $image="https://printrat.sirv.com/fox/fox/photo-1542377281-73d08e3a10aa-min.jpeg?ch=70%25"
+                              $preLoadImage='https://printrat.sirv.com/fox/fox/photo-1542377281-73d08e3a10aa-min.jpeg?ch=70%25&h=15%25'
+                              $alt='picture of car wheel'
                         />
                   </InfoPageImageContainer>
             </InfoPageHeader>

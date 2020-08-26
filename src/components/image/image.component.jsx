@@ -9,7 +9,6 @@ const Image = ({$image, $alt}) => {
       useEffect(() => {
             setHeight(myRef.current.offsetHeight);
             setWidth(myRef.current.offsetWidth);
-            console.log(`${$image}?w=${width}&h=${height}`)
       }, [$image, height, width])
       return (
             

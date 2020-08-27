@@ -15,8 +15,9 @@ const Services = ({engineSize, data, tileColor}) => {
                                     <ServiceTileContainer $titleBlock>
                                           <Image
                                                 $image={el.image}
-                                                $preLoadImage={el.preLoadImage}
                                                 $alt='generic background image'
+                                                $imageSize='50%'
+
                                           />
                                           <ServiceTileBackgroundFader/>
                                           <ServiceTileTitle>{el.title}</ServiceTileTitle>

@@ -89,8 +89,9 @@ const TyreFittingPage = ({isMobile, history}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1477823986828-5aff156284aa-min.jpeg"
+                              $image="https://printrat.sirv.com/fox/foximages/photo-1477823986828-5aff156284aa.jpeg"
                               $alt='stacked up tyres'
+                              $imageSize='25%'
                         />
                   </InfoPageImageContainer>
             </InfoPageHeader>

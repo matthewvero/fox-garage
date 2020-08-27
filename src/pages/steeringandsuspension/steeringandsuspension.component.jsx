@@ -73,7 +73,7 @@ const SteeringAndSuspensionPage = ({history, isMobile}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1542377281-73d08e3a10aa-min.jpeg"
+                              $image="https://printrat.sirv.com/fox/foximages/photo-1542377281-73d08e3a10aa.jpeg"
                               $alt='picture of car wheel'
                         />
                   </InfoPageImageContainer>

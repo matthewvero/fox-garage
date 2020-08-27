@@ -68,8 +68,9 @@ const AirconPage = ({isMobile, history}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                        $image="https://printrat.sirv.com/fox/fox/photo-1525490829609-d166ddb58678-min.jpeg"
+                        $image="https://printrat.sirv.com/fox/foximages/photo-1525490829609-d166ddb58678.jpeg"
                         $alt='Sunny Sky background'
+                        $imageSize='50%'
                         />
                   </InfoPageImageContainer>
             </InfoPageHeader>

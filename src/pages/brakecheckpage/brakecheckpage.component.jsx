@@ -95,7 +95,7 @@ const BrakeCheckPage = ({history, isMobile}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1578148211838-491f3014dfc8-min.jpeg"
+                              $image="https://printrat.sirv.com/fox/foximages/photo-1578148211838-491f3014dfc8.jpeg"
                               $alt='Image of a wheel'
                         />
                   </InfoPageImageContainer>

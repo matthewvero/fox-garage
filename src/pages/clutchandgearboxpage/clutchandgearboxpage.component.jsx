@@ -72,8 +72,9 @@ const ClutchAndGearboxPage = ({history, isMobile}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1560574188-6a6774965120-min.jpeg"
+                              $image="https://printrat.sirv.com/fox/foximages/photo-1560574188-6a6774965120.jpeg"
                               $alt='picture of gears'
+                              $imageSize='25%'
                         />
                   </InfoPageImageContainer>
             </InfoPageHeader>

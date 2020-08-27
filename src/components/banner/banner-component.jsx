@@ -16,8 +16,9 @@ class Banner extends React.Component {
             return (
             <BannerContainer >
                   <Image
-                        $image='https://printrat.sirv.com/fox/fox/photo-1471174617910-3e9c04f58ff5-min.jpeg'
+                        $image='https://printrat.sirv.com/fox/foximages/photo-1471174617910-3e9c04f58ff5.jpeg'
                         $alt='background image of car interior'
+                        $imageSize='50%'
                   />
                   <BackgroundFade/>
                   <BannerTextContainer>

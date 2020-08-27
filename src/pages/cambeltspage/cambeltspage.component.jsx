@@ -63,7 +63,7 @@ const CambeltsPage = ({history, isMobile}) => {
                   </InfoPageHeaderTextContainer>
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1486262715619-67b85e0b08d3-min.jpeg"
+                              $image="https://printrat.sirv.com/fox/foximages/photo-1486262715619-67b85e0b08d3-2.jpeg"
                               $alt='Picture of engine cam belt'
                         />
                   </InfoPageImageContainer>

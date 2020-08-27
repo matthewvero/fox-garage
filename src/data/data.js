@@ -65,7 +65,7 @@ export const servicesAndPrices = {
                 title: "Standard Service With MOT",
                 key: "standardServiceMOT",
                 image:
-                "https://printrat.sirv.com/fox/fox/photo-1487754180451-c456f719a1fc-min.jpeg", 
+                "https://printrat.sirv.com/fox/foximages/photo-1487754180451-c456f719a1fc.jpeg", 
             },
             {
                 prices: {
@@ -76,7 +76,7 @@ export const servicesAndPrices = {
                 title: "Complete Service With MOT",
                 key: "completeServiceMOT",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1487754180451-c456f719a1fc-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1487754180451-c456f719a1fc.jpeg",
             },
             {
                 prices: {
@@ -87,7 +87,7 @@ export const servicesAndPrices = {
                 title: "MOT Check: All Engines",
                 key: "MOTCheck",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1530046339160-ce3e530c7d2f.jpeg",
             },
             {
                 prices: {
@@ -98,7 +98,7 @@ export const servicesAndPrices = {
                 title: "MOT Check: New Customers",
                 key: "MOTCheckNewCustomers",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1530046339160-ce3e530c7d2f.jpeg",
             },
         ],
     },
@@ -114,7 +114,7 @@ export const servicesAndPrices = {
                 title: "Standard Service",
                 key: "standardService",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1487754180451-c456f719a1fc-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1487754180451-c456f719a1fc.jpeg",
             },
             {
                 prices: {
@@ -125,7 +125,7 @@ export const servicesAndPrices = {
                 title: "Complete Service",
                 key: "completeService",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1487754180451-c456f719a1fc-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1487754180451-c456f719a1fc.jpeg",
             },
             {
                 prices: {
@@ -136,7 +136,7 @@ export const servicesAndPrices = {
                 title: "Standard Service With MOT",
                 key: "standardServiceMOT",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1530046339160-ce3e530c7d2f.jpeg",
             },
             {
                 prices: {
@@ -147,7 +147,7 @@ export const servicesAndPrices = {
                 title: "Complete Service With MOT",
                 key: "completeServiceMOT",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1530046339160-ce3e530c7d2f-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1530046339160-ce3e530c7d2f.jpeg",
             },
         ],
     },
@@ -163,7 +163,7 @@ export const servicesAndPrices = {
                 title: "Free Winter Safety Check",
                 key: "winterSafetyCheck",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1512566393827-78dc4c8d8292-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1512566393827-78dc4c8d8292.jpeg",
             },
             {
                 prices: {
@@ -174,7 +174,7 @@ export const servicesAndPrices = {
                 title: "Free Wheel Alignment Check",
                 key: "wheelAlignmentCheck",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1542377281-73d08e3a10aa-min.jpeg",
+                    "https://printrat.sirv.com/fox/foximages/photo-1542377281-73d08e3a10aa.jpeg",
             },
             {
                 prices: {
@@ -185,7 +185,7 @@ export const servicesAndPrices = {
                 title: "Free Battery Check",
                 key: "freeBatteryCheck",
                 image:
-                    "https://printrat.sirv.com/fox/fox/photo-1523349858072-b5440e970531-min.jpeg", 
+                    "https://printrat.sirv.com/fox/foximages/photo-1523349858072-b5440e970531.jpeg", 
             },
         ],
     },
@@ -270,25 +270,25 @@ export const LatestNews = [
           title: 'TOP 3 WINTER DRIVING TIPS', 
           type: 'How To Guides',
           link: '#',
-          image: 'https://printrat.sirv.com/fox/fox/photo-1551384051-7400776bbd49-min.jpeg',
+          image: 'https://printrat.sirv.com/fox/foximages/photo-1551384051-7400776bbd49.jpeg',
     },
     {
           title: '3 SIGNS YOUR CAR BATTERY IS ABOUT TO DIE', 
           type: 'Car Maintenance',
           link: '#',
-          image: 'https://printrat.sirv.com/fox/fox/photo-1523349858072-b5440e970531-min.jpeg',
+          image: 'https://printrat.sirv.com/fox/foximages/photo-1523349858072-b5440e970531.jpeg',
     }, 
     {
           title: 'PREPARE YOUR VEHICLE FOR THE COLDEST WINTER IN 5 YEARS', 
           type: 'How To Guides',
           link: '#',
-          image:'https://printrat.sirv.com/fox/fox/photo-1544361263-b86bdea95bf3-min.jpeg',
+          image:'https://printrat.sirv.com/fox/foximages/photo-1544361263-b86bdea95bf3.jpeg',
     }, 
     {
           title: 'WHAT IS THE FOXY LADY DRIVING CLUB?', 
           type: 'Motor Industry News',
           link: '#',
-          image: 'https://printrat.sirv.com/fox/fox/photo-1571775300511-ef41b23ce413-min.jpeg',
+          image: 'https://printrat.sirv.com/fox/foximages/photo-1571775300511-ef41b23ce413.jpeg',
     }
 
 ]

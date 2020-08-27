@@ -34,8 +34,9 @@ const HybridAndEvPage = ({history, isMobile}) => {
             >
                   <InfoPageImageContainer>
                         <Image
-                              $image="https://printrat.sirv.com/fox/fox/photo-1571987502227-9231b837d92a-min.jpeg"
+                              $image="https://printrat.sirv.com/fox/foximages/photo-1571987502227-9231b837d92a.jpeg"
                               $alt='electric vehicle image'
+                              
                         />
                   </InfoPageImageContainer>
                   <InfoPageHeaderTextContainer 

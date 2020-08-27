@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { ImageMain, ImagePreLoad } from './image.styles'
 
-const Image = ({$image, $alt}) => {
+const Image = ({$image, $alt, $imageSize = '75%'}) => {
       const [loaded, setLoaded] = useState(false)
       const myRef = useRef(null)
       const [width, setWidth] = useState(0)
@@ -16,11 +16,11 @@ const Image = ({$image, $alt}) => {
                   <ImageMain 
                         onLoad={() => setLoaded(true)} 
                         alt={$alt} 
-                        src={`${$image}?cy=center&ch=${height}&w=${width + 100}`}
+                        src={`${$image}?cx=center&cy=center&cw=${width}&ch=${height}&w=${$imageSize}25`}
                   />
                   <ImagePreLoad 
                         ref={myRef} 
-                        src={`${$image}?cy=center&ch=${height}&blur=15&w=${Math.floor(width / 10)}`} 
+                        src={`${$image}?cw=${width}&ch=${height}&blur=15&w=5%25`} 
                         alt={$alt} 
                         loaded={loaded}
                   />

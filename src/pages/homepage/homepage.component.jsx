@@ -51,7 +51,7 @@ const Homepage = ({isMobile, history}) => {
             <ImageCarousel>
                 <ImageCarouselSlide>
                     <Image 
-                        $image='https://printrat.sirv.com/fox/fox/photo-1486673748761-a8d18475c757-min.jpeg'
+                        $image='https://printrat.sirv.com/fox/foximages/photo-1486673748761-a8d18475c757.jpeg'
                         $alt='Picture of country road'
                     />
                 <CarouselTitle color='rgb(49,255, 150)' >
@@ -63,7 +63,7 @@ const Homepage = ({isMobile, history}) => {
                 </ImageCarouselSlide>
                 <ImageCarouselSlide >
                     <Image 
-                        $image='https://printrat.sirv.com/fox/fox/photo-1457269449834-928af64c684d-min.jpeg'
+                        $image='https://printrat.sirv.com/fox/foximages/photo-1457269449834-928af64c684d.jpeg'
                         $alt='snowflake background'
                     />
                     <CarouselTitle color='rgb(49,255, 150)' alignment='left'>
@@ -75,7 +75,7 @@ const Homepage = ({isMobile, history}) => {
                 </ImageCarouselSlide>
                 <ImageCarouselSlide >
                     <Image
-                        $image='https://printrat.sirv.com/fox/fox/photo-1489824904134-891ab64532f1-min.jpeg'
+                        $image='https://printrat.sirv.com/fox/foximages/photo-1489824904134-891ab64532f1.jpeg'
                         $alt='Brightly coloured vehicle'
                     />
                 <CarouselTitle color='DODGERBLUE'>
@@ -87,7 +87,7 @@ const Homepage = ({isMobile, history}) => {
                 </ImageCarouselSlide>
                 <ImageCarouselSlide >
                     <Image 
-                        $image='https://printrat.sirv.com/fox/fox/photo-1486262715619-67b85e0b08d3-min.jpeg'
+                        $image='https://printrat.sirv.com/fox/foximages/photo-1486262715619-67b85e0b08d3-2.jpeg'
                         $alt='Background image of an engine
                         '
                     />
@@ -235,8 +235,9 @@ const Homepage = ({isMobile, history}) => {
             
                 <AppearHOC>
                 <VerticleBanner 
-                    $image='https://printrat.sirv.com/fox/fox/photo-1530484567812-2d5a2d82268c-min.jpeg'
+                    $image='https://printrat.sirv.com/fox/foximages/photo-1530484567812-2d5a2d82268c.jpeg'
                     $alt='car bonnet'
+                    $imageSize='50%'
                     >
                     <VerticleBannerHeading>
                         12,000 Mile Service Guarantee
@@ -320,8 +321,9 @@ const Homepage = ({isMobile, history}) => {
                     </CardsContainerWidget>
                 </WidgetCluster>
                 <VerticleBanner 
-                    $image='https://printrat.sirv.com/fox/fox/photo-1502190643063-5e2579fa0317-min.jpeg'
+                    $image='https://printrat.sirv.com/fox/foximages/photo-1502190643063-5e2579fa0317.jpeg'
                     $alt='car interior'
+                    $imageSize='50%'
                 />
 
                 </AppearHOC>

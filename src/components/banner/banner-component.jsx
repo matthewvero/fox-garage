@@ -25,7 +25,7 @@ class Banner extends React.Component {
                         <BannerTitle>MOT FOR ALL CUSTOMERS</BannerTitle>
                         <BannerSubtitle>FREE DURING COVID-19</BannerSubtitle>
                   </BannerTextContainer>
-                  <BannerImage backgroundImage='https://printrat.sirv.com/fox/fox/mot_logo.png?w=20%25&h=20%25' alt='MOT symbol'/>
+                  <BannerImage backgroundImage='https://printrat.sirv.com/fox/mot_logo.png?w=20%25' alt='MOT symbol'/>
             </BannerContainer>
       )}
 }

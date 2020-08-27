@@ -23,5 +23,20 @@ export const EVIconComponent = styled(FontAwesomeIcon)`
       color: rgb(49,255,149);
       filter: drop-shadow(0px 0px 5px #333333);
       animation:  ${colorAnimation} 4s linear forwards infinite;
+      animation-delay: -2s;
 `;
 
+export const EVIconLeft = styled(EVIconComponent)`
+      margin: 10px;
+      font-size: 5vh;
+      transform: rotate(-30deg);
+      animation-delay: -3s;
+`
+
+export const EVIconRight = styled(EVIconComponent)`
+      margin: 10px;
+      font-size: 5vh;
+      transform: rotate(30deg);
+      animation-delay: -1s;
+      
+`

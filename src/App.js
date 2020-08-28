@@ -55,15 +55,17 @@ function App({setIsMobile, location, history}) {
         <div className="App">
             <Header></Header>
             <Wrapper>
-              <TransitionGroup>
-                <CSSTransition
-                  classNames='page'
-                  unmountOnExit
-                  timeout={800}
-                  key={location.key}
-                >
+            <TransitionGroup>
+              <CSSTransition
+                classNames='page'
+                unmountOnExit
+                timeout={800}
+                key={location.key}
+              >
+              <div>
+            <Suspense fallback={<div></div>}>
 
-                <Suspense fallback={<div>Loading...</div>}>
+                
                 
                 <Switch location={location}>
                     <Route exact path="/" component={Homepage} />
@@ -82,6 +84,7 @@ function App({setIsMobile, location, history}) {
                     <Route exact path='/hybridandev' component={HybridAndEvPage}/>
                 </Switch>
                 </Suspense>
+                </div>
                 </CSSTransition>
               </TransitionGroup>
             </Wrapper>

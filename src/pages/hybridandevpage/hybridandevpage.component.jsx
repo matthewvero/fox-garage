@@ -114,6 +114,7 @@ const HybridAndEvPage = ({history, isMobile}) => {
                                     <div style={{width: '100%', height: '20vh', position: 'relative'}}>
                                           <Image
                                                 $image='https://printrat.sirv.com/fox/foximages/img-electric-car.jpg'
+                                                $alt='EV vehicle battery'
                                           />
                                     
                                     </div>
@@ -183,6 +184,7 @@ const HybridAndEvPage = ({history, isMobile}) => {
                                     <div style={{width: '100%', height: '20vh', position: 'relative'}}>
                                           <Image
                                                 $image='https://printrat.sirv.com/fox/foximages/img-electric-car-2.jpg'
+                                                $alt='EV vehicle battery'
                                           />
                                     </div>
 

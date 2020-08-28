@@ -101,7 +101,7 @@ export const InfoPageImageContainer = styled.div`
       position: relative;
       @media (max-width: 1150px) {
             width: 100%;
-            height: 10vh;
+            height: 40vh;
             
       }
 `

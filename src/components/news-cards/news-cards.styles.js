@@ -11,14 +11,23 @@ export const NewsCardsContainer = styled.div`
 `;
 
 export const NewsCard = styled.div`
-      margin: 20px;
-      height: 300px;
-      width: 25%;
+      height: 40vh;
+      width: 20%;
       background-color: #444444;
       box-shadow: inset 0 0 10px #222222;
       position: relative;
       box-shadow: 0 0 10px #222222;
       cursor: pointer;
+
+      
+      @media (max-width: 1000px) {
+            width: 40%;
+            margin: 5%;
+      };
+      @media (max-width: 800px) {
+            width: 90%;
+      };
+      
 `;
 
 export const NewCardInfoBox = styled.div`
@@ -38,11 +47,15 @@ export const NewCardInfoBox = styled.div`
 export const NewsCardTypeText = styled.div`
       color: ${props => props.$color ? props.$color : 'white'};
       font-size: 2vw;
-
+      @media (max-width: 1000px) {
+            font-size: 2.5vw;
+      };
 `;
 
 export const NewsCardText = styled.div`
       color: white;
       font-size: 1.5vw;
-  
+      @media (max-width: 1000px) {
+            font-size: 2vw;
+      };
 `;

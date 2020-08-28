@@ -5,14 +5,14 @@ export const DropdownMenuBox = styled.div`
       position: absolute;
       width: 96vw;
       background: #666666;
-      top: 90px;
+      top: 10vh;
       right: 2vw;
       box-shadow: 0 0 5px #222222;
       border-radius: 10px;
       overflow: hidden;
       padding: 10px 0;
       transition: height 200ms ease;
-      
+      will-change: transform;
       &.dropdown-enter {
             position: absolute;
             transform: translateX(120%);

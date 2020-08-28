@@ -6,10 +6,31 @@ const Image = ({$image, $alt, $imageSize = '75%'}) => {
       const myRef = useRef(null)
       const [width, setWidth] = useState(0)
       const [height, setHeight] = useState(0)
+
       useEffect(() => {
             setHeight(myRef.current.offsetHeight);
+              setWidth(myRef.current.offsetWidth);
+      }, [height, width])
+
+
+      const resizeListener = debounce(() => {
+            setHeight(myRef.current.offsetHeight);
             setWidth(myRef.current.offsetWidth);
-      }, [$image, height, width])
+            console.log('resized')
+      }, 250)
+  
+      useEffect(() => {
+          window.addEventListener("resize", resizeListener, {passive: true});
+          return () => {
+              window.removeEventListener("resize", resizeListener);
+          };
+      });
+
+
+
+  
+      
+
       return (
             
             <React.Fragment>
@@ -28,4 +49,17 @@ const Image = ({$image, $alt, $imageSize = '75%'}) => {
       )
 }
 
+const debounce = (func, wait) => {
+      let timeout;
+    
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+    
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+};
 export default Image

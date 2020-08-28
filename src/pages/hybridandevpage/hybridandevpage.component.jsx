@@ -36,6 +36,7 @@ const HybridAndEvPage = ({history, isMobile}) => {
                         <Image
                               $image="https://printrat.sirv.com/fox/foximages/photo-1571987502227-9231b837d92a.jpeg"
                               $alt='electric vehicle image'
+                              $imageSize='100%'
                               
                         />
                   </InfoPageImageContainer>
@@ -100,20 +101,161 @@ const HybridAndEvPage = ({history, isMobile}) => {
                               </WidgetText>
                               <WidgetParagraph
                               $color='white'
+                              style={{padding: '0'}}
                               >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                               </WidgetParagraph>
                         </div>
                         <div
-                              style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}
+                              style={{display: 'flex', flexFlow: 'row wrap', justifyContent: 'space-around'}}
                         >
                               <EVServiceContainer>
-                                 
+                                    <div style={{width: '100%', height: '20vh', position: 'relative'}}>
+                                          <Image
+                                                $image='https://printrat.sirv.com/fox/foximages/img-electric-car.jpg'
+                                          />
+                                    
+                                    </div>
+
+                                    <WidgetText
+                                          $color='rgb(49, 255, 149)'
+                                    >
+                                          HYBIRD VEHICLE STANDARD SERVICING
+                                    </WidgetText>
+
+                                    <WidgetParagraph
+                                          $color='white'
+                                          $textAlign='left'
+                                    >
+                                          Your vehicle’s standard hybrid service needs to be carried out once every 12 months or 10,000 miles – 
+                                          whichever comes first. We carry out a full safety check as well as an oil and filter check using high quality,
+                                          low ash, fully synthetic 05W30 oil as standard. We offer great deals on standard (interim) and full hybrid services – plus, 
+                                          you’ll save more when you book your MOT at the same time.
+                                    </WidgetParagraph>
+
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                    - 36-POINT SAFETY CHECK WITH REPORT
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                    - OIL & FILTER CHANGE
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                    - FLUID TOP-UPS
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                    - DIAGNOSTIC HYBRID BATTERY HEALTH CHECK
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                    - CHARGING PORT & HIGH VOLTAGE CABLES CHECK
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                    - INVERTER COOLANT CHECK
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                    - BRAKE BINDING CHECK
+                                    </WidgetText>
+                                   
+
                               </EVServiceContainer> 
                               <EVServiceContainer>
+                                    <div style={{width: '100%', height: '20vh', position: 'relative'}}>
+                                          <Image
+                                                $image='https://printrat.sirv.com/fox/foximages/img-electric-car-2.jpg'
+                                          />
+                                    </div>
 
+                                    <WidgetText
+                                    $color='rgb(49, 255, 149)'
+                                    >
+                                          HYBIRD VEHICLE STANDARD SERVICING
+                                    </WidgetText>
 
+                                    <WidgetParagraph
+                                          $color='white'
+                                          $textAlign='left'
+                                    >
+                                    Your vehicle’s complete hybrid service needs to be carried out once every 24 months or 20,000 miles. 
+                                    As with all our services, we use a fully-synthetic 05W30 oil for this service. 
+                                    We offer great deals on standard (interim) and full hybrid services – 
+                                    plus, you’ll save more when you book your MOT at the same time.
+                                    </WidgetParagraph>
+
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - 36-POINT SAFETY CHECK WITH REPORT
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - OIL & FILTER CHANGE
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - AIR FILTER CHANGE
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - FUEL FILTER CHANGE
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - FLUID TOP-UPS
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - DIAGNOSTIC HYBRID BATTERY HEALTH CHECK
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - CHARGING PORT & HIGH VOLTAGE CABLES CHECK
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - INVERTER COOLANT CHECK
+                                    </WidgetText>
+                                    <WidgetText
+                                          $color='white'
+                                          $textSize='subtext'
+                                    >
+                                          - BRAKE BINDING CHECK
+                                    </WidgetText>
                               </EVServiceContainer> 
                         </div>
 

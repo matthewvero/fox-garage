@@ -64,9 +64,6 @@ function App({setIsMobile, location, history}) {
               >
               <div>
             <Suspense fallback={<div></div>}>
-
-                
-                
                 <Switch location={location}>
                     <Route exact path="/" component={Homepage} />
                     <Route exact path="/prices" component={BookingPage} />

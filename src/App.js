@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import { Route, Switch, withRouter } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.component";
-import BookingPage from './pages/bookingpage/bookingpage.component'
 import Header from './components/header/header/header.component'
 import Footer from "./components/footer/footer.component";
 import { setIsMobile } from "./redux/screen-size/screen-size.actions";
 import { connect } from "react-redux";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Wrapper } from "./pages/page/page-transition-wrapper";
-import MOTPage from "./pages/motpage/motpage.component";
-import CompleteServicePage from "./pages/completeservicepage/completeservicepage.component";
-import StandardServicePage from './pages/standardservicepage/standardservicepage.component';
-import AirconPage from './pages/airconpage/airconpage.component';
-import TyreFittingPage from "./pages/tyrefittingpage/tyrefittingpage.component";
-import CambeltsPage from "./pages/cambeltspage/cambeltspage.component";
-import BrakeCheckPage from "./pages/brakecheckpage/brakecheckpage.component";
-import ClutchAndGearboxPage from "./pages/clutchandgearboxpage/clutchandgearboxpage.component";
-import ExhaustPage from "./pages/exhaustpage/exhaustpage.component";
-import SteeringAndSuspensionPage from "./pages/steeringandsuspension/steeringandsuspension.component";
-import OtherServicesPage from "./pages/otherservicespage/otherservicespage.component";
-import HybridAndEvPage from "./pages/hybridandevpage/hybridandevpage.component";
+const HybridAndEvPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "HybridAndEvPage" */ './pages/hybridandevpage/hybridandevpage.component'))
+const BookingPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "BookingPage" */ './pages/bookingpage/bookingpage.component'))
+const MOTPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "MOTpage" */ "./pages/motpage/motpage.component"))
+const CompleteServicePage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "CompleteServicePage" */ "./pages/completeservicepage/completeservicepage.component"))
+const StandardServicePage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "StandardServicePage" */ './pages/standardservicepage/standardservicepage.component'))
+const AirconPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Aircon" */ './pages/airconpage/airconpage.component'))
+const TyreFittingPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "TyreFitting" */ "./pages/tyrefittingpage/tyrefittingpage.component"))
+const CambeltsPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Cambelts" */ "./pages/cambeltspage/cambeltspage.component"))
+const BrakeCheckPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "BrakeCheck" */ "./pages/brakecheckpage/brakecheckpage.component"))
+const ClutchAndGearboxPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "ClutchAndGearbox" */ "./pages/clutchandgearboxpage/clutchandgearboxpage.component"))
+const ExhaustPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Exhaust" */ "./pages/exhaustpage/exhaustpage.component"))
+const SteeringAndSuspensionPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "SteeringAndSuspension" */ "./pages/steeringandsuspension/steeringandsuspension.component"))
+const OtherServicesPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "OtherServices" */ "./pages/otherservicespage/otherservicespage.component"))
+
 function App({setIsMobile, location, history}) {
 
     const [isMobile, setIsMobileHook] = useState(window.innerWidth > 1150 ? true : false);
@@ -44,6 +45,8 @@ function App({setIsMobile, location, history}) {
         };
     });
 
+    
+
     useEffect(() => {
             setIsMobile(debouncedIsMobile)
     }, [debouncedIsMobile, setIsMobile])
@@ -59,6 +62,9 @@ function App({setIsMobile, location, history}) {
                   timeout={800}
                   key={location.key}
                 >
+
+                <Suspense fallback={<div>Loading...</div>}>
+                
                 <Switch location={location}>
                     <Route exact path="/" component={Homepage} />
                     <Route exact path="/prices" component={BookingPage} />
@@ -75,6 +81,7 @@ function App({setIsMobile, location, history}) {
                     <Route exact path='/other' component={OtherServicesPage}/>
                     <Route exact path='/hybridandev' component={HybridAndEvPage}/>
                 </Switch>
+                </Suspense>
                 </CSSTransition>
               </TransitionGroup>
             </Wrapper>

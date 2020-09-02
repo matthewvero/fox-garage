@@ -11,7 +11,6 @@ export const EngineSelectorContainer = styled.div`
 
       justify-content: center; 
       align-items: space-around;
-      align-content: ;
       box-shadow: 0 0 10px #222222;
       z-index: 4;
       &.engineSelector-enter {

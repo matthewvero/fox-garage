@@ -147,7 +147,14 @@ const Homepage = ({isMobile, history}) => {
                 </Widget>
             </WidgetCluster>
 
-            <Banner  />
+            <Banner  
+                $image='https://printrat.sirv.com/fox/foximages/photo-1471174617910-3e9c04f58ff5.jpeg'
+                $alt='background image of car interior'
+                $imageSize='50%'
+                $bannerImage='https://printrat.sirv.com/fox/mot_logo.png?w=20%25' 
+                $bannerImageAlt='MOT symbol'
+                $path='prices'
+            />
 
             {isMobile ? (
                 <AppearHOC isMobile={isMobile}>

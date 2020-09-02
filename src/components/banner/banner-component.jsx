@@ -8,26 +8,29 @@ import {
       BannerSubtitle,  
 } from './banner.styles'
 import Image from '../image/image.component';
+import { withRouter } from 'react-router';
 
-class Banner extends React.Component {
+const Banner = ({$image, $alt, $imageSize, $path, history, $bannerImage, $bannerImageAlt}) => {
 
 
-      render(){
-            return (
-            <BannerContainer >
+
+      return (
+            <BannerContainer onClick={() => history.push($path)}>
                   <Image
-                        $image='https://printrat.sirv.com/fox/foximages/photo-1471174617910-3e9c04f58ff5.jpeg'
-                        $alt='background image of car interior'
-                        $imageSize='50%'
+                        $image={$image}
+                        $alt={$alt}
+                        $imageSize={$imageSize}
                   />
                   <BackgroundFade/>
                   <BannerTextContainer>
                         <BannerTitle>MOT FOR ALL CUSTOMERS</BannerTitle>
                         <BannerSubtitle>FREE DURING COVID-19</BannerSubtitle>
                   </BannerTextContainer>
-                  <BannerImage backgroundImage='https://printrat.sirv.com/fox/mot_logo.png?w=20%25' alt='MOT symbol'/>
+                  {$bannerImage && 
+                        <BannerImage backgroundImage={$bannerImage} alt={$bannerImageAlt}/>
+                  }
             </BannerContainer>
-      )}
+      )
 }
 
-export default Banner
+export default withRouter(Banner)

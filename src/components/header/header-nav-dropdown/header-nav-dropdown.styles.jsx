@@ -12,7 +12,7 @@ export const HeaderDropDownContainer = styled.div`
       transition: all 150ms 200ms ease;
       z-index: 10;
       right: 0px;
-      will-change: transform;
+      will-change: contents;
       &.nav-menu-enter {
             position: absolute;
             transform: scaleY(0);
@@ -24,7 +24,7 @@ export const HeaderDropDownContainer = styled.div`
             position: absolute;
       }
       &.nav-menu-exit-active {
-            transition: all 75ms ease;
-            transform: scaleY(0) scaleX(0.75);
+            transition: all 0ms ease;
+            transform: scaleY(0);
       }
 `

@@ -13,3 +13,8 @@ export const setMobileMenuHeight = (payload) => ({
     type: headerTypes.setMobileMenuHeight,
     payload: payload,
 });
+
+export const setActiveNavBarMenu = (payload) => ({
+    type: headerTypes.setActiveNavBarMenu,
+    payload: payload,
+});

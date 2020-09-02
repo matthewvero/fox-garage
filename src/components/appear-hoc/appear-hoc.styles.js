@@ -55,7 +55,7 @@ export const ComponentScrollHint = styled(FontAwesomeIcon)`
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-out;
-      will-change: opacity;
+      will-change: contents;
       &.appear-enter {
             position: absolute;
             opacity: 0;
@@ -75,6 +75,4 @@ export const ComponentScrollHint = styled(FontAwesomeIcon)`
       }
 
       
-
 `
-

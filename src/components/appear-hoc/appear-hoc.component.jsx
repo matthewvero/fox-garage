@@ -21,9 +21,9 @@ export const AppearHOC = ({ children }) => {
         }
     };
 
-    const [ref, inView, entry] = useInView({
+    const [ref, inView] = useInView({
         /* Optional options */
-        threshold: 0,
+        threshold: 0.5,
         triggerOnce: true,
     });
 

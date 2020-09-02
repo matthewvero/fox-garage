@@ -3,5 +3,6 @@ export const headerTypes = {
       setActiveMobileMenu: 'SET_ACTIVE_MOBILE_MENU',
       togglePricesMenu: 'TOGGLE_PRICE_MENU_VISIBLE',
       toggleServicesMenu: 'TOGGLE_SERVICES_MENU_VISIBLE',
-      setMobileMenuHeight: 'SET_MOBILE_MENU_HEIGHT'
+      setMobileMenuHeight: 'SET_MOBILE_MENU_HEIGHT',
+      setActiveNavBarMenu: 'SET_ACTIVE_NAVBAR_MENU'
 }

@@ -10,24 +10,29 @@ import HeaderNavDropdown from "../header-nav-dropdown/header-nav-dropdown.compon
 import DropDownMenuItem from "../../dropdown-menu-item/dropdown-menu-item.component";
 import { connect } from "react-redux";
 import { selectEngineType } from "../../../redux/engine-selector/engine-selector.actions";
+import { setActiveNavBarMenu } from "../../../redux/header/header.actions";
 
 class HeaderNav extends React.Component {
     state = {
         activeMenu: "none",
+        
     };
 
+    
+
     render() {
+        const {setActiveNavBarMenu, selectEngineType} = this.props;
         return (
             <HeaderSection>
                 <HeaderNavComponent
                     dropdown
-                    onMouseEnter={() => this.setState({ activeMenu: "prices" })}
-                    onMouseLeave={() => this.setState({ activeMenu: "none" })}
+                    onMouseEnter={() => setActiveNavBarMenu( "prices")}
+                    onMouseLeave={() => setActiveNavBarMenu( "none")}
                 >
                     Prices
                     <HeaderDropDownIcon icon={faChevronDown} />
                     <CSSTransition
-                        in={this.state.activeMenu === "prices" ? true : false}
+                        in={this.props.activeNavBarMenu === "prices" ? true : false}
                         timeout={500}
                         classNames="nav-menu"
                         unmountOnExit
@@ -38,7 +43,10 @@ class HeaderNav extends React.Component {
                                 rightIcon={faChevronRight}
                                 $action='link'
                                 $route='prices'
-                                $function={() => this.props.dispatch(selectEngineType('2L'))}
+                                $function={() => {
+                                    selectEngineType('2L')
+                                    setActiveNavBarMenu( "none")
+                                }}
                             >
                                 Less Than 2.0 Litres
                             </DropDownMenuItem>
@@ -47,7 +55,10 @@ class HeaderNav extends React.Component {
                                 rightIcon={faChevronRight}
                                 $action='link'
                                 $route='prices'
-                                $function={() => this.props.dispatch(selectEngineType('2L-3L'))}
+                                $function={() => {
+                                    selectEngineType('2L-3L') 
+                                    setActiveNavBarMenu( "none")
+                                }}
                             >
                                 2.1 To 3.0 Litres
                             </DropDownMenuItem>
@@ -56,7 +67,10 @@ class HeaderNav extends React.Component {
                                 rightIcon={faChevronRight}
                                 $action='link'
                                 $route='prices'
-                                $function={() => this.props.dispatch(selectEngineType('3L+'))}
+                                $function={() => {
+                                    selectEngineType('3L+')
+                                    setActiveNavBarMenu( "none")
+                                }}
                             >
                                 3.1 litres +
                             </DropDownMenuItem>
@@ -66,14 +80,14 @@ class HeaderNav extends React.Component {
                 <HeaderNavComponent
                     dropdown
                     onMouseEnter={() =>
-                        this.setState({ activeMenu: "services" })
+                        setActiveNavBarMenu( "services" )
                     }
-                    onMouseLeave={() => this.setState({ activeMenu: "none" })}
+                    onMouseLeave={() => setActiveNavBarMenu( "none" )}
                 >
                     Services
                     <HeaderDropDownIcon icon={faChevronDown} />
                     <CSSTransition
-                        in={this.state.activeMenu === "services" ? true : false}
+                        in={this.props.activeNavBarMenu === "services" ? true : false}
                         timeout={500}
                         classNames="nav-menu"
                         unmountOnExit
@@ -84,6 +98,7 @@ class HeaderNav extends React.Component {
                                 rightIcon={faChevronRight}
                                 $action='link'
                                 $route='mot'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 MOT Test
                             </DropDownMenuItem>
@@ -92,6 +107,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='completeservice'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Complete Servicing
                             </DropDownMenuItem>
@@ -100,6 +116,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='standardservice'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Standard Servicing
                             </DropDownMenuItem>
@@ -108,6 +125,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='hybridandev'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Hybrid & Electric Cars
                             </DropDownMenuItem>
@@ -116,6 +134,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='aircon'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 AirCon
                             </DropDownMenuItem>
@@ -124,6 +143,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='tyrefitting'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Tyre Fitting
                             </DropDownMenuItem>
@@ -132,6 +152,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='cambelts'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Cam Belts
                             </DropDownMenuItem>
@@ -140,6 +161,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='brakecheck'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Free Brake Check
                             </DropDownMenuItem>
@@ -148,6 +170,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='clutchandgearbox'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Clutch & Gearbox
                             </DropDownMenuItem>
@@ -156,6 +179,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='exhaust'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Exhausts
                             </DropDownMenuItem>
@@ -164,6 +188,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='steeringandsuspension'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Steering & Suspension
                             </DropDownMenuItem>
@@ -172,6 +197,7 @@ class HeaderNav extends React.Component {
                                 header
                                 $action='link'
                                 $route='other'
+                                $function={() => setActiveNavBarMenu( "none")}
                             >
                                 Other
                             </DropDownMenuItem>
@@ -180,13 +206,13 @@ class HeaderNav extends React.Component {
                 </HeaderNavComponent>
                 <HeaderNavComponent
                     dropdown
-                    onMouseEnter={() => this.setState({ activeMenu: "blog" })}
-                    onMouseLeave={() => this.setState({ activeMenu: "none" })}
+                    onMouseEnter={() => setActiveNavBarMenu( "blog" )}
+                    onMouseLeave={() => setActiveNavBarMenu( "none" )}
                 >
                     Blog
                     <HeaderDropDownIcon icon={faChevronDown} />
                     <CSSTransition
-                        in={this.state.activeMenu === "blog" ? true : false}
+                        in={this.props.activeNavBarMenu === "blog" ? true : false}
                         timeout={500}
                         classNames="nav-menu"
                         unmountOnExit
@@ -206,13 +232,13 @@ class HeaderNav extends React.Component {
                 </HeaderNavComponent>
                 <HeaderNavComponent
                     dropdown
-                    onMouseEnter={() => this.setState({ activeMenu: "about" })}
-                    onMouseLeave={() => this.setState({ activeMenu: "none" })}
+                    onMouseEnter={() => setActiveNavBarMenu( "about" )}
+                    onMouseLeave={() => setActiveNavBarMenu( "none" )}
                 >
                     About Fox
                     <HeaderDropDownIcon icon={faChevronDown} />
                     <CSSTransition
-                        in={this.state.activeMenu === "about" ? true : false}
+                        in={this.props.activeNavBarMenu === "about" ? true : false}
                         timeout={500}
                         classNames="nav-menu"
                         unmountOnExit
@@ -234,4 +260,13 @@ class HeaderNav extends React.Component {
     }
 }
 
-export default connect()(HeaderNav)
+const mapDispatch = dispatch => ({
+    setActiveNavBarMenu: menu => dispatch(setActiveNavBarMenu(menu)),
+    selectEngineType: engine => dispatch(selectEngineType(engine))
+})
+
+const mapProps = state => ({
+    activeNavBarMenu: state.header.activeNavBarMenu
+})
+
+export default connect(mapProps, mapDispatch)(HeaderNav)

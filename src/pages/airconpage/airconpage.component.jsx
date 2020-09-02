@@ -27,7 +27,7 @@ const AirconPage = ({isMobile, history}) => {
             <Page>
             <HoveringBookNowButton/>
             <InfoPageHeader>
-                  <InfoPageHeaderTextContainer $color='#666666'>
+                  <InfoPageHeaderTextContainer $color='dodgerblue'>
 
                         <InfoPageTextSubHeading>
                               <span>Fox Garage Camberley</span>

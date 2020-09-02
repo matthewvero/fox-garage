@@ -6,6 +6,7 @@ const INITIAL_STATE = {
     priceMenuVisible: false,
     servicesMenuVisible: false,
     mobileMenuHeight: 250,
+    activeNavbarMenu: 'none'
 };
 
 const headerReducer = (state = INITIAL_STATE, { type, payload }) => {
@@ -34,6 +35,11 @@ const headerReducer = (state = INITIAL_STATE, { type, payload }) => {
             return {
                 ...state,
                 mobileMenuHeight: payload,
+            };
+        case headerTypes.setActiveNavBarMenu:
+            return {
+                ...state,
+                activeNavBarMenu: payload,
             };
 
         default: {

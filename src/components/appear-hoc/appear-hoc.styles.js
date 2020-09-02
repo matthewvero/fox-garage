@@ -13,14 +13,15 @@ export const ComponentContainer = styled.div`
       align-items: space-around;
       position: relative;
       margin: 10px 0;
+      transition: all 200ms ease;
 `
 
 export const ComponentSlider = styled.div`
       position: absolute;
-      will-change: opacity;
       display: flex;
       flex-direction: row;
       align-items: center;
+      will-change: opacity;
       &.appear-enter {
             opacity: 0;
       }
@@ -54,7 +55,7 @@ export const ComponentScrollHint = styled(FontAwesomeIcon)`
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-out;
-
+      will-change: opacity;
       &.appear-enter {
             position: absolute;
             opacity: 0;

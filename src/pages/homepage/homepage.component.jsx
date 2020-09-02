@@ -88,8 +88,7 @@ const Homepage = ({isMobile, history}) => {
                 <ImageCarouselSlide >
                     <Image 
                         $image='https://printrat.sirv.com/fox/foximages/photo-1486262715619-67b85e0b08d3-2.jpeg'
-                        $alt='Background image of an engine
-                        '
+                        $alt='Background image of an engine'
                     />
                 <CarouselTitle color='rgb(49,255, 150)' alignment='right'>
                         Far right fox propaganda!

@@ -41,7 +41,7 @@ const Image = ({$image, $alt, $imageSize = '75%'}) => {
                   />
                   <ImagePreLoad 
                         ref={myRef} 
-                        src={`${$image}?cw=${width}&ch=${height}&blur=15&w=5%25`} 
+                        src={`${$image}?cx=center&cy=center&cw=${width}&ch=${height}&w=10%25&blur=20`} 
                         alt={$alt} 
                         loaded={loaded}
                   />

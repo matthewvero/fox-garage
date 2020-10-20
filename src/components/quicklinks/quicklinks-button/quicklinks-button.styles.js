@@ -2,10 +2,11 @@ import styled from "styled-components/macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const QuickLinkIcon = styled(FontAwesomeIcon)`
-      font-size: 5vw;
-      color: DODGERBLUE;
       align-self: center;
       transition: transform linear 100ms ;
+      font-size: 5vw;
+      color: DODGERBLUE;
+      user-select: none;
       @media (max-width: 1000px) {
             font-size: 5vw;
 
@@ -13,19 +14,21 @@ export const QuickLinkIcon = styled(FontAwesomeIcon)`
       @media (max-width: 750px) {
             font-size: 7vw;
       }
-      user-select: none
 
 `
 
 export const QuickLinkTitle = styled.div`
-      font-size: 1.3vw;
       position: absolute;
       top: 45%;
-      text-align: center;
-      transform: scale(2);
-      transition: all ease-out 100ms;
+
       opacity: 0;
       color: white;
+      text-align: center;
+      font-size: 1.3vw;
+      transform: scale(2);
+      transition: all ease-out 100ms;
+      user-select: none;
+
       @media (max-width: 1000px) {
             font-size: 2vw;
             opacity: 1;
@@ -35,27 +38,27 @@ export const QuickLinkTitle = styled.div`
       @media (max-width: 750px) {
             font-size: 2.5vw;
       }
-      user-select: none
       
 `
 
 
 export const QuickLinksButtonContainer = styled.div`
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
+      position: relative;
       width: 42%;
       margin: 0 2%;
       height: 30%;
-      box-sizing: border-box;
-      
-      position: relative;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      
+      box-shadow: inset 0 0 10px #222222;
+      background-color: #444444;
+      
+      box-sizing: border-box;
       overflow: hidden;
       cursor: pointer;
-      background-color: #444444;
-      box-shadow: inset 0 0 10px #222222;
       @media (max-width: 1000px) {
             height: 100px;
             margin: 1% 2%;

@@ -36,22 +36,21 @@ export const EVIconRight = styled(EVIconComponent)`
 `
 
 export const EVIconContainer = styled.div`
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+      position: relative;
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  &:hover ${EVIconLeft} {
-        transform: translateX(-10px) rotate(-45deg) scaleY(1.5);  
-        
-  }
-  &:hover ${EVIconRight} {
-        transform: translateX(10px) rotate(45deg) scaleY(1.5);
-        
-  }
+      &:hover ${EVIconLeft} {
+            transform: translateX(-10px) rotate(-45deg) scaleY(1.5);  
+            
+      }
+      &:hover ${EVIconRight} {
+            transform: translateX(10px) rotate(45deg) scaleY(1.5);
+            
+      }
 
 `;
 

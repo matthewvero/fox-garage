@@ -2,9 +2,7 @@ import styled from "styled-components/macro";
 
 export const InfoPageHeaderContainer = styled.div`
       width: 100vw;
-      display: flex;
-      flex-direction: row; 
-      flex-wrap: nowrap; 
+      display: flex; 
       @media (max-width: 1150px) {
             flex-direction: column;
       }
@@ -15,7 +13,6 @@ export const InfoPageHeaderTextContainer = styled.div`
       height: 100%;
       display: flex;
       flex-direction: column; 
-      flex-wrap: nowrap; 
       background-color: ${props => props.$color ? props.$color : 'DODGERBLUE'};
       align-items: flex-end;
       padding-top: 30px;
@@ -28,8 +25,7 @@ export const InfoPageHeaderTextContainer = styled.div`
 export const InfoPageTextList = styled.div`
       width: 40vw;
       height: 100%;
-      display: flex;
-      flex-direction: row; 
+      display: flex; 
       flex-wrap: wrap; 
       justify-content: space-between;
       align-content: flex-start;
@@ -85,7 +81,6 @@ export const InfoPageTextListItem = styled.div`
       font-size: 1.1vw;
       display: flex;
       flex-flow: row nowrap;
-      justify-content: start;
       @media (max-width: 1150px) {
             font-size: 2vw;
             justify-content: center;

@@ -1,17 +1,18 @@
 import styled from "styled-components/macro";
 
 export const HeaderDropDownContainer = styled.div`
+      z-index: 10;
+      bottom: -${props => props.height}px;
+      right: 0px;
       position: absolute; 
       width: 20vw;
       height: ${props => props.height}px;
       display: flex; 
       flex-direction: column;
+      
       background-color: #444444;
-      bottom: -${props => props.height}px;
       transform-origin: top;
       transition: all 150ms 200ms ease;
-      z-index: 10;
-      right: 0px;
       will-change: contents;
       &.nav-menu-enter {
             position: absolute;

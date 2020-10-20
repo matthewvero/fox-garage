@@ -2,10 +2,10 @@ import React, { useState, useRef, useEffect } from 'react'
 import { ImageMain, ImagePreLoad } from './image.styles'
 
 const Image = ({$image, $alt, $imageSize = '75%'}) => {
-      const [loaded, setLoaded] = useState(false)
-      const myRef = useRef(null)
-      const [width, setWidth] = useState(0)
-      const [height, setHeight] = useState(0)
+      const [loaded, setLoaded] = useState(false);
+      const myRef = useRef(null);
+      const [width, setWidth] = useState(0);
+      const [height, setHeight] = useState(0);
 
       useEffect(() => {
             setHeight(myRef.current.offsetHeight);

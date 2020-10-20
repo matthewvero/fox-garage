@@ -11,7 +11,6 @@ export const DropdownMenuItemText = styled.div`
       width: 100%;
       border-radius: 10px;
       display: flex;
-      flex-direction: row;
       align-items: center;
       user-select: none;
 `

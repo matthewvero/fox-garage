@@ -1,10 +1,10 @@
 import styled from "styled-components/macro";
 export const DropdownMenuSectionContainer = styled.div`
+      position: absolute;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: absolute;
       cursor: auto;
       
       &.menu-primary-enter {

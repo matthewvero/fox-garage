@@ -17,24 +17,25 @@ export const BookNowText = styled.div`
 `
 
 export const BookNowButtonContainer = styled.div`
+      z-index: 5;
       position: fixed; 
       bottom: 20px;
       right: 20px;
       width: 50px;
       height: 50px;
-      border-radius: 10px;
-      transition: width 200ms ease; 
-      box-shadow: 0 0 10px #222222;
-      z-index: 5;
-      background-color: DODGERBLUE;
       display: flex; 
       justify-content: center;
       align-items: center;
+      
+      border-radius: 10px;
+      transition: width 200ms ease; 
+      box-shadow: 0 0 10px #222222;
+      background-color: DODGERBLUE;
       color: white;
       cursor: pointer;
+      
       &:hover {
             width: 300px;
-
       }
 
       &:hover ${BookNowText} {

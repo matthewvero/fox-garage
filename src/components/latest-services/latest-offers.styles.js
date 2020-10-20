@@ -2,13 +2,13 @@ import styled from "styled-components/macro";
 
 export const LatestOffersContainer = styled.div`
     width: 70%;
-
+    margin: 1vh 3vw;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-self: flex-end;
     box-sizing: border-box;
-    margin: 1vh 3vw;
+
     @media (max-width: 1150px) {
         width: 90%;
         margin: 1vh 0;
@@ -28,16 +28,17 @@ export const LatestOffersSection = styled.div`
 export const LatestOfferItem = styled.div`
     width: 100%;
     height: 4vh;
-    font-size: 1.2vw;
+    margin: 1vh;
+    padding: 5px 10px;
     color: white;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
     background-color: #444444;
-    margin: 1vh;
-    padding: 5px 10px;
     box-shadow: inset 0 0 10px #222222;
+    font-size: 1.2vw;
     cursor: pointer;
     &:hover {
         box-shadow: 0 0 10px #000000;
@@ -53,13 +54,14 @@ export const LatestOfferItem = styled.div`
 export const LatestOfferSectionTitle = styled.div`
     width: 100%;
     height: 5vh;
-    font-size: 1.5vw;
-    color: dodgerblue;
-    text-align: left;
     padding: 0 1vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    color: dodgerblue;
+    text-align: left;
+    font-size: 1.5vw;
     @media (max-width: 1150px) {
         font-size: 2vw;
     }
@@ -69,9 +71,9 @@ export const LatestOfferSectionTitle = styled.div`
 `;
 
 export const LatestOffersTitle = styled.div`
-    font-size: 2.5vw;
-    color: dodgerblue;
     margin: 5px 0;
+    color: dodgerblue;
+    font-size: 2.5vw;
     @media (max-width: 500px) {
         font-size: 4vw;
     }

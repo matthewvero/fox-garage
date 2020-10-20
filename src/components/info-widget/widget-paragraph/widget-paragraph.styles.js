@@ -6,14 +6,16 @@ export const WidgetParagraphContainer = styled.div`
 `
 
 export const WidgetParagraphContent = styled.p`
-      font-size: ${props => props.$fontSize ? props.$fontSize : '1.25vw'};
-      font-weight: ${props => props.$fontWeight ? props.$fontWeight : '400'};
-      color: ${props => props.$color};
+      padding-left: 50px;
       padding: 0 20px;
       margin: 0;
-      text-align: ${props => props.$textAlign ? props.$textAlign : 'center'};
+      
+      color: ${props => props.$color};
       line-height: 1.3;
-      padding-left: 50px;
+      text-align: ${props => props.$textAlign ? props.$textAlign : 'center'};
+      font-size: ${props => props.$fontSize ? props.$fontSize : '1.25vw'};
+      font-weight: ${props => props.$fontWeight ? props.$fontWeight : '400'};
+
       @media (max-width: 1000px) {
             font-size: 2.5vw;
       }

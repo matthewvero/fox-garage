@@ -1,18 +1,17 @@
 import styled from "styled-components/macro";
 
 export const CardContainer = styled.div`
+      position: relative;
       margin: 10px;
-      background-color: #444444;
+      padding: 10px;
       display: flex;
       flex-direction: column;
-      padding: 10px;
       justify-content: space-around;
       align-items: center;
+      
+      background-color: #444444;
       box-shadow: inset 0 0 10px #222222;
-      background-image: url('${props => props.$backgroundImage}');
-      background-size: cover;
-      background-position: center;
-      position: relative;
+      background-image: url('${props => props.$backgroundImage}') cover center;
       ${
             props => props.$mini ? 
             `

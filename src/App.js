@@ -1,5 +1,4 @@
 import React, { useEffect, useState, Suspense } from "react";
-// import logo from './logo.svg';
 import "./App.css";
 import { Route, Switch, withRouter } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.component";
@@ -9,19 +8,21 @@ import { setIsMobile } from "./redux/screen-size/screen-size.actions";
 import { connect } from "react-redux";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Wrapper } from "./pages/page/page-transition-wrapper";
-const HybridAndEvPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "HybridAndEvPage" */ './pages/hybridandevpage/hybridandevpage.component'))
-const BookingPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "BookingPage" */ './pages/bookingpage/bookingpage.component'))
-const MOTPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "MOTpage" */ "./pages/motpage/motpage.component"))
-const CompleteServicePage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "CompleteServicePage" */ "./pages/completeservicepage/completeservicepage.component"))
-const StandardServicePage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "StandardServicePage" */ './pages/standardservicepage/standardservicepage.component'))
-const AirconPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Aircon" */ './pages/airconpage/airconpage.component'))
-const TyreFittingPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "TyreFitting" */ "./pages/tyrefittingpage/tyrefittingpage.component"))
-const CambeltsPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Cambelts" */ "./pages/cambeltspage/cambeltspage.component"))
-const BrakeCheckPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "BrakeCheck" */ "./pages/brakecheckpage/brakecheckpage.component"))
-const ClutchAndGearboxPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "ClutchAndGearbox" */ "./pages/clutchandgearboxpage/clutchandgearboxpage.component"))
-const ExhaustPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Exhaust" */ "./pages/exhaustpage/exhaustpage.component"))
-const SteeringAndSuspensionPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "SteeringAndSuspension" */ "./pages/steeringandsuspension/steeringandsuspension.component"))
-const OtherServicesPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "OtherServices" */ "./pages/otherservicespage/otherservicespage.component"))
+const HybridAndEvPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "HybridAndEvPage" */ './pages/hybridandevpage/hybridandevpage.component'));
+const BookingPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "BookingPage" */ './pages/bookingpage/bookingpage.component'));
+const MOTPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "MOTpage" */ "./pages/motpage/motpage.component"));
+const CompleteServicePage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "CompleteServicePage" */ "./pages/completeservicepage/completeservicepage.component"));
+const StandardServicePage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "StandardServicePage" */ './pages/standardservicepage/standardservicepage.component'));
+const AirconPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Aircon" */ './pages/airconpage/airconpage.component'));
+const TyreFittingPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "TyreFitting" */ "./pages/tyrefittingpage/tyrefittingpage.component"));
+const CambeltsPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Cambelts" */ "./pages/cambeltspage/cambeltspage.component"));
+const BrakeCheckPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "BrakeCheck" */ "./pages/brakecheckpage/brakecheckpage.component"));
+const ClutchAndGearboxPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "ClutchAndGearbox" */ "./pages/clutchandgearboxpage/clutchandgearboxpage.component"));
+const ExhaustPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "Exhaust" */ "./pages/exhaustpage/exhaustpage.component"));
+const SteeringAndSuspensionPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "SteeringAndSuspension" */ "./pages/steeringandsuspension/steeringandsuspension.component"));
+const OtherServicesPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "OtherServices" */ "./pages/otherservicespage/otherservicespage.component"));
+const BlogPage = React.lazy(() => import(/* webpackPrefetch: true */ /* webpackChunkName: "OtherServices" */ "./pages/blogpage/blogpage.component"));
+
 
 function App({setIsMobile, location, history}) {
 
@@ -45,7 +46,7 @@ function App({setIsMobile, location, history}) {
         };
     });
 
-    
+
 
     useEffect(() => {
             setIsMobile(debouncedIsMobile)
@@ -79,6 +80,7 @@ function App({setIsMobile, location, history}) {
                     <Route exact path='/steeringandsuspension' component={SteeringAndSuspensionPage}/>
                     <Route exact path='/other' component={OtherServicesPage}/>
                     <Route exact path='/hybridandev' component={HybridAndEvPage}/>
+                    <Route exact path='/blogpage' component={BlogPage}/>
                 </Switch>
                 </Suspense>
                 </div>

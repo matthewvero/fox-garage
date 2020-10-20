@@ -2,9 +2,9 @@ import styled from "styled-components/macro";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const ImageCarouselContainer = styled.div`
+      position: relative;
       width: 100vw;
       height: 40vh; 
-      position: relative;
 `
 
 export const ImageCarouselSlide = styled.div`
@@ -13,8 +13,8 @@ export const ImageCarouselSlide = styled.div`
       display: flex; 
       flex-direction: column;
       align-content: center; 
-      box-shadow: inset 0 0 30px #000000;
       justify-content: space-around;
+      box-shadow: inset 0 0 30px #000000;
 `
 
 export const ImageSlider = styled.div`
@@ -38,15 +38,16 @@ export const ImageSlider = styled.div`
 `
 
 export const CarouselButton = styled(FontAwesomeIcon)`
-  font-size: 3rem;
-  color: white;
   position: absolute;
-  cursor: pointer;
+  z-index: 1;
   top: 0px;
   height: 100%;
-  transition: all 100ms ease;
-  z-index: 1;
   padding: 0 100px;
+  
+  cursor: pointer;
+  color: white;
+  transition: all 100ms ease;
+  font-size: 3rem;
   @media (max-width: 1000px){
     padding: 0 50px;
     &:active {
@@ -79,22 +80,20 @@ export const RightCarouselButton = styled(CarouselButton)`
 export const CarouselSlideIndicator = styled.div`
   height: 1vw;
   width: 1vw; 
+  margin: 0 0.5vw;
   border: solid 3px white;
   border-radius: 50%;
   ${props => props.active ? 'background-color: white;' : null}
   cursor: pointer;
-  margin: 0 0.5vw;
 
 `
 export const CarouselSlideIndicatorGroup = styled.div`
   height: 2vw;
+  display: flex; 
+  align-items: center;
+  justify-content: space-around; 
   border-radius: 15px;
   background-color: rgba(50,50,50,0.5);
-  display: flex;
-  flex-direction: row; 
-  flex-wrap: nowrap; 
-  justify-content: space-around; 
-  align-items: center;
   transition: all 100ms ease;
   &:hover {
       background-color: rgba(50,50,50, 0.7);
@@ -104,46 +103,47 @@ export const CarouselSlideIndicatorGroup = styled.div`
 `
 
 export const CarouselIndicatorContainer = styled.div`
-  width: 100%;
   position: absolute;
+  z-index: 1;
   bottom: 0px;
+  width: 100%;
   height: 50px;
   display: flex; 
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 `
 
 export const CarouselFader = styled.div`
+  position: absolute;
+  top: 0px;
   width: 100%;
   height: 100%;
   background-color: rgba(50,50,50, 0.3);
-  position: absolute;
-  top: 0px;
 `
 
 export const CarouselTitle = styled.div`
-  font-size: 3vw;
-  font-weight: 600;
-  color: ${props => props.color};
+  z-index: 1;
+  margin: 0 15vw;
   ${props => props.alignment === 'left' ? 'align-self: flex-start;' : null}
   ${props => props.alignment === 'right' ? 'align-self: flex-end;' : null}
-  margin: 0 15vw;
-  z-index: 1;
+  color: ${props => props.color};
+  font-size: 3vw;
+  font-weight: 600;
+
   @media (max-width: 1150px) {
     font-size: 5vw;
   }
 
 `
 export const CarouselSubtitle = styled.div`
-  font-size: 2vw; 
-  color: ${props => props.color};
-  font-weight: 600;
+  z-index: 1;
+  margin: 0 15vw;
   ${props => props.alignment === 'left' ? 'align-self: flex-start;' : null}
   ${props => props.alignment === 'right' ? 'align-self: flex-end;' : null}
-  margin: 0 15vw;
-  z-index: 1;
+  color: ${props => props.color};
+  font-weight: 600;
+  font-size: 2vw; 
+  
   @media (max-width: 1150px) {
     font-size: 4vw;
   }

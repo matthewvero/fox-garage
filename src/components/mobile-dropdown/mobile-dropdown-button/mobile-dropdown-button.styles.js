@@ -14,15 +14,15 @@ export const HamburgerLine = styled.div`
 export const DropDownButton = styled.div`
       width: 50px;
       height: 50px;
-      background: #444444;
-      border-radius: 5px;
+      padding: 20% 0;
       display: flex; 
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 20% 0;
-      box-sizing: border-box;
       overflow: hidden;
+      background: #444444;
+      box-sizing: border-box;
+      border-radius: 5px;
       
 
       ${HamburgerLine}:nth-child(1) {

@@ -1,11 +1,13 @@
 import styled from "styled-components/macro";
 
 export const WidgetTextContainer = styled.div`
-      
+      width: 100%;
 
 `
 
 export const WidgetTextContent = styled.p`
+      padding: 5px 20px;
+      margin: 0.5%;
       font-size: ${props => {
             switch(props.$textSize) {
                   case 'subtext':
@@ -42,8 +44,6 @@ export const WidgetTextContent = styled.p`
             }};
       }
       color: ${props => props.$color};
-      padding: 5px 20px;
-      margin: 0.5%;
       text-align: ${props => props.$textAlign ? props.$textAlign : 'centre'};
       line-height: 1.2;
       font-weight: ${props => props.$fontWeight ? props.$fontWeight : 400};

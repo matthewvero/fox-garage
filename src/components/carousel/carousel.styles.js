@@ -2,34 +2,35 @@ import styled from "styled-components/macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const CarouselContainer = styled.div`
+    position: relative;
     width: 100%;
     height: 300px;
+    
     background-color: white;
-    overflow: hidden;
-    position: relative;
     background-color: #666666;
+    overflow: hidden;
 `;
 
 export const CarouselCard = styled.div`
-    width: 60%;
-    height: 80%;
     position: absolute;
     left: 20%;
     top: 10%;
-    background-color: #444444;
+    width: 60%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
     box-sizing: border-box;
-    box-shadow: inset 0 0 10px #222222;
     overflow: hidden;
+    
+    background-color: #444444;
+    box-shadow: inset 0 0 10px #222222;
 `;
 
 export const CarouselCardSection = styled.div`
-    padding: 30px;
     z-index: 2;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,9 +53,9 @@ export const CarouselCardSection = styled.div`
 
 export const CarouselButton = styled(FontAwesomeIcon)`
     position: absolute;
-    color: DODGERBLUE;
     top: 40%;
     padding: 30px 20px;
+    color: DODGERBLUE;
     &:hover {
         background-color: rgba(55, 55, 55, 0.6);
     }

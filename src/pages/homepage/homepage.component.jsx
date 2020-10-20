@@ -70,7 +70,7 @@ const Homepage = ({isMobile, history}) => {
                         DEALS ON THE LEFT
                     </CarouselTitle>
                     <CarouselSubtitle color='white' alignment='left'>
-                        This deal will save you mucho pezos
+                        This deal will save you £££
                     </CarouselSubtitle>
                 </ImageCarouselSlide>
                 <ImageCarouselSlide >
@@ -79,7 +79,7 @@ const Homepage = ({isMobile, history}) => {
                         $alt='Brightly coloured vehicle'
                     />
                 <CarouselTitle color='DODGERBLUE'>
-                        COLORFUL 
+                        COLOURFUL 
                     </CarouselTitle>
                     <CarouselSubtitle color='white'>
                         I swear the deal is great - only £££
@@ -91,7 +91,7 @@ const Homepage = ({isMobile, history}) => {
                         $alt='Background image of an engine'
                     />
                 <CarouselTitle color='rgb(49,255, 150)' alignment='right'>
-                        Far right fox propaganda!
+                        Closer to the right!
                     </CarouselTitle>
                     <CarouselSubtitle color='white' alignment='right'>
                         Fox is the BEST GARAGE
@@ -242,9 +242,9 @@ const Homepage = ({isMobile, history}) => {
                 <AppearHOC>
                 <VerticleBanner 
                     $image='https://printrat.sirv.com/fox/foximages/photo-1530484567812-2d5a2d82268c.jpeg'
-                    $alt='car bonnet'
+                    $alt='car bonnet background image'
                     $imageSize='50%'
-                    >
+                >
                     <VerticleBannerHeading>
                         12,000 Mile Service Guarantee
                     </VerticleBannerHeading>
@@ -281,7 +281,10 @@ const Homepage = ({isMobile, history}) => {
                                 <CardText >2.0 Litre or Less</CardText>
                             </CardSection>
                             <CardSection>
-                                <CustomButton $fontsize="1.5vw">
+                                <CustomButton 
+                                    $fontsize="1.5vw"
+                                    $function={() => history.push('/prices')}
+                                >
                                     Book Now
                                 </CustomButton>
                             </CardSection>
@@ -301,7 +304,10 @@ const Homepage = ({isMobile, history}) => {
                                 <CardText>2.0 Litre or Less</CardText>
                             </CardSection>
                             <CardSection>
-                                <CustomButton $fontsize="1.5vw">
+                                <CustomButton 
+                                    $fontsize="1.5vw"
+                                    $function={() => history.push('/prices')}
+                                >
                                     Book Now
                                 </CustomButton>
                             </CardSection>
@@ -319,7 +325,10 @@ const Homepage = ({isMobile, history}) => {
                                 <CardText>2.0 Litre or Less</CardText>
                             </CardSection>
                             <CardSection>
-                                <CustomButton $fontsize="1.5vw">
+                                <CustomButton 
+                                    $fontsize="1.5vw"
+                                    $function={() => history.push('/prices')}
+                                >
                                     Book Now
                                 </CustomButton>
                             </CardSection>

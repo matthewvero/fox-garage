@@ -6,45 +6,47 @@ export const CustomButtonContainer = styled.div`
 `
 
 export const CustomButtonSlider = styled.div`
-      background-color: #666666;
+      z-index: 1;
+      position: absolute;
+      left: -100%;
+      top: -50%;
       width: 100%;
       height: 200%;
-      position: absolute;
-      top: -50%;
-      left: -100%;
+      
+      background-color: #666666;
       transition: transform 200ms ease;
-      z-index: 1;
 `
 
 export const CustomButtonIcon = styled(FontAwesomeIcon)`
-      position: absolute; 
-      right: 45%;
-      opacity: 0;
       z-index: 2;
+      right: 45%;
+      position: absolute; 
+      opacity: 0;
 `
 
 export const CustomButtonInput = styled.button`
+      z-index: 2;
+      position: relative;
+      width: 80%;
       margin: 0 10%;
       padding: 5px 0;
-      width: 80%;
-      outline: none; 
+      display: flex;
+      justify-content: space-around;
+      overflow: hidden;
+
       border-radius: 5px;
-      border: none;
       box-shadow: 0 0 5px #222222;
       background-color: DODGERBLUE;
       color: white;
       font-size: ${props => props.$fontsize};
       cursor: pointer;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      outline: none; 
+      border: none;
+      
       &:hover ${CustomButtonSlider} {
             transform: translate(100%, 0%) scaleX(1.1);
 
       }
-      z-index: 2;
 
       &:hover ${CustomButtonIcon} {
             transition: opacity 300ms 200ms ease;
@@ -55,9 +57,9 @@ export const CustomButtonInput = styled.button`
       }
 
       @media (max-width: 1000px) {
-            font-size: 4vw;
             width: 50%;
             align-self: center;
             margin: 20px;
+            font-size: 4vw;
       }
 `

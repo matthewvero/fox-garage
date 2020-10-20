@@ -12,8 +12,6 @@ import { withRouter } from 'react-router';
 
 const Banner = ({$image, $alt, $imageSize, $path, history, $bannerImage, $bannerImageAlt}) => {
 
-
-
       return (
             <BannerContainer onClick={() => history.push($path)}>
                   <Image

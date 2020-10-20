@@ -6,26 +6,34 @@ import {
     ComponentSlider,
     ComponentScrollHint,
 } from "./appear-hoc.styles";
+
 import { CSSTransition } from "react-transition-group";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export const AppearHOC = ({ children }) => {
+
     const [isVisible, setVisible] = useState(false);
+
     const [height, setHeight] = useState(400);
+
     const myRef = useRef();
+
     const childRef = useRef();
+
     const checkChildHeight = (ref) => {
         if (ref.current) {
             const childHeight = ref.current.firstChild.offsetHeight;
             setHeight(childHeight);
         }
     };
+    // check height of child and adjust own height acoordingly
 
     const [ref, inView] = useInView({
         /* Optional options */
         threshold: 0.5,
         triggerOnce: true,
     });
+    // check whether the element is in the viewport 
 
     useEffect(() => {
         checkChildHeight(childRef);

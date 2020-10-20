@@ -1,16 +1,17 @@
 import styled from "styled-components/macro";
 
 export const DropdownMenuBox = styled.div`
-      height: ${props => props.height}px;
       position: absolute;
-      width: 96vw;
-      background: #666666;
-      top: 10vh;
       right: 2vw;
-      box-shadow: 0 0 5px #222222;
+      top: 10vh;
+      height: ${props => props.height}px;
+      width: 96vw;
+      padding: 10px 0;
       border-radius: 10px;
       overflow: hidden;
-      padding: 10px 0;
+      
+      box-shadow: 0 0 5px #222222;
+      background: #666666;
       transition: height 200ms ease;
       will-change: transform;
       &.dropdown-enter {

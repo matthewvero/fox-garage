@@ -262,34 +262,88 @@ const HybridAndEvPage = ({history, isMobile}) => {
                         </div>
 
                   </Widget>
-                  
+            </WidgetCluster>
+
+            <AppearHOC>
             
 
+            <WidgetCluster>
+            
+                  <Widget>
+                  
+                        <WidgetText
+                              $color='dodgerblue'
+                              $fontWeight='600'
+
+                        >
+                              MY CAR IS IN WARRANTY, ARE YOU STILL ABLE TO SERVICE IT?
+                        </WidgetText>
+                        <WidgetParagraph
+                              $color='white'
+                        >
+                              Yes. If your car is in warranty, we will follow the manufacturers 
+                              service procedure and use manufacturer parts, 
+                              which keeps your policy intact. We do this regularly for our customers.
+                        </WidgetParagraph>
+                        <WidgetText
+                              $color='dodgerblue'
+                              $fontWeight='600'
+
+                        >
+                              I CAN’T DROP MY CAR OFF DUE TO WORK COMMITMENTS, CAN YOU HELP?
+                        </WidgetText>
+                        <WidgetParagraph
+                              $color='white'
+                        >
+                              Yes. We make things easier with our FREE collection and delivery service. Whether it’s your work or home address, 
+                              we’ll collect your car in the morning and drop it off once your hybrid service is completed. 
+                              This is valid within 5m of Fox Garage Camberley.
+                        </WidgetParagraph>
+                  
+                  </Widget>   
+                  
+                  <Widget
+                        style={{position: 'relative'}}
+                  >
+                  
+                        <Image
+                              $image='https://printrat.sirv.com/fox/foximages/photo-1554744512-783e8dc69b10.jpeg'
+                              $imageSize='50%'
+                              $alt='ev charging port'
+
+                        />
+                  
+                  </Widget>         
+
             </WidgetCluster>
+                  
+            </AppearHOC>
+
 
             <AppearHOC isMobile={isMobile}>
                   
-            <NewsCards $items={LatestNews}/>
+                  <NewsCards $items={LatestNews}/>
 
             </AppearHOC>
+
             <AppearHOC>
-            <WidgetCluster width="90vw">
+                  <WidgetCluster width="90vw">
 
-                  <Widget>
-                  <WidgetText $color='dodgerblue' $fontWeight='600'>
-                        Quick Links
-                  </WidgetText>
-                        <QuickLinks>
-                        <QuickLinksButton title='MOT' icon={faListAlt} $function={() => history.push('/mot')}/>                              
-                        <QuickLinksButton title='SERVICE' icon={faOilCan} $function={() => history.push('/completeservice')}/>
-                        <QuickLinksButton title='AIRCON' icon={faSnowflake} $function={() => history.push('/aircon')}/>
-                        <QuickLinksButton title='TYRE FITTING' icon={faDotCircle} $function={() => history.push('/tyrefitting')}/>
-                        <QuickLinksButton title='CAMBELTS' icon={faCogs} $function={() => history.push('/cambelts')}/>
-                        <QuickLinksButton title='EXHAUST' icon={faCloudMeatball} $function={() => history.push('/exhaust')}/>
+                        <Widget>
+                              <WidgetText $color='dodgerblue' $fontWeight='600'>
+                                    Quick Links
+                              </WidgetText>
+                              <QuickLinks>
+                                    <QuickLinksButton title='MOT' icon={faListAlt} $function={() => history.push('/mot')}/>                              
+                                    <QuickLinksButton title='SERVICE' icon={faOilCan} $function={() => history.push('/completeservice')}/>
+                                    <QuickLinksButton title='AIRCON' icon={faSnowflake} $function={() => history.push('/aircon')}/>
+                                    <QuickLinksButton title='TYRE FITTING' icon={faDotCircle} $function={() => history.push('/tyrefitting')}/>
+                                    <QuickLinksButton title='CAMBELTS' icon={faCogs} $function={() => history.push('/cambelts')}/>
+                                    <QuickLinksButton title='EXHAUST' icon={faCloudMeatball} $function={() => history.push('/exhaust')}/>
 
-                        </QuickLinks>
-                  </Widget>
-            </WidgetCluster>
+                              </QuickLinks>
+                        </Widget>
+                  </WidgetCluster>
             </AppearHOC>
 
       </Page>

@@ -2,25 +2,25 @@ import styled, {keyframes} from "styled-components/macro";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const ComponentContainer = styled.div`
+      position: relative;
+      height: ${props => props.height + 50}px;
+      width: 100%;
+      display: flex;  
+      justify-content: center;
+      align-items: space-around;
+      margin: 10px 0;
+
+      transition: all 200ms ease;
       @media (max-width: 1000px) {
             height: ${props => props.height + 100}px;
       }
-      height: ${props => props.height + 50}px;
-      width: 100%;
-      display: flex; 
-      flex-direction: row; 
-      justify-content: center;
-      align-items: space-around;
-      position: relative;
-      margin: 10px 0;
-      transition: all 200ms ease;
 `
 
 export const ComponentSlider = styled.div`
       position: absolute;
       display: flex;
-      flex-direction: row;
       align-items: center;
+      
       will-change: opacity;
       &.appear-enter {
             opacity: 0;
@@ -48,14 +48,10 @@ const breatheAnimation = keyframes`
 `
 
 export const ComponentScrollHint = styled(FontAwesomeIcon)`
-      font-size: 3rem;
       color: DODGERBLUE;
-
-      animation-name: ${breatheAnimation};
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-out;
+      font-size: 3rem;
       will-change: contents;
+      animation: ${breatheAnimation} 2s infinite ease-out;
       &.appear-enter {
             position: absolute;
             opacity: 0;

@@ -218,7 +218,13 @@ class HeaderNav extends React.Component {
                         unmountOnExit
                     >
                         <HeaderNavDropdown>
-                            <DropDownMenuItem rightIcon={faChevronRight} header>
+                            <DropDownMenuItem 
+                                rightIcon={faChevronRight} 
+                                header
+                                $action='link'
+                                $route='blogpage'
+                                $function={() => setActiveNavBarMenu( "none")}
+                            >
                                 Car Maintainance
                             </DropDownMenuItem>
                             <DropDownMenuItem rightIcon={faChevronRight} header>

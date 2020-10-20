@@ -1,10 +1,10 @@
 import styled from "styled-components/macro";
 
 export const CardHeaderDiv = styled.div`
-    font-size: 3vw;
-    color: ${(props) => (props.color ? props.color : "DODGERBLUE")};
-    font-weight: 600;
     z-index: 2;
+    color: ${(props) => (props.color ? props.color : "DODGERBLUE")};
+    font-size: 3vw;
+    font-weight: 600;
     ${props => props.mini ? 
     `
         @media (max-width: 750px) {

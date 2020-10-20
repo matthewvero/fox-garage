@@ -3,14 +3,15 @@ import styled from "styled-components/macro";
 export const SectionContainer = styled.div`
       width: 100%;
       max-height: 100%;
-      color: ${props => props.color};
-      background-color: ${props => props.backgroundcolor};
-      font-size: 1.50rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       flex-grow: ${props => props.large ? 1 : 1};
       flex-basis: 50%;
+      
+      color: ${props => props.color};
+      background-color: ${props => props.backgroundcolor};
+      font-size: 1.50rem;
       font-weight: 600;
 
       ${props => props.otherStyles};

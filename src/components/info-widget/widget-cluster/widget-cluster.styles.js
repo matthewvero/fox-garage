@@ -5,7 +5,6 @@ export const WidgetBox = styled.div`
       min-height: 35vw;
       margin: 0 10%;
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap; 
       overflow: hidden;
       margin: 20px;
